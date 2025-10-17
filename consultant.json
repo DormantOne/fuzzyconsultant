@@ -6,7 +6,8 @@
     "role": "MD",
     "zip_code": "15232",
     "hospital_affiliations": ["UPMC (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": ["dementia","early dementia","memory loss","MCI","mild cognitive impairment","Alzheimer's","neurodegenerative","cognitive decline","MoCA","MMSE","neuropsych testing","behavior change","caregiver burden","amyloid PET","CSF tau","LBD","FTD"]
   },
   {
     "area": "Neurology",
@@ -15,7 +16,8 @@
     "role": "MD",
     "zip_code": "15232",
     "hospital_affiliations": ["UPMC (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": ["dementia","MCI","Alzheimer's","cognitive impairment","neurobehavioral","amnestic","executive dysfunction","visuospatial","language deficits","MoCA","functional decline","delirium vs dementia"]
   },
   {
     "area": "Neurology",
@@ -24,7 +26,8 @@
     "role": "MD/PhD",
     "zip_code": "15232",
     "hospital_affiliations": ["UPMC (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": ["Alzheimer's biomarkers","amyloid","tau","PET","CSF","neurodegeneration","dementia workup","MCI","longitudinal assessment","neuroimaging"]
   },
   {
     "area": "Neurology",
@@ -33,7 +36,8 @@
     "role": "MD",
     "zip_code": "15232",
     "hospital_affiliations": ["UPMC (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": ["cognitive neurology","behavioral changes","care planning","safety assessment","driving evaluation","caregiver support","neuropsychology referral"]
   },
   {
     "area": "Neurology",
@@ -42,7 +46,8 @@
     "role": "PA",
     "zip_code": "15232",
     "hospital_affiliations": ["UPMC (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": ["cognitive screening","MoCA","MMSE","clinic intake","symptom triage","care coordination","memory clinic"]
   },
 
   {
@@ -52,7 +57,8 @@
     "role": "MD",
     "zip_code": "15213",
     "hospital_affiliations": ["UPMC – Simmons Center for Interstitial Lung Disease (MUH)"],
-    "comments": "Autoimmune lung disease; Simmons Center ILD. Scheduling contact: Anna Dvorsky, P: 412-647-1805."
+    "comments": "Autoimmune lung disease; Simmons Center ILD. Scheduling contact: Anna Dvorsky, P: 412-647-1805.",
+    "keywords": ["interstitial lung disease","ILD","pulmonary fibrosis","autoimmune lung disease","CTD-ILD","scleroderma","rheumatoid lung","NSIP","UIP","hypersensitivity pneumonitis","dyspnea","chronic cough","DLCO","FVC","honeycombing","nintedanib","pirfenidone"]
   },
 
   {
@@ -62,7 +68,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP."
+    "comments": "Performs TURP.",
+    "keywords": ["BPH","benign prostatic hyperplasia","LUTS","nocturia","enlarged prostate","urinary retention","TURP","UroLift","alpha blocker","tamsulosin","PVR","AUA score"]
   },
   {
     "area": "Urologic Surgery",
@@ -71,7 +78,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP and UroLift."
+    "comments": "Performs TURP and UroLift.",
+    "keywords": ["BPH","UroLift","minimally invasive BPH","LUTS","urinary frequency","weak stream","TURP candidacy","trial without catheter"]
   },
   {
     "area": "Urologic Surgery",
@@ -80,7 +88,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP and UroLift."
+    "comments": "Performs TURP and UroLift.",
+    "keywords": ["BPH","UroLift","TURP","prostate enlargement","hematuria","catheter dependence","post-void residual"]
   },
   {
     "area": "Urologic Surgery",
@@ -89,7 +98,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP."
+    "comments": "Performs TURP.",
+    "keywords": ["BPH","TURP","resection","urinary obstruction","PVR","bladder outlet obstruction","LUTS management"]
   },
   {
     "area": "Urologic Surgery",
@@ -98,7 +108,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP."
+    "comments": "Performs TURP.",
+    "keywords": ["BPH","TURP","enlarged prostate","LUTS","urology surgery","urinary retention"]
   },
   {
     "area": "Urologic Surgery",
@@ -107,7 +118,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP."
+    "comments": "Performs TURP.",
+    "keywords": ["BPH","TURP","LUTS","nocturia","weak stream","frequent urination","urology consult"]
   },
   {
     "area": "Urologic Surgery",
@@ -116,7 +128,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP."
+    "comments": "Performs TURP.",
+    "keywords": ["BPH","TURP","urolift referral","minimally invasive BPH","prostate surgery"]
   },
   {
     "area": "Urologic Surgery",
@@ -125,7 +138,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Performs TURP."
+    "comments": "Performs TURP.",
+    "keywords": ["BPH","TURP","LUTS","urinary retention","catheter","benign prostatic hyperplasia"]
   },
 
   {
@@ -135,7 +149,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPP Neurosurgery (UPMC)"],
-    "comments": "Recommended for pituitary surgery follow-up."
+    "comments": "Recommended for pituitary surgery follow-up.",
+    "keywords": ["skull base","pituitary adenoma","pituitary surgery","endoscopic endonasal","macroadenoma","Cushing's","acromegaly","prolactinoma","craniopharyngioma","optic chiasm","CSF leak"]
   },
 
   {
@@ -145,7 +160,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["electrophysiology","EP","atrial fibrillation","AF","arrhythmia","cardioversion","ablation","EP study","SVT","VT","anticoagulation","DOAC","rate control","rhythm control"]
   },
   {
     "area": "Cardiology",
@@ -154,7 +170,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["AF","arrhythmia","syncope","palpitations","ablation","cardioversion","Holter","Zio","pacemaker","ICD"]
   },
   {
     "area": "Cardiology",
@@ -163,7 +180,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["atrial fibrillation","flutter","SVT","VT","PVCs","EPS","catheter ablation","antiarrhythmic","anticoagulation"]
   },
   {
     "area": "Cardiology",
@@ -172,7 +190,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["EP","AF","ablation","cardioversion","rate vs rhythm","stroke prevention","CHA2DS2-VASc","HAS-BLED"]
   },
   {
     "area": "Cardiology",
@@ -181,7 +200,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["arrhythmia","AF","SVT","VT","ICD","pacemaker","EPS","cardioversion","anticoagulants"]
   },
   {
     "area": "Cardiology",
@@ -190,7 +210,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["atrial fibrillation","ablation","cardioversion","long-standing AF","Holter","event monitor","rate control"]
   },
   {
     "area": "Cardiology",
@@ -199,7 +220,8 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["AF","EP","catheter ablation","cardioversion","anticoagulation","stroke risk","DOAC","warfarin"]
   },
   {
     "area": "Cardiology",
@@ -208,6 +230,7 @@
     "role": "MD",
     "zip_code": "15217",
     "hospital_affiliations": ["UPMC (system)"],
-    "comments": "Treats AF; performs cardioversion."
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": ["AF","arrhythmia","ablation","cardioversion","anticoagulants","DOAC","EP referral","palpitations"]
   }
 ]
