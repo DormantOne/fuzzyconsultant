@@ -1,0 +1,213 @@
+[
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Oscar Lopez",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": ["UPMC (per PRM list)"],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Riddhi Patira",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": ["UPMC (per PRM list)"],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Tharick Pascoal",
+    "role": "MD/PhD",
+    "zip_code": "15232",
+    "hospital_affiliations": ["UPMC (per PRM list)"],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Estavana Isaac",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": ["UPMC (per PRM list)"],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Abigail Opiela",
+    "role": "PA",
+    "zip_code": "15232",
+    "hospital_affiliations": ["UPMC (per PRM list)"],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss."
+  },
+
+  {
+    "area": "Pulmonary",
+    "sub_area": "Interstitial Lung Disease",
+    "provider": "Kevin F. Gibson",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": ["UPMC – Simmons Center for Interstitial Lung Disease (MUH)"],
+    "comments": "Autoimmune lung disease; Simmons Center ILD. Scheduling contact: Anna Dvorsky, P: 412-647-1805."
+  },
+
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Tarin",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP."
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Benoit",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP and UroLift."
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Ogagan",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP and UroLift."
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Browning",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP."
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Rycyna",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP."
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Turner",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP."
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Sharbaugh",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP."
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Liem",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Performs TURP."
+  },
+
+  {
+    "area": "Neurosurgery",
+    "sub_area": "Skull Base Neurosurgery",
+    "provider": "Georgios Zenonos",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPP Neurosurgery (UPMC)"],
+    "comments": "Recommended for pituitary surgery follow-up."
+  },
+
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Aditya Bhonsale",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Mark Estes",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Sandeep Jain",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Aditi Naniwadekar",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Alaa Shalaby",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Norman Wang",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Krishna Kancharla",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Andrew Voigt",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": ["UPMC (system)"],
+    "comments": "Treats AF; performs cardioversion."
+  }
+]
