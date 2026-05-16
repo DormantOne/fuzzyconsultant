@@ -1160,6 +1160,47 @@
       "sortOrder": 23
     },
     {
+      "id": "shy-20251120-025",
+      "series": "shy",
+      "seriesLabel": "SHY",
+      "date": "2025-11-20",
+      "dateLabel": "11/20/25",
+      "title": "Update in Hypertension",
+      "rawTitle": "11/20/25 Shadyside Medicine Grand Rounds — “Update in Hypertension”",
+      "presenter": "Evan Ray, MD PhD FASN",
+      "keywords": [
+        "hypertension",
+        "htn",
+        "blood pressure",
+        "resistant hypertension",
+        "renal artery",
+        "aldosterone"
+      ],
+      "links": [
+        {
+          "label": "🎥 Watch Recording",
+          "type": "recording",
+          "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/odonwl_upmc_edu/IQAiZxvS6IfVS4cukpSotmubARJIYF1aABsMLINoc8bAZTM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4yTJTW"
+        },
+        {
+          "label": "📄 Transcript",
+          "type": "transcript",
+          "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQCwNWq-PcvPSJcwMaqYh4fRAd_xuVpL_uFfGt4JpSd4Kow?e=XMcAns"
+        },
+        {
+          "label": "🧾 Take-Home",
+          "type": "take_home",
+          "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQDeVLfPuRjoQ6qd8xd7cMVXAcT2qVGGEwMwKOLJs-EtMLU?e=UWFjW6"
+        },
+        {
+          "label": "🗺 Mind Map",
+          "type": "mind_map",
+          "url": "https://examplepages.z13.web.core.windows.net/htnmindmap.html"
+        }
+      ],
+      "sortOrder": 24
+    },
+    {
       "id": "cmi-20251120-024",
       "series": "cmi",
       "seriesLabel": "CMI",
@@ -1209,47 +1250,6 @@
           "label": "RISK CALCULATOR",
           "type": "related",
           "url": "https://riskcalc.org/PCPTRC/"
-        }
-      ],
-      "sortOrder": 24
-    },
-    {
-      "id": "shy-20251120-025",
-      "series": "shy",
-      "seriesLabel": "SHY",
-      "date": "2025-11-20",
-      "dateLabel": "11/20/25",
-      "title": "Update in Hypertension",
-      "rawTitle": "11/20/25 Shadyside Medicine Grand Rounds — “Update in Hypertension”",
-      "presenter": "Evan Ray, MD PhD FASN",
-      "keywords": [
-        "hypertension",
-        "htn",
-        "blood pressure",
-        "resistant hypertension",
-        "renal artery",
-        "aldosterone"
-      ],
-      "links": [
-        {
-          "label": "🎥 Watch Recording",
-          "type": "recording",
-          "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/odonwl_upmc_edu/IQAiZxvS6IfVS4cukpSotmubARJIYF1aABsMLINoc8bAZTM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4yTJTW"
-        },
-        {
-          "label": "📄 Transcript",
-          "type": "transcript",
-          "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQCwNWq-PcvPSJcwMaqYh4fRAd_xuVpL_uFfGt4JpSd4Kow?e=XMcAns"
-        },
-        {
-          "label": "🧾 Take-Home",
-          "type": "take_home",
-          "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQDeVLfPuRjoQ6qd8xd7cMVXAcT2qVGGEwMwKOLJs-EtMLU?e=UWFjW6"
-        },
-        {
-          "label": "🗺 Mind Map",
-          "type": "mind_map",
-          "url": "https://examplepages.z13.web.core.windows.net/htnmindmap.html"
         }
       ],
       "sortOrder": 25
@@ -1757,6 +1757,31 @@
       "sortOrder": 34
     },
     {
+      "id": "archive-20241101-005",
+      "series": "archive",
+      "seriesLabel": "Archive",
+      "date": "2024-11-01",
+      "dateLabel": "Nov 2024",
+      "title": "Town Hall November 2024",
+      "rawTitle": "(Archive) Town Hall November 2024",
+      "presenter": "CMI Archive",
+      "keywords": [
+        "town hall",
+        "november",
+        "2024",
+        "cmi",
+        "archive"
+      ],
+      "links": [
+        {
+          "label": "🎥 Watch Recording",
+          "type": "archive",
+          "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/znidba_upmc_edu/EZsP8X5dE8FPjMPzyu0YJUkBH0baHMlu1bTZsRGuGeTGVA"
+        }
+      ],
+      "sortOrder": 35
+    },
+    {
       "id": "cmi-20240911-035",
       "series": "cmi",
       "seriesLabel": "CMI",
@@ -1827,7 +1852,32 @@
           "url": "https://www.cdc.gov/travel"
         }
       ],
-      "sortOrder": 35
+      "sortOrder": 36
+    },
+    {
+      "id": "archive-20240901-006",
+      "series": "archive",
+      "seriesLabel": "Archive",
+      "date": "2024-09-01",
+      "dateLabel": "Sep 2024",
+      "title": "Town Hall September 2024",
+      "rawTitle": "(Archive) Town Hall September 2024",
+      "presenter": "CMI Archive",
+      "keywords": [
+        "town hall",
+        "september",
+        "2024",
+        "cmi",
+        "archive"
+      ],
+      "links": [
+        {
+          "label": "🎥 Watch Recording",
+          "type": "archive",
+          "url": "https://upmchs.sharepoint.com/:v:/s/CMIAdministratorDocuments/Ed1_5TOJK59BrphdOoT2CT8BmD52nL81Rm43PgJ29UZR3g"
+        }
+      ],
+      "sortOrder": 37
     },
     {
       "id": "cmi-20240711-036",
@@ -1864,7 +1914,122 @@
           "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/ET92bT-tB7ZKv_ACUxy_S_RkBqOJ8koj5o-dE4_fGAmy6Tg"
         }
       ],
-      "sortOrder": 36
+      "sortOrder": 38
+    },
+    {
+      "id": "archive-20240515-001",
+      "series": "archive",
+      "seriesLabel": "Archive",
+      "date": "2024-05-15",
+      "dateLabel": "5/15/24",
+      "title": "PMR and Temporal Arteritis Fast Track Program",
+      "rawTitle": "5/15/24: PMR and Temporal Arteritis Fast Track Program",
+      "presenter": "CMI Archive",
+      "keywords": [
+        "pmr",
+        "polymyalgia",
+        "temporal arteritis",
+        "giant cell arteritis",
+        "gca",
+        "fast track",
+        "rheumatology",
+        "archive"
+      ],
+      "links": [
+        {
+          "label": "🎥 Watch Recording",
+          "type": "archive",
+          "url": "https://upmchs.sharepoint.com/:v:/s/CMIRFPProviderEducationSeries/EVCVuXry_RpNtx3U1oNpHckBViC-Z_PRGsra7AUglIEoyQ"
+        }
+      ],
+      "sortOrder": 39
+    },
+    {
+      "id": "archive-20240306-002",
+      "series": "archive",
+      "seriesLabel": "Archive",
+      "date": "2024-03-06",
+      "dateLabel": "3/6/24",
+      "title": "Obesity Pharmacotherapy",
+      "rawTitle": "3/6/24: Obesity Pharmacotherapy",
+      "presenter": "CMI Archive",
+      "keywords": [
+        "obesity",
+        "pharmacotherapy",
+        "weight loss",
+        "glp-1",
+        "semaglutide",
+        "tirzepatide",
+        "bmi",
+        "archive"
+      ],
+      "links": [
+        {
+          "label": "🎥 Watch Recording",
+          "type": "archive",
+          "url": "https://upmchs.sharepoint.com/:v:/s/CMIRFPProviderEducationSeries/EXXepenKpF5GmDE-iiZx_AkBwaAmeSPlZem936YXvNn-4g"
+        }
+      ],
+      "sortOrder": 40
+    },
+    {
+      "id": "archive-20240110-003",
+      "series": "archive",
+      "seriesLabel": "Archive",
+      "date": "2024-01-10",
+      "dateLabel": "1/10/24",
+      "title": "Eval & Rx of Microcytic and Macrocytic Anemia",
+      "rawTitle": "1/10/24: Eval & Rx of Microcytic and Macrocytic Anemia",
+      "presenter": "CMI Archive",
+      "keywords": [
+        "anemia",
+        "microcytic",
+        "macrocytic",
+        "iron deficiency",
+        "b12",
+        "folate",
+        "mcv",
+        "hematology",
+        "archive"
+      ],
+      "links": [
+        {
+          "label": "🎥 Watch Recording",
+          "type": "archive",
+          "url": "https://upmchs.sharepoint.com/:v:/s/CMIRFPProviderEducationSeries/EThPdEiXsKVNjFxj5s27844Bf2jBS7J-ol2Ce1kIC8p33A"
+        }
+      ],
+      "sortOrder": 41
+    },
+    {
+      "id": "archive-20231108-004",
+      "series": "archive",
+      "seriesLabel": "Archive",
+      "date": "2023-11-08",
+      "dateLabel": "11/8/23",
+      "title": "Latest updates for the Treatment of Diabetes 2023",
+      "rawTitle": "11/8/23: Latest updates for the Treatment of Diabetes 2023",
+      "presenter": "CMI Archive",
+      "keywords": [
+        "diabetes",
+        "treatment",
+        "updates",
+        "2023",
+        "a1c",
+        "insulin",
+        "glp-1",
+        "sglt2",
+        "endocrine",
+        "archive"
+      ],
+      "links": [
+        {
+          "label": "🎥 Watch Recording",
+          "type": "archive",
+          "url": "https://upmchs.sharepoint.com/:v:/s/CMIRFPProviderEducationSeries/EREBFwiHZetAkwmcSJcGdegBmUWyHirUcINR326cANA1Rg"
+        }
+      ],
+      "sortOrder": 42
     }
   ]
 }
