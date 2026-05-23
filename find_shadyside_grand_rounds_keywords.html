@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -97,7 +98,7 @@ const countEl = document.getElementById('countPill');
 const dataNoteEl = document.getElementById('dataNote');
 function normalize(s) { return String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim(); }
 function escapeHtml(s) { return String(s || '').replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch])); }
-function escapeRegExp(s) { return String(s).replace(/[.*+?^${}()|[\]\]/g, '\$&'); }
+function escapeRegExp(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 function highlight(text, q) {
   const raw = String(text || ''); const terms = normalize(q).split(/\s+/).filter(Boolean).slice(0,5);
   if (!terms.length) return escapeHtml(raw);
