@@ -1,11 +1,2027 @@
 [
-    {
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Oscar Lopez",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC (per PRM list)"
+    ],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": [
+      "dementia",
+      "early dementia",
+      "memory loss",
+      "MCI",
+      "mild cognitive impairment",
+      "Alzheimer's",
+      "neurodegenerative",
+      "cognitive decline",
+      "MoCA",
+      "MMSE",
+      "neuropsych testing",
+      "behavior change",
+      "caregiver burden",
+      "amyloid PET",
+      "CSF tau",
+      "LBD",
+      "FTD"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Riddhi Patira",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC (per PRM list)"
+    ],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": [
+      "dementia",
+      "MCI",
+      "Alzheimer's",
+      "cognitive impairment",
+      "neurobehavioral",
+      "amnestic",
+      "executive dysfunction",
+      "visuospatial",
+      "language deficits",
+      "MoCA",
+      "functional decline",
+      "delirium vs dementia"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Tharick Pascoal",
+    "role": "MD/PhD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC (per PRM list)"
+    ],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": [
+      "Alzheimer's biomarkers",
+      "amyloid",
+      "tau",
+      "PET",
+      "CSF",
+      "neurodegeneration",
+      "dementia workup",
+      "MCI",
+      "longitudinal assessment",
+      "neuroimaging"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Estavana Isaac",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC (per PRM list)"
+    ],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": [
+      "cognitive neurology",
+      "behavioral changes",
+      "care planning",
+      "safety assessment",
+      "driving evaluation",
+      "caregiver support",
+      "neuropsychology referral"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Cognitive and Behavioral Neurology",
+    "provider": "Abigail Opiela",
+    "role": "PA",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC (per PRM list)"
+    ],
+    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
+    "keywords": [
+      "cognitive screening",
+      "MoCA",
+      "MMSE",
+      "clinic intake",
+      "symptom triage",
+      "care coordination",
+      "memory clinic"
+    ]
+  },
+  {
+    "area": "Pulmonary",
+    "sub_area": "Interstitial Lung Disease",
+    "provider": "Kevin F. Gibson",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC – Simmons Center for Interstitial Lung Disease (MUH)"
+    ],
+    "comments": "Autoimmune lung disease; Simmons Center ILD. Scheduling contact: Anna Dvorsky, P: 412-647-1805.",
+    "keywords": [
+      "interstitial lung disease",
+      "ILD",
+      "pulmonary fibrosis",
+      "autoimmune lung disease",
+      "CTD-ILD",
+      "scleroderma",
+      "rheumatoid lung",
+      "NSIP",
+      "UIP",
+      "hypersensitivity pneumonitis",
+      "dyspnea",
+      "chronic cough",
+      "DLCO",
+      "FVC",
+      "honeycombing",
+      "nintedanib",
+      "pirfenidone"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Tarin",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP.",
+    "keywords": [
+      "BPH",
+      "benign prostatic hyperplasia",
+      "LUTS",
+      "nocturia",
+      "enlarged prostate",
+      "urinary retention",
+      "TURP",
+      "UroLift",
+      "alpha blocker",
+      "tamsulosin",
+      "PVR",
+      "AUA score"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Benoit",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP and UroLift.",
+    "keywords": [
+      "BPH",
+      "UroLift",
+      "minimally invasive BPH",
+      "LUTS",
+      "urinary frequency",
+      "weak stream",
+      "TURP candidacy",
+      "trial without catheter"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Ogagan",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP and UroLift.",
+    "keywords": [
+      "BPH",
+      "UroLift",
+      "TURP",
+      "prostate enlargement",
+      "hematuria",
+      "catheter dependence",
+      "post-void residual"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Browning",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP.",
+    "keywords": [
+      "BPH",
+      "TURP",
+      "resection",
+      "urinary obstruction",
+      "PVR",
+      "bladder outlet obstruction",
+      "LUTS management"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Rycyna",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP.",
+    "keywords": [
+      "BPH",
+      "TURP",
+      "enlarged prostate",
+      "LUTS",
+      "urology surgery",
+      "urinary retention"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Turner",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP.",
+    "keywords": [
+      "BPH",
+      "TURP",
+      "LUTS",
+      "nocturia",
+      "weak stream",
+      "frequent urination",
+      "urology consult"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Sharbaugh",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP.",
+    "keywords": [
+      "BPH",
+      "TURP",
+      "urolift referral",
+      "minimally invasive BPH",
+      "prostate surgery"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "BPH/TURP/UroLift",
+    "provider": "Liem",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Performs TURP.",
+    "keywords": [
+      "BPH",
+      "TURP",
+      "LUTS",
+      "urinary retention",
+      "catheter",
+      "benign prostatic hyperplasia"
+    ]
+  },
+  {
+    "area": "Neurosurgery",
+    "sub_area": "Skull Base Neurosurgery",
+    "provider": "Georgios Zenonos",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPP Neurosurgery (UPMC)"
+    ],
+    "comments": "Recommended for pituitary surgery follow-up.",
+    "keywords": [
+      "skull base",
+      "pituitary adenoma",
+      "pituitary surgery",
+      "endoscopic endonasal",
+      "macroadenoma",
+      "Cushing's",
+      "acromegaly",
+      "prolactinoma",
+      "craniopharyngioma",
+      "optic chiasm",
+      "CSF leak"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Aditya Bhonsale",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "electrophysiology",
+      "EP",
+      "atrial fibrillation",
+      "AF",
+      "arrhythmia",
+      "cardioversion",
+      "ablation",
+      "EP study",
+      "SVT",
+      "VT",
+      "anticoagulation",
+      "DOAC",
+      "rate control",
+      "rhythm control"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Mark Estes",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "AF",
+      "arrhythmia",
+      "syncope",
+      "palpitations",
+      "ablation",
+      "cardioversion",
+      "Holter",
+      "Zio",
+      "pacemaker",
+      "ICD"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Sandeep Jain",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "atrial fibrillation",
+      "flutter",
+      "SVT",
+      "VT",
+      "PVCs",
+      "EPS",
+      "catheter ablation",
+      "antiarrhythmic",
+      "anticoagulation"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Aditi Naniwadekar",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "EP",
+      "AF",
+      "ablation",
+      "cardioversion",
+      "rate vs rhythm",
+      "stroke prevention",
+      "CHA2DS2-VASc",
+      "HAS-BLED"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Alaa Shalaby",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "arrhythmia",
+      "AF",
+      "SVT",
+      "VT",
+      "ICD",
+      "pacemaker",
+      "EPS",
+      "cardioversion",
+      "anticoagulants"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Norman Wang",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "atrial fibrillation",
+      "ablation",
+      "cardioversion",
+      "long-standing AF",
+      "Holter",
+      "event monitor",
+      "rate control"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Krishna Kancharla",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "AF",
+      "EP",
+      "catheter ablation",
+      "cardioversion",
+      "anticoagulation",
+      "stroke risk",
+      "DOAC",
+      "warfarin"
+    ]
+  },
+  {
+    "area": "Cardiology",
+    "sub_area": "Electrophysiology",
+    "provider": "Andrew Voigt",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Treats AF; performs cardioversion.",
+    "keywords": [
+      "AF",
+      "arrhythmia",
+      "ablation",
+      "cardioversion",
+      "anticoagulants",
+      "DOAC",
+      "EP referral",
+      "palpitations"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage; Carotid Surgery (Open/Endovascular)",
+    "provider": "Raymond Eid",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)",
+      "UPMC Shadyside (clinic; per PRM)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Also performs open and endovascular carotid surgery for stenosis at UPMC Shadyside; clinic at UPMC Shadyside (15232) (per PRM).",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage",
+      "carotid stenosis",
+      "carotid artery disease",
+      "carotid endarterectomy",
+      "CEA",
+      "TCAR",
+      "carotid stent",
+      "carotid angioplasty",
+      "endovascular carotid",
+      "symptomatic carotid stenosis",
+      "asymptomatic carotid stenosis",
+      "TIA",
+      "stroke prevention",
+      "amaurosis fugax",
+      "carotid duplex"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage; Carotid Surgery (Open/Endovascular)",
+    "provider": "Michael Singh",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)",
+      "UPMC Shadyside (clinic; per PRM)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Also performs open and endovascular carotid surgery for stenosis at UPMC Shadyside; clinic at UPMC Shadyside (15232) (per PRM).",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage",
+      "carotid stenosis",
+      "carotid artery disease",
+      "carotid endarterectomy",
+      "CEA",
+      "TCAR",
+      "carotid stent",
+      "carotid angioplasty",
+      "endovascular carotid",
+      "symptomatic carotid stenosis",
+      "asymptomatic carotid stenosis",
+      "TIA",
+      "stroke prevention",
+      "amaurosis fugax",
+      "carotid duplex"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Georges Al-Khoury",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Michael Madigan",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Richard Redlinger",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Eric Hager",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Lindsay Haga",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Desiree Picone",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Natalie Sridharan",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Vascular Surgery",
+    "sub_area": "Peripheral Arterial Surgery and Limb Salvage",
+    "provider": "Gregory Steiner",
+    "role": "MD",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC Vascular Surgery (system)"
+    ],
+    "comments": "Peripheral arterial disease and limb salvage (nonhealing foot ulcers, decreased pulses). Listed by vascular surgery/PRM as a limb salvage provider.",
+    "keywords": [
+      "peripheral arterial disease",
+      "PAD",
+      "critical limb ischemia",
+      "CLI",
+      "nonhealing ulcer",
+      "foot ulcer",
+      "tissue loss",
+      "gangrene",
+      "rest pain",
+      "decreased pulses",
+      "ankle-brachial index",
+      "ABI",
+      "toe pressures",
+      "revascularization",
+      "bypass",
+      "angioplasty",
+      "stent",
+      "endovascular",
+      "limb salvage"
+    ]
+  },
+  {
+    "area": "Neurosurgery",
+    "sub_area": "Spinal Surgery",
+    "provider": "David Kojo Hamilton",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Presbyterian – Neurosurgery / Spine"
+    ],
+    "comments": "Primarily spinal neurosurgeon; confirmed active by SWPA Provider Relationship Management. For surgical spine pathology and complex spine cases.",
+    "keywords": [
+      "spine surgery",
+      "spinal surgery",
+      "spinal stenosis",
+      "lumbar stenosis",
+      "cervical myelopathy",
+      "radiculopathy",
+      "disc herniation",
+      "spinal deformity",
+      "spondylolisthesis",
+      "spine tumor",
+      "cervical fusion",
+      "lumbar fusion",
+      "minimally invasive spine",
+      "neurosurgery",
+      "back pain",
+      "neck pain"
+    ]
+  },
+  {
+    "area": "Urologic Surgery",
+    "sub_area": "Sexual Health / Erectile Dysfunction",
+    "provider": "Kevin McNally",
+    "role": "CRNP",
+    "zip_code": "15217",
+    "hospital_affiliations": [
+      "UPMC (system)"
+    ],
+    "comments": "Sexual health–focused urologist; recommended by SWPA Provider Relationship Management for ED symptoms.",
+    "keywords": [
+      "erectile dysfunction",
+      "ED",
+      "sexual health",
+      "men's health",
+      "PDE5 inhibitor",
+      "sildenafil",
+      "tadalafil",
+      "vardenafil",
+      "penile prosthesis",
+      "vacuum erection device",
+      "penile Doppler",
+      "Peyronie's disease",
+      "hypogonadism",
+      "testosterone deficiency",
+      "low libido",
+      "ejaculatory disorder",
+      "premature ejaculation",
+      "urology consult"
+    ]
+  },
+  {
+    "area": "Gastroenterology",
+    "sub_area": "Neurogastroenterology / IBS",
+    "provider": "Michael Kingsley",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC – Neurogastroenterology and Motility (system)"
+    ],
+    "comments": "Clinically active for irritable bowel syndrome (IBS) and functional GI disorders; part of UPMC neurogastroenterology team.",
+    "keywords": [
+      "IBS",
+      "irritable bowel syndrome",
+      "functional GI",
+      "neurogastroenterology",
+      "abdominal pain",
+      "bloating",
+      "diarrhea",
+      "constipation",
+      "IBS-D",
+      "IBS-C",
+      "IBS-M",
+      "visceral hypersensitivity",
+      "gut-brain axis",
+      "functional dyspepsia",
+      "chronic nausea",
+      "motility",
+      "low FODMAP",
+      "pelvic floor dysfunction"
+    ]
+  },
+  {
+    "area": "Gastroenterology",
+    "sub_area": "Neurogastroenterology / IBS",
+    "provider": "Aylin Tansel",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC – Neurogastroenterology and Motility (system)"
+    ],
+    "comments": "Clinically active for irritable bowel syndrome (IBS) and related functional bowel disorders; neurogastroenterology team.",
+    "keywords": [
+      "IBS",
+      "irritable bowel syndrome",
+      "functional bowel disorder",
+      "neurogastroenterology",
+      "abdominal pain",
+      "bloating",
+      "altered bowel habits",
+      "diarrhea",
+      "constipation",
+      "IBS-D",
+      "IBS-C",
+      "IBS-M",
+      "visceral hypersensitivity",
+      "gut-brain axis",
+      "chronic nausea",
+      "functional dyspepsia",
+      "motility disorder",
+      "Rome criteria"
+    ]
+  },
+  {
+    "area": "Gastroenterology",
+    "sub_area": "Neurogastroenterology / IBS",
+    "provider": "Sun Oh",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC – Neurogastroenterology and Motility (system)"
+    ],
+    "comments": "Clinically active for IBS and functional GI; part of neurogastroenterology / motility group.",
+    "keywords": [
+      "IBS",
+      "irritable bowel syndrome",
+      "functional GI",
+      "motility",
+      "abdominal pain",
+      "bloating",
+      "diarrhea",
+      "constipation",
+      "postinfectious IBS",
+      "pelvic floor dysfunction",
+      "anorectal manometry",
+      "visceral pain",
+      "gut-brain interaction",
+      "functional constipation",
+      "chronic diarrhea"
+    ]
+  },
+  {
+    "area": "Gastroenterology",
+    "sub_area": "Neurogastroenterology / IBS",
+    "provider": "Caitlin Yanizeski",
+    "role": "PA-C",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC – Neurogastroenterology and Motility (system)"
+    ],
+    "comments": "PA-C in neurogastroenterology clinic; assists with IBS and functional GI care, clinic intake, and follow-up.",
+    "keywords": [
+      "IBS",
+      "irritable bowel syndrome",
+      "functional GI",
+      "clinic intake",
+      "symptom triage",
+      "care coordination",
+      "medication management",
+      "follow-up visits",
+      "patient education",
+      "diet counseling",
+      "low FODMAP",
+      "abdominal pain",
+      "bloating",
+      "diarrhea",
+      "constipation"
+    ]
+  },
+  {
+    "area": "Gastroenterology",
+    "sub_area": "Neurogastroenterology / IBS",
+    "provider": "Emilee Jackson",
+    "role": "PA-C",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC – Neurogastroenterology and Motility (system)"
+    ],
+    "comments": "PA-C within neurogastroenterology team; clinically active in IBS and functional GI, supporting evaluation and ongoing management.",
+    "keywords": [
+      "IBS",
+      "irritable bowel syndrome",
+      "functional bowel disorder",
+      "functional GI",
+      "clinic intake",
+      "symptom triage",
+      "care coordination",
+      "IBS follow-up",
+      "medication titration",
+      "patient education",
+      "bloating",
+      "abdominal pain",
+      "diarrhea",
+      "constipation",
+      "gut-brain axis"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Neuromuscular",
+    "provider": "David Lacomis",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Neurology – Neuromuscular (Kaufmann)"
+    ],
+    "comments": "Neuromuscular specialist; evaluation of myopathy, neuropathy, and motor neuron disease.",
+    "keywords": [
+      "neuromuscular",
+      "myopathy",
+      "neuropathy",
+      "ALS",
+      "motor neuron disease",
+      "EMG",
+      "NCS",
+      "weakness",
+      "foot drop",
+      "CK elevation"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Neuromuscular",
+    "provider": "Tawfiq Al-Lahham",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Neurology – Neuromuscular (Shadyside, Kaufmann)"
+    ],
+    "comments": "Neuromuscular clinic; neuropathy, myopathy, and junction disorders.",
+    "keywords": [
+      "neuromuscular",
+      "polyneuropathy",
+      "CIDP",
+      "myasthenia gravis",
+      "EMG",
+      "NCS",
+      "weakness",
+      "gait difficulty"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Neuromuscular",
+    "provider": "Fang Sun",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Neurology – Neuromuscular (Shadyside, Kaufmann)"
+    ],
+    "comments": "Neuromuscular disorders with EMG/NCS evaluation.",
+    "keywords": [
+      "neuromuscular",
+      "EMG",
+      "NCS",
+      "myopathy",
+      "neuropathy",
+      "distal weakness"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Neuromuscular",
+    "provider": "Paula Clemens",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Neurology – Neuromuscular (Kaufmann)"
+    ],
+    "comments": "Neuromuscular specialist; muscular dystrophies and myopathies.",
+    "keywords": [
+      "neuromuscular",
+      "muscular dystrophy",
+      "myopathy",
+      "CK elevation",
+      "proximal weakness"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Neuromuscular",
+    "provider": "Jonathan Brent",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Neurology – Neuromuscular (Kaufmann)"
+    ],
+    "comments": "Neuromuscular disease; EMG-guided evaluation of weakness and neuropathy.",
+    "keywords": [
+      "neuromuscular",
+      "EMG",
+      "NCS",
+      "neuropathy",
+      "radiculopathy",
+      "plexopathy"
+    ]
+  },
+  {
+    "area": "Neurology",
+    "sub_area": "Neuromuscular",
+    "provider": "Joshua Smith",
+    "role": "MD",
+    "zip_code": "15090",
+    "hospital_affiliations": [
+      "UPMC Neurology – Wexford"
+    ],
+    "comments": "Neuromuscular neurology at Wexford; peripheral nerve and muscle disease.",
+    "keywords": [
+      "neuromuscular",
+      "neuropathy",
+      "myopathy",
+      "EMG",
+      "weakness",
+      "Wexford"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Otology / Hearing Loss",
+    "provider": "Megan Sayles",
+    "role": "PA",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Otology / ENT"
+    ],
+    "comments": "Otology PA; evaluates hearing loss and balance complaints.",
+    "keywords": [
+      "hearing loss",
+      "otology",
+      "ear fullness",
+      "tinnitus",
+      "balance",
+      "vertigo",
+      "ENT",
+      "PA"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Otology / Hearing Loss",
+    "provider": "Meredith Easterling",
+    "role": "PA",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Otology / ENT"
+    ],
+    "comments": "Otology PA; hearing loss, ear complaints, and pre-otology triage.",
+    "keywords": [
+      "hearing loss",
+      "ear pain",
+      "tinnitus",
+      "otology",
+      "ENT",
+      "PA"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Otology / Hearing Loss",
+    "provider": "Maura Barrett",
+    "role": "PA",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Otology / ENT"
+    ],
+    "comments": "Otology PA; hearing loss and balance symptoms triage.",
+    "keywords": [
+      "hearing loss",
+      "otology",
+      "ear symptoms",
+      "vertigo",
+      "ENT",
+      "PA"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Audiology",
+    "provider": "UPMC Audiology",
+    "role": "Audiology service",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Audiology"
+    ],
+    "comments": "Audiology for hearing testing. Phone: 412-647-2030.",
+    "keywords": [
+      "audiology",
+      "hearing test",
+      "audiogram",
+      "hearing loss",
+      "hearing aids",
+      "tinnitus"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Balance / Vestibular",
+    "provider": "Joseph Furman",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Otology / Neurotology"
+    ],
+    "comments": "Balance and vestibular specialist; vertigo, dizziness, gait imbalance.",
+    "keywords": [
+      "balance",
+      "vertigo",
+      "dizziness",
+      "vestibular",
+      "BPPV",
+      "Meniere's",
+      "neurotology"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Meniere's / Otology",
+    "provider": "Peter Santa Maria",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Otology / Neurotology"
+    ],
+    "comments": "Otologist; Meniere's disease and other inner ear disorders.",
+    "keywords": [
+      "Meniere's",
+      "vertigo",
+      "hearing loss",
+      "tinnitus",
+      "aural fullness",
+      "otology",
+      "neurotology"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Meniere's / Otology",
+    "provider": "Gregory Basura",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Otology / Neurotology"
+    ],
+    "comments": "Otology / neurotology; Meniere's disease and complex inner ear pathology.",
+    "keywords": [
+      "Meniere's",
+      "vertigo",
+      "hearing loss",
+      "inner ear",
+      "otology",
+      "neurotology"
+    ]
+  },
+  {
+    "area": "Otolaryngology",
+    "sub_area": "Meniere's / Otology",
+    "provider": "Phil Perez",
+    "role": "MD",
+    "zip_code": "15213",
+    "hospital_affiliations": [
+      "UPMC Otology / Neurotology"
+    ],
+    "comments": "Otologist; evaluation and management of Meniere's and other vestibular disorders.",
+    "keywords": [
+      "Meniere's",
+      "vertigo",
+      "hearing loss",
+      "tinnitus",
+      "balance",
+      "otology"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Oleg E Akilov",
+    "role": "MD, PhD",
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC (per Internal Referrals sheet)"
+    ],
+    "comments": "General dermatologic surgery: Excision. Falk: Wednesdays. Scope includes common lesions/indications listed on Internal Referrals sheet (ASDS-guided indications).",
+    "procedures": [
+      "Excision"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Falk",
+        "days": "Wednesdays"
+      }
+    ],
+    "keywords": [
+      "dermatologic surgery",
+      "excision",
+      "lesion excision",
+      "skin lesion removal",
+      "non-Mohs excision",
+      "trunk",
+      "extremities",
+      "basal cell carcinoma",
+      "BCC",
+      "squamous cell carcinoma",
+      "SCC",
+      "melanoma",
+      "melanoma in situ",
+      "MIS",
+      "benign skin lesion",
+      "epidermal inclusion cyst",
+      "EIC",
+      "sebaceous cyst",
+      "lipoma",
+      "small lipoma",
+      "dermatofibroma",
+      "neurofibroma",
+      "sebaceous hyperplasia",
+      "electrodesiccation",
+      "cautery",
+      "pigmented lesion",
+      "dysplastic nevus",
+      "severely dysplastic nevus",
+      "moderately dysplastic nevus",
+      "cutaneous infection",
+      "debridement",
+      "hidradenitis suppurativa",
+      "abscess",
+      "incision and drainage",
+      "I&D",
+      "vascular lesion",
+      "pyogenic granuloma",
+      "hemangioma",
+      "Merkel cell carcinoma",
+      "dermatofibrosarcoma protuberans",
+      "DFSP"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Tung",
+    "role": null,
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC (per Internal Referrals sheet)"
+    ],
+    "comments": "General dermatologic surgery: Excision. Falk: Thursday PM. Scope includes common lesions/indications listed on Internal Referrals sheet (ASDS-guided indications).",
+    "procedures": [
+      "Excision"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Falk",
+        "days": "Thursday PM"
+      }
+    ],
+    "keywords": [
+      "dermatologic surgery",
+      "excision",
+      "lesion excision",
+      "skin lesion removal",
+      "non-Mohs excision",
+      "trunk",
+      "extremities",
+      "basal cell carcinoma",
+      "BCC",
+      "squamous cell carcinoma",
+      "SCC",
+      "melanoma",
+      "melanoma in situ",
+      "MIS",
+      "benign skin lesion",
+      "epidermal inclusion cyst",
+      "EIC",
+      "sebaceous cyst",
+      "lipoma",
+      "small lipoma",
+      "dermatofibroma",
+      "neurofibroma",
+      "sebaceous hyperplasia",
+      "electrodesiccation",
+      "cautery",
+      "pigmented lesion",
+      "dysplastic nevus",
+      "severely dysplastic nevus",
+      "moderately dysplastic nevus",
+      "cutaneous infection",
+      "debridement",
+      "hidradenitis suppurativa",
+      "abscess",
+      "incision and drainage",
+      "I&D",
+      "vascular lesion",
+      "pyogenic granuloma",
+      "hemangioma",
+      "Merkel cell carcinoma",
+      "dermatofibrosarcoma protuberans",
+      "DFSP"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Yuri Bunimovich",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC Shadyside (per Internal Referrals sheet)"
+    ],
+    "comments": "General dermatologic surgery: Excision. Listed as 'Y. Bunimovich' on sheet. Shadyside: Monday AM, Thursday AM, Friday AM. Scope includes common lesions/indications listed on Internal Referrals sheet (ASDS-guided indications).",
+    "procedures": [
+      "Excision"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Shadyside",
+        "days": "Monday AM"
+      },
+      {
+        "location": "Shadyside",
+        "days": "Thursday AM"
+      },
+      {
+        "location": "Shadyside",
+        "days": "Friday AM"
+      }
+    ],
+    "keywords": [
+      "dermatologic surgery",
+      "excision",
+      "lesion excision",
+      "skin lesion removal",
+      "non-Mohs excision",
+      "trunk",
+      "extremities",
+      "basal cell carcinoma",
+      "BCC",
+      "squamous cell carcinoma",
+      "SCC",
+      "melanoma",
+      "melanoma in situ",
+      "MIS",
+      "benign skin lesion",
+      "epidermal inclusion cyst",
+      "EIC",
+      "sebaceous cyst",
+      "lipoma",
+      "small lipoma",
+      "dermatofibroma",
+      "neurofibroma",
+      "sebaceous hyperplasia",
+      "electrodesiccation",
+      "cautery",
+      "pigmented lesion",
+      "dysplastic nevus",
+      "severely dysplastic nevus",
+      "moderately dysplastic nevus",
+      "cutaneous infection",
+      "debridement",
+      "hidradenitis suppurativa",
+      "abscess",
+      "incision and drainage",
+      "I&D",
+      "vascular lesion",
+      "pyogenic granuloma",
+      "hemangioma",
+      "Merkel cell carcinoma",
+      "dermatofibrosarcoma protuberans",
+      "DFSP"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Angela Makalinao Guerrero",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC Shadyside (per Internal Referrals sheet)"
+    ],
+    "comments": "General dermatologic surgery: Excision. Shadyside: Tuesday AM. Scope includes common lesions/indications listed on Internal Referrals sheet (ASDS-guided indications).",
+    "procedures": [
+      "Excision"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Shadyside",
+        "days": "Tuesday AM"
+      }
+    ],
+    "keywords": [
+      "dermatologic surgery",
+      "excision",
+      "lesion excision",
+      "skin lesion removal",
+      "non-Mohs excision",
+      "trunk",
+      "extremities",
+      "basal cell carcinoma",
+      "BCC",
+      "squamous cell carcinoma",
+      "SCC",
+      "melanoma",
+      "melanoma in situ",
+      "MIS",
+      "benign skin lesion",
+      "epidermal inclusion cyst",
+      "EIC",
+      "sebaceous cyst",
+      "lipoma",
+      "small lipoma",
+      "dermatofibroma",
+      "neurofibroma",
+      "sebaceous hyperplasia",
+      "electrodesiccation",
+      "cautery",
+      "pigmented lesion",
+      "dysplastic nevus",
+      "severely dysplastic nevus",
+      "moderately dysplastic nevus",
+      "cutaneous infection",
+      "debridement",
+      "hidradenitis suppurativa",
+      "abscess",
+      "incision and drainage",
+      "I&D",
+      "vascular lesion",
+      "pyogenic granuloma",
+      "hemangioma",
+      "Merkel cell carcinoma",
+      "dermatofibrosarcoma protuberans",
+      "DFSP"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Timothy Patton",
+    "role": "DO",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC Shadyside (per Internal Referrals sheet)"
+    ],
+    "comments": "General dermatologic surgery: Excision. Shadyside: Wednesday PM. Scope includes common lesions/indications listed on Internal Referrals sheet (ASDS-guided indications).",
+    "procedures": [
+      "Excision"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Shadyside",
+        "days": "Wednesday PM"
+      }
+    ],
+    "keywords": [
+      "dermatologic surgery",
+      "excision",
+      "lesion excision",
+      "skin lesion removal",
+      "non-Mohs excision",
+      "trunk",
+      "extremities",
+      "basal cell carcinoma",
+      "BCC",
+      "squamous cell carcinoma",
+      "SCC",
+      "melanoma",
+      "melanoma in situ",
+      "MIS",
+      "benign skin lesion",
+      "epidermal inclusion cyst",
+      "EIC",
+      "sebaceous cyst",
+      "lipoma",
+      "small lipoma",
+      "dermatofibroma",
+      "neurofibroma",
+      "sebaceous hyperplasia",
+      "electrodesiccation",
+      "cautery",
+      "pigmented lesion",
+      "dysplastic nevus",
+      "severely dysplastic nevus",
+      "moderately dysplastic nevus",
+      "cutaneous infection",
+      "debridement",
+      "hidradenitis suppurativa",
+      "abscess",
+      "incision and drainage",
+      "I&D",
+      "vascular lesion",
+      "pyogenic granuloma",
+      "hemangioma",
+      "Merkel cell carcinoma",
+      "dermatofibrosarcoma protuberans",
+      "DFSP"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Mary Sheehan",
+    "role": "MD",
+    "zip_code": "15232",
+    "hospital_affiliations": [
+      "UPMC Shadyside (per Internal Referrals sheet)"
+    ],
+    "comments": "General dermatologic surgery: Excision. Shadyside: Monday PM and Wednesday PM. Scope includes common lesions/indications listed on Internal Referrals sheet (ASDS-guided indications).",
+    "procedures": [
+      "Excision"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Shadyside",
+        "days": "Monday PM"
+      },
+      {
+        "location": "Shadyside",
+        "days": "Wednesday PM"
+      }
+    ],
+    "keywords": [
+      "dermatologic surgery",
+      "excision",
+      "lesion excision",
+      "skin lesion removal",
+      "non-Mohs excision",
+      "trunk",
+      "extremities",
+      "basal cell carcinoma",
+      "BCC",
+      "squamous cell carcinoma",
+      "SCC",
+      "melanoma",
+      "melanoma in situ",
+      "MIS",
+      "benign skin lesion",
+      "epidermal inclusion cyst",
+      "EIC",
+      "sebaceous cyst",
+      "lipoma",
+      "small lipoma",
+      "dermatofibroma",
+      "neurofibroma",
+      "sebaceous hyperplasia",
+      "electrodesiccation",
+      "cautery",
+      "pigmented lesion",
+      "dysplastic nevus",
+      "severely dysplastic nevus",
+      "moderately dysplastic nevus",
+      "cutaneous infection",
+      "debridement",
+      "hidradenitis suppurativa",
+      "abscess",
+      "incision and drainage",
+      "I&D",
+      "vascular lesion",
+      "pyogenic granuloma",
+      "hemangioma",
+      "Merkel cell carcinoma",
+      "dermatofibrosarcoma protuberans",
+      "DFSP"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Savage",
+    "role": null,
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC St. Margaret (per Internal Referrals sheet)"
+    ],
+    "comments": "General dermatologic surgery: Excision (Friday AM) + Resident Surgery Limited Access (1st & 3rd Friday PM). Scope for excision includes common lesions/indications listed on Internal Referrals sheet (ASDS-guided indications).",
+    "procedures": [
+      "Excision",
+      "Resident Surgery Limited Access"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "St. Margaret",
+        "days": "Friday AM",
+        "procedure": "Excision"
+      },
+      {
+        "location": "St. Margaret",
+        "days": "1st & 3rd Friday PM",
+        "procedure": "Resident Surgery Limited Access"
+      }
+    ],
+    "keywords": [
+      "dermatologic surgery",
+      "excision",
+      "lesion excision",
+      "skin lesion removal",
+      "resident surgery",
+      "resident surgery limited access",
+      "non-Mohs excision",
+      "trunk",
+      "extremities",
+      "basal cell carcinoma",
+      "BCC",
+      "squamous cell carcinoma",
+      "SCC",
+      "melanoma",
+      "melanoma in situ",
+      "MIS",
+      "benign skin lesion",
+      "epidermal inclusion cyst",
+      "EIC",
+      "sebaceous cyst",
+      "lipoma",
+      "small lipoma",
+      "dermatofibroma",
+      "neurofibroma",
+      "sebaceous hyperplasia",
+      "electrodesiccation",
+      "cautery",
+      "pigmented lesion",
+      "dysplastic nevus",
+      "severely dysplastic nevus",
+      "moderately dysplastic nevus",
+      "cutaneous infection",
+      "debridement",
+      "hidradenitis suppurativa",
+      "abscess",
+      "incision and drainage",
+      "I&D",
+      "vascular lesion",
+      "pyogenic granuloma",
+      "hemangioma",
+      "Merkel cell carcinoma",
+      "dermatofibrosarcoma protuberans",
+      "DFSP"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries",
+    "provider": "Pugliano",
+    "role": null,
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC St. Margaret (per Internal Referrals sheet)"
+    ],
+    "comments": "Resident Surgery Limited Access. St. Margaret: 2nd & 4th Friday PM.",
+    "procedures": [
+      "Resident Surgery Limited Access"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "St. Margaret",
+        "days": "2nd & 4th Friday PM"
+      }
+    ],
+    "keywords": [
+      "dermatology",
+      "dermatologic surgery",
+      "resident surgery",
+      "resident surgery limited access"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "Cosmetic Surgeries",
+    "provider": "Obagi",
+    "role": null,
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC Wexford (per Internal Referrals sheet)"
+    ],
+    "comments": "Internal referral destination for cosmetic surgeries at Wexford. Includes cosmetically sensitive excisions (send photo + document lesion size + symptoms) and a range of cosmetic/lesion procedures.",
+    "procedures": [
+      "Certain excisions on cosmetically sensitive areas",
+      "Acne scars",
+      "Body liposuction",
+      "Congenital nevi on face or body (staged excisions)",
+      "Cosmetic blepharoplasty",
+      "Cysts on face (if indicated)",
+      "Dilated pore of Winer (punch grafts)",
+      "Earlobe repairs",
+      "Large lipomas (US-confirmed; body up to 10 cm)",
+      "Lipomas on the forehead",
+      "Mini-facelifts",
+      "Neck liposuction",
+      "Nevus sebaceous or epidermal nevus of the face/neck",
+      "Scar revisions on the face or body",
+      "Skin resurfacing"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Wexford",
+        "days": null
+      }
+    ],
+    "keywords": [
+      "cosmetic surgery",
+      "dermatologic surgery",
+      "cosmetically sensitive excision",
+      "lesion excision",
+      "acne scars",
+      "body liposuction",
+      "congenital nevi",
+      "cosmetic blepharoplasty",
+      "cysts on face",
+      "dilated pore of Winer",
+      "earlobe repair",
+      "large lipoma",
+      "forehead lipoma",
+      "mini-facelift",
+      "neck liposuction",
+      "nevus sebaceous",
+      "epidermal nevus",
+      "scar revision",
+      "skin resurfacing",
+      "pilar cyst",
+      "epidermal inclusion cyst",
+      "digital mucous cyst",
+      "hypertrophic scar",
+      "keloid",
+      "foreign body removal",
+      "skin tags",
+      "pilonidal cyst",
+      "post-op seroma",
+      "drain placement",
+      "excessive bleeding",
+      "TXA",
+      "pyogenic granuloma",
+      "hemangioma"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "Cosmetic Surgeries",
+    "provider": "Willis",
+    "role": null,
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC Wexford (per Internal Referrals sheet)"
+    ],
+    "comments": "Internal referral destination for cosmetic surgeries at Wexford. Note on sheet: 'Starting February 1st in Wexford 2 days/week, nothing through insurance.'",
+    "procedures": [
+      "Body liposuction",
+      "Earlobe repairs",
+      "Neck liposuction",
+      "Scar revisions",
+      "Skin resurfacing"
+    ],
+    "clinic_schedule": [
+      {
+        "location": "Wexford",
+        "days": "2 days/week (starting February 1st; per sheet)"
+      }
+    ],
+    "billing_notes": "Nothing through insurance (per sheet).",
+    "keywords": [
+      "cosmetic surgery",
+      "dermatologic surgery",
+      "body liposuction",
+      "earlobe repair",
+      "neck liposuction",
+      "scar revision",
+      "skin resurfacing",
+      "cosmetically sensitive excision",
+      "acne scars",
+      "cysts on face",
+      "pilar cyst",
+      "epidermal inclusion cyst",
+      "digital mucous cyst",
+      "hypertrophic scar",
+      "keloid",
+      "foreign body removal",
+      "skin tags",
+      "pilonidal cyst",
+      "post-op seroma",
+      "drain placement",
+      "excessive bleeding",
+      "TXA",
+      "pyogenic granuloma",
+      "hemangioma"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries / Cosmetic (Unverified on provided pages)",
+    "provider": "Olga Bunimovich",
+    "role": "MD",
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC (user-provided; not shown on pages 1–2)"
+    ],
+    "comments": "User-provided name; procedures/schedule not captured on pages 1–2.",
+    "procedures": [],
+    "clinic_schedule": [],
+    "keywords": [
+      "dermatology"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries / Cosmetic (Unverified on provided pages)",
+    "provider": "Panayiota Govas",
+    "role": "MD",
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC (user-provided; not shown on pages 1–2)"
+    ],
+    "comments": "User-provided name; procedures/schedule not captured on pages 1–2.",
+    "procedures": [],
+    "clinic_schedule": [],
+    "keywords": [
+      "dermatology"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries / Cosmetic (Unverified on provided pages)",
+    "provider": "Daniel Harry Kaplan",
+    "role": "MD",
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC (user-provided; not shown on pages 1–2)"
+    ],
+    "comments": "User-provided name; procedures/schedule not captured on pages 1–2.",
+    "procedures": [],
+    "clinic_schedule": [],
+    "keywords": [
+      "dermatology"
+    ]
+  },
+  {
+    "area": "Dermatology",
+    "sub_area": "General Dermatologic Surgeries / Cosmetic (Unverified on provided pages)",
+    "provider": "Katherine E. Park",
+    "role": "MD",
+    "zip_code": null,
+    "hospital_affiliations": [
+      "UPMC (user-provided; not shown on pages 1–2)"
+    ],
+    "comments": "User-provided name; procedures/schedule not captured on pages 1–2.",
+    "procedures": [],
+    "clinic_schedule": [],
+    "keywords": [
+      "dermatology"
+    ]
+  },
+  {
     "area": "Urologic Surgery",
     "sub_area": "Peyronie's Disease / Reconstructive Urology / Urethral Reconstruction",
     "provider": "Paul John Rusilko",
     "role": "DO",
     "zip_code": "15217",
-    "hospital_affiliations": ["UPMC / UPP Urology (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPMC / UPP Urology (per SWPA PRM response)"
+    ],
     "comments": "Sees patients with Peyronie's disease. Also useful for reconstructive urology questions including urethral stricture / urethral reconstruction. Add provider booking link if available in local build.",
     "keywords": [
       "Peyronie's",
@@ -41,7 +2057,9 @@
     "provider": "UPP Urology Vasectomy Clinics",
     "role": "Clinic / Scheduling Pathway",
     "zip_code": "15232",
-    "hospital_affiliations": ["UPP Urology"],
+    "hospital_affiliations": [
+      "UPP Urology"
+    ],
     "comments": "UPP Urology has designated vasectomy clinics at multiple locations. Patients can call 412-347-3306 to be scheduled at the most convenient office. Note: UPP Urology did not report dedicated vasectomy reversal providers at this time.",
     "keywords": [
       "vasectomy",
@@ -65,7 +2083,9 @@
     "provider": "Jeffrey Browning",
     "role": "MD",
     "zip_code": "15090",
-    "hospital_affiliations": ["Three Rivers Urology / UPMC-affiliated pathway (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "Three Rivers Urology / UPMC-affiliated pathway (per SWPA PRM response)"
+    ],
     "comments": "Per SWPA Provider Relationship Management: does vasectomies. Three Rivers reported no providers perform vasectomy reversals.",
     "keywords": [
       "vasectomy",
@@ -87,7 +2107,9 @@
     "provider": "Gideon Moshe Lorber",
     "role": "MD",
     "zip_code": "15090",
-    "hospital_affiliations": ["Three Rivers Urology / UPMC-affiliated pathway (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "Three Rivers Urology / UPMC-affiliated pathway (per SWPA PRM response)"
+    ],
     "comments": "Per SWPA Provider Relationship Management: does vasectomies. Three Rivers reported no providers perform vasectomy reversals.",
     "keywords": [
       "vasectomy",
@@ -109,7 +2131,9 @@
     "provider": "Amy D. Srodes",
     "role": "MD",
     "zip_code": "15501",
-    "hospital_affiliations": ["Three Rivers Urology / UPMC-affiliated pathway (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "Three Rivers Urology / UPMC-affiliated pathway (per SWPA PRM response)"
+    ],
     "comments": "Per SWPA Provider Relationship Management: does vasectomies. Three Rivers reported no providers perform vasectomy reversals.",
     "keywords": [
       "vasectomy",
@@ -131,7 +2155,10 @@
     "provider": "No current UPP / Three Rivers reversal provider identified",
     "role": "Negative Routing Note",
     "zip_code": "15232",
-    "hospital_affiliations": ["UPP Urology", "Three Rivers Urology"],
+    "hospital_affiliations": [
+      "UPP Urology",
+      "Three Rivers Urology"
+    ],
     "comments": "Important negative routing entry: SWPA PRM reported that UPP Urology does not have providers dedicated to vasectomy reversals at this time, and Three Rivers reported that no providers perform reversals. Recheck before directing patients externally.",
     "keywords": [
       "vasectomy reversal",
@@ -154,7 +2181,9 @@
     "provider": "Elyse Marie Watson",
     "role": "MD",
     "zip_code": "15213",
-    "hospital_affiliations": ["UPP Psychiatry (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPP Psychiatry (per SWPA PRM response)"
+    ],
     "comments": "UPP Psychiatry recommended Dr. Elyse Watson for anorexia specialist request.",
     "keywords": [
       "anorexia",
@@ -181,7 +2210,9 @@
     "provider": "Justin Shuster",
     "role": "MD",
     "zip_code": "15213",
-    "hospital_affiliations": ["UPP Psychiatry / Psychiatry Access Clinic (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPP Psychiatry / Psychiatry Access Clinic (per SWPA PRM response)"
+    ],
     "comments": "Recommended for initial adult ADHD evaluation and determination of next steps. Leads Psychiatry Access Clinic.",
     "keywords": [
       "ADHD",
@@ -206,7 +2237,9 @@
     "provider": "Childhood Clinic Southside / Kim Blair",
     "role": "Clinic / MD",
     "zip_code": "15203",
-    "hospital_affiliations": ["UPP Psychiatry / Childhood Clinic Southside (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPP Psychiatry / Childhood Clinic Southside (per SWPA PRM response)"
+    ],
     "comments": "Recommended pathway for initial younger child / before-school-age ADHD evaluation and determination of next steps.",
     "keywords": [
       "ADHD",
@@ -230,7 +2263,9 @@
     "provider": "CCF Clinic / Shoshanna Shear",
     "role": "Clinic / MD",
     "zip_code": "15213",
-    "hospital_affiliations": ["UPP Psychiatry / CCF Clinic (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPP Psychiatry / CCF Clinic (per SWPA PRM response)"
+    ],
     "comments": "Recommended pathway for initial school-age child ADHD evaluation and determination of next steps. CCF Clinic includes Dr. Shoshanna Shear among others.",
     "keywords": [
       "ADHD",
@@ -256,7 +2291,9 @@
     "provider": "Janet Hokwan Leung",
     "role": "MD",
     "zip_code": "15213",
-    "hospital_affiliations": ["UPMC Endocrinology (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPMC Endocrinology (per SWPA PRM response)"
+    ],
     "comments": "Recommended for testosterone care in a nonbinary patient / gender-related hormone care. If specifically related to transgender care, scheduling decision tree may route to Janet Leung, Jessica Lambert, or Niveditha Manivannan.",
     "keywords": [
       "gender affirming care",
@@ -281,7 +2318,9 @@
     "provider": "Jessica Lambert",
     "role": "Provider",
     "zip_code": "15213",
-    "hospital_affiliations": ["UPMC Endocrinology / Transgender care scheduling pathway (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPMC Endocrinology / Transgender care scheduling pathway (per SWPA PRM response)"
+    ],
     "comments": "Listed as part of the scheduling decision tree for transgender care. Confirm exact role, clinic location, and scheduling link before publishing broadly.",
     "keywords": [
       "gender affirming care",
@@ -302,7 +2341,9 @@
     "provider": "Niveditha Manivannan",
     "role": "Provider",
     "zip_code": "15213",
-    "hospital_affiliations": ["UPMC Endocrinology / Transgender care scheduling pathway (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPMC Endocrinology / Transgender care scheduling pathway (per SWPA PRM response)"
+    ],
     "comments": "Listed as part of the scheduling decision tree for transgender care. Confirm exact role, clinic location, and scheduling link before publishing broadly.",
     "keywords": [
       "gender affirming care",
@@ -323,7 +2364,9 @@
     "provider": "Hussain Abde Ali Karimi",
     "role": "MD",
     "zip_code": "15227",
-    "hospital_affiliations": ["UPMC Nephrology (per SWPA PRM response)"],
+    "hospital_affiliations": [
+      "UPMC Nephrology (per SWPA PRM response)"
+    ],
     "comments": "Sees patients at the Route 51 UPMC outpatient center, described as the old Toys R Us location. Also has a Bethel Park clinic, though farther out for the request. Useful for West Mifflin / South Hills CKD referrals.",
     "keywords": [
       "nephrology",
@@ -343,239 +2386,5 @@
       "hyperkalemia",
       "renal referral"
     ]
-  },
-  {
-    "area": "Neurology",
-    "sub_area": "Cognitive and Behavioral Neurology",
-    "provider": "Oscar Lopez",
-    "role": "MD",
-    "zip_code": "15232",
-    "hospital_affiliations": ["HOSPITAL (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
-    "keywords": ["dementia","early dementia","memory loss","MCI","mild cognitive impairment","Alzheimer's","neurodegenerative","cognitive decline","MoCA","MMSE","neuropsych testing","behavior change","caregiver burden","amyloid PET","CSF tau","LBD","FTD"]
-  },
-  {
-    "area": "Neurology",
-    "sub_area": "Cognitive and Behavioral Neurology",
-    "provider": "Riddhi Patira",
-    "role": "MD",
-    "zip_code": "15232",
-    "hospital_affiliations": ["HOSPITAL (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
-    "keywords": ["dementia","MCI","Alzheimer's","cognitive impairment","neurobehavioral","amnestic","executive dysfunction","visuospatial","language deficits","MoCA","functional decline","delirium vs dementia"]
-  },
-  {
-    "area": "Neurology",
-    "sub_area": "Cognitive and Behavioral Neurology",
-    "provider": "Tharick Pascoal",
-    "role": "MD/PhD",
-    "zip_code": "15232",
-    "hospital_affiliations": ["HOSPITAL (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
-    "keywords": ["Alzheimer's biomarkers","amyloid","tau","PET","CSF","neurodegeneration","dementia workup","MCI","longitudinal assessment","neuroimaging"]
-  },
-  {
-    "area": "Neurology",
-    "sub_area": "Cognitive and Behavioral Neurology",
-    "provider": "Estavana Isaac",
-    "role": "MD",
-    "zip_code": "15232",
-    "hospital_affiliations": ["HOSPITAL (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
-    "keywords": ["cognitive neurology","behavioral changes","care planning","safety assessment","driving evaluation","caregiver support","neuropsychology referral"]
-  },
-  {
-    "area": "Neurology",
-    "sub_area": "Cognitive and Behavioral Neurology",
-    "provider": "Abigail Opiela",
-    "role": "PA",
-    "zip_code": "15232",
-    "hospital_affiliations": ["HOSPITAL (per PRM list)"],
-    "comments": "Help diagnose early signs of dementia; severe new-onset memory loss.",
-    "keywords": ["cognitive screening","MoCA","MMSE","clinic intake","symptom triage","care coordination","memory clinic"]
-  },
-
-  {
-    "area": "Pulmonary",
-    "sub_area": "Interstitial Lung Disease",
-    "provider": "Kevin F. Gibson",
-    "role": "MD",
-    "zip_code": "15213",
-    "hospital_affiliations": ["HOSPITAL – Simmons Center for Interstitial Lung Disease (MUH)"],
-    "comments": "Autoimmune lung disease; Simmons Center ILD. Scheduling contact: Anna Dvorsky, P: 412-647-1805.",
-    "keywords": ["interstitial lung disease","ILD","pulmonary fibrosis","autoimmune lung disease","CTD-ILD","scleroderma","rheumatoid lung","NSIP","UIP","hypersensitivity pneumonitis","dyspnea","chronic cough","DLCO","FVC","honeycombing","nintedanib","pirfenidone"]
-  },
-
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Tarin",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP.",
-    "keywords": ["BPH","benign prostatic hyperplasia","LUTS","nocturia","enlarged prostate","urinary retention","TURP","UroLift","alpha blocker","tamsulosin","PVR","AUA score"]
-  },
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Benoit",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP and UroLift.",
-    "keywords": ["BPH","UroLift","minimally invasive BPH","LUTS","urinary frequency","weak stream","TURP candidacy","trial without catheter"]
-  },
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Ogagan",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP and UroLift.",
-    "keywords": ["BPH","UroLift","TURP","prostate enlargement","hematuria","catheter dependence","post-void residual"]
-  },
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Browning",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP.",
-    "keywords": ["BPH","TURP","resection","urinary obstruction","PVR","bladder outlet obstruction","LUTS management"]
-  },
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Rycyna",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP.",
-    "keywords": ["BPH","TURP","enlarged prostate","LUTS","urology surgery","urinary retention"]
-  },
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Turner",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP.",
-    "keywords": ["BPH","TURP","LUTS","nocturia","weak stream","frequent urination","urology consult"]
-  },
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Sharbaugh",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP.",
-    "keywords": ["BPH","TURP","urolift referral","minimally invasive BPH","prostate surgery"]
-  },
-  {
-    "area": "Urologic Surgery",
-    "sub_area": "BPH/TURP/UroLift",
-    "provider": "Liem",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Performs TURP.",
-    "keywords": ["BPH","TURP","LUTS","urinary retention","catheter","benign prostatic hyperplasia"]
-  },
-
-  {
-    "area": "Neurosurgery",
-    "sub_area": "Skull Base Neurosurgery",
-    "provider": "Georgios Zenonos",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["UPP Neurosurgery (HOSPITAL)"],
-    "comments": "Recommended for pituitary surgery follow-up.",
-    "keywords": ["skull base","pituitary adenoma","pituitary surgery","endoscopic endonasal","macroadenoma","Cushing's","acromegaly","prolactinoma","craniopharyngioma","optic chiasm","CSF leak"]
-  },
-
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Aditya Bhonsale",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["electrophysiology","EP","atrial fibrillation","AF","arrhythmia","cardioversion","ablation","EP study","SVT","VT","anticoagulation","DOAC","rate control","rhythm control"]
-  },
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Mark Estes",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["AF","arrhythmia","syncope","palpitations","ablation","cardioversion","Holter","Zio","pacemaker","ICD"]
-  },
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Sandeep Jain",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["atrial fibrillation","flutter","SVT","VT","PVCs","EPS","catheter ablation","antiarrhythmic","anticoagulation"]
-  },
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Aditi Naniwadekar",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["EP","AF","ablation","cardioversion","rate vs rhythm","stroke prevention","CHA2DS2-VASc","HAS-BLED"]
-  },
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Alaa Shalaby",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["arrhythmia","AF","SVT","VT","ICD","pacemaker","EPS","cardioversion","anticoagulants"]
-  },
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Norman Wang",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["atrial fibrillation","ablation","cardioversion","long-standing AF","Holter","event monitor","rate control"]
-  },
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Krishna Kancharla",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["AF","EP","catheter ablation","cardioversion","anticoagulation","stroke risk","DOAC","warfarin"]
-  },
-  {
-    "area": "Cardiology",
-    "sub_area": "Electrophysiology",
-    "provider": "Andrew Voigt",
-    "role": "MD",
-    "zip_code": "15217",
-    "hospital_affiliations": ["HOSPITAL (system)"],
-    "comments": "Treats AF; performs cardioversion.",
-    "keywords": ["AF","arrhythmia","ablation","cardioversion","anticoagulants","DOAC","EP referral","palpitations"]
   }
 ]
