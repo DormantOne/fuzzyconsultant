@@ -3,11 +3,98 @@
   "updated": "2026-05-23",
   "source": "Shadyside Handbook Grand Rounds pages pasted by user",
   "count": 204,
-  "recordingCount": 172,
-  "withLinksCount": 172,
+  "recordingCount": 173,
+  "withLinksCount": 173,
   "notRecordedCount": 15,
   "notes": "Attendance codes removed. Keywords and user-facing summaries expanded with local rule-based synonym groups; no API or vector database required.",
   "lectures": [
+    {
+  "id": "shy-20260528-001",
+  "series": "shy",
+  "seriesLabel": "SHY",
+  "date": "2026-05-28",
+  "dateLabel": "5/28/26",
+  "title": "The Problem with “Normal” Rethinking Iron Deficiency in Clinical Practice",
+  "rawTitle": "The Problem with “Normal” Rethinking Iron Deficiency in Clinical Practice",
+  "presenter": "Nicoletta Machin, DO, MS / Assistant Professor, Division of Classical Hematology / Associate Program Director, Hematology Education (ASH HFFTP & Hematology/Oncology Fellowship) / Hemophilia Center of Western PA",
+  "presenterLines": [
+    "Nicoletta Machin, DO, MS",
+    "Assistant Professor, Division of Classical Hematology",
+    "Associate Program Director, Hematology Education (ASH HFFTP & Hematology/Oncology Fellowship)",
+    "Hemophilia Center of Western PA"
+  ],
+  "topic": null,
+  "notRecorded": false,
+  "keywords": [
+    "Problem",
+    "Normal",
+    "Rethinking",
+    "Iron",
+    "Deficiency",
+    "Clinical",
+    "Practice",
+    "Nicoletta",
+    "Machin",
+    "Hematology",
+    "Classical Hematology",
+    "Hemophilia",
+    "Iron Deficiency",
+    "Iron Deficiency Clinical Practice",
+    "Rethinking Iron Deficiency",
+    "Problem with Normal",
+    "Normal Iron",
+    "Ferritin",
+    "Transferrin Saturation",
+    "TSAT",
+    "Iron Studies",
+    "Anemia",
+    "Iron Deficiency Anemia",
+    "Hemoglobin",
+    "Microcytosis",
+    "Fatigue",
+    "IV Iron",
+    "Oral Iron",
+    "video"
+  ],
+  "links": [
+    {
+      "label": "🎥 Watch Recording",
+      "type": "recording",
+      "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/odonwl_upmc_edu/IQCdcM_9CXo8Rb389d3gFb7VAfFrkvwYDWn_QXjP9N0ewKA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=0jaKDn"
+    },
+    {
+      "label": "📄 Transcript",
+      "type": "transcript",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQCQIcfn5eL5Q6YijY2XLxs5AeokKoA7ib5IOY3ail3ynMs?e=q0KdQY"
+    },
+    {
+      "label": "🧾 Take-Home",
+      "type": "take_home",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQBIFZQUV9xYRafpytAKSaxwAYyHBvc8jeCWLRBnkkXiHvA?e=mTQcV7"
+    },
+    {
+      "label": "💬 Engage",
+      "type": "engage",
+      "url": "https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMDUzMjYzMTM0NzIifQ"
+    },
+    {
+      "label": "🤖 Discuss G.R. w/ AI",
+      "type": "discuss_ai",
+      "url": "https://dormantone.github.io/payloadprompt/grandrounds2.html"
+    },
+    {
+      "label": "🧠 Mindmap",
+      "type": "mind_map",
+      "url": "https://examplepages.z13.web.core.windows.net/iron_mind_map.html"
+    }
+  ],
+  "sortOrder": 0,
+  "sourcePage": "Just Missed / Archives 2025-2026",
+  "summary": "Search lens: general internal medicine, hematology, and clinical diagnosis of iron deficiency. Presenter: Nicoletta Machin, DO, MS. Useful terms: Iron, Deficiency, Clinical Practice, Hematology, Classical Hematology, Ferritin, TSAT, iron studies, anemia, oral iron, and IV iron. Resources: recording, transcript, take-home, discussion, discussion prompt, mind map.",
+  "topicGroup": "General medicine / hematology",
+  "topicGroups": [],
+  "searchText": "5/28/26 2026-05-28 The Problem with “Normal” Rethinking Iron Deficiency in Clinical Practice Nicoletta Machin, DO, MS / Assistant Professor, Division of Classical Hematology / Associate Program Director, Hematology Education (ASH HFFTP & Hematology/Oncology Fellowship) / Hemophilia Center of Western PA Search lens: general internal medicine, hematology, and clinical diagnosis of iron deficiency. Presenter: Nicoletta Machin, DO, MS. Useful terms: Iron, Deficiency, Clinical Practice, Hematology, Classical Hematology, Ferritin, TSAT, iron studies, anemia, oral iron, and IV iron. Resources: recording, transcript, take-home, discussion, discussion prompt, mind map. Problem Normal Rethinking Iron Deficiency Clinical Practice Nicoletta Machin Hematology Classical Hematology Hemophilia Iron Deficiency Iron Deficiency Clinical Practice Rethinking Iron Deficiency Problem with Normal Normal Iron Ferritin Transferrin Saturation TSAT Iron Studies Anemia Iron Deficiency Anemia Hemoglobin Microcytosis Fatigue IV Iron Oral Iron video"
+},
     {
       "id": "shy-20260514-001",
       "series": "shy",
