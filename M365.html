@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,41 +22,25 @@
     .badge{display:inline-flex;gap:6px;align-items:center;padding:5px 10px;border-radius:999px;background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.18);color:var(--accent2);font-weight:900;font-size:.78rem;white-space:nowrap}
     .dot{width:8px;height:8px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}
     .actionsTop{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-    .layout{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px;align-items:start}
+    .layout{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px}
     @media(max-width:980px){.layout{grid-template-columns:1fr}}
-    .panel{padding:14px;min-width:0}
-    .previewPanel{position:sticky;top:106px;max-height:calc(100vh - 122px);display:flex;flex-direction:column;overflow:hidden;min-width:0;max-width:100%}
-    @media(max-width:980px){.previewPanel{position:static;max-height:none}}
+    .panel{padding:14px}
     .phead{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
     .ptitle{font-weight:900;display:flex;gap:8px;align-items:center}
-    .step{min-width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:#e5e7eb;color:#374151;font-weight:900;border:1px solid var(--border)}
-    fieldset{border:1px solid var(--border);background:#f9fafb;border-radius:12px;padding:10px;margin-top:10px;min-width:0;max-width:100%}
-    .previewField{display:flex;flex-direction:column;min-height:0;flex:1;overflow:hidden;min-width:0;max-width:100%}
+    .step{min-width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:var(--accent);color:#fff;font-weight:900}
+    fieldset{border:1px solid var(--border);background:#f9fafb;border-radius:12px;padding:10px;margin-top:10px}
     legend{padding:0 6px;color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
     select,input,textarea{width:100%;margin-top:6px;padding:9px 10px;border:1px solid var(--border);border-radius:8px;font:inherit;background:#fff}
-    textarea{min-height:112px;max-height:220px;resize:vertical;line-height:1.45;overflow-y:auto;overflow-x:hidden;white-space:pre-wrap;overflow-wrap:anywhere}
+    textarea{min-height:112px;resize:vertical;line-height:1.45}
     select:focus,input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.18)}
     .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
     @media(max-width:760px){.row2,.row3{grid-template-columns:1fr}}
-    .otherRow{margin-top:8px}
-    .otherRow[hidden]{display:none!important}
-    .hospitalPicker{margin-top:6px}
-    .hospitalPicker summary{list-style:none;cursor:pointer;background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-weight:900;color:var(--accent2);display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .hospitalPicker summary::-webkit-details-marker{display:none}
-    .hospitalPicker summary:after{content:"▾";font-size:.9rem;color:var(--muted)}
-    .hospitalPicker[open] summary:after{content:"▴"}
-    .hospitalBox{margin-top:8px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;max-height:250px;overflow-y:auto;overflow-x:hidden}
-    .hospitalGroup{margin-top:8px}
-    .hospitalGroup:first-child{margin-top:0}
-    .hospitalGroupTitle{font-size:.74rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2px 0 6px}
-    .hospitalGrid{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}
-    @media(max-width:760px){.hospitalGrid{grid-template-columns:1fr}}
-    .hospitalCheck{display:flex;gap:8px;align-items:flex-start;border:1px solid rgba(209,213,219,.75);border-radius:10px;padding:7px 8px;background:#f9fafb;font-size:.84rem;line-height:1.25}
-    .hospitalCheck input{width:auto;margin-top:2px}
-    .hospitalControls{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-    .smallBtn{border:1px solid rgba(37,99,235,.35);background:#fff;color:var(--accent2);border-radius:999px;padding:6px 10px;font-weight:900;cursor:pointer;font-size:.78rem}
-    .smallBtn:hover{background:rgba(37,99,235,.08)}
+    .chips,.hospitalGrid{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;max-height:220px;overflow:auto;padding-right:4px}
+    .chip{border:1px solid var(--accent);background:#fff;color:var(--accent2);font-size:.8rem;padding:7px 10px;border-radius:999px;cursor:pointer;font-weight:900;text-align:left}
+    .chip:hover{background:var(--accent);color:#fff}
+    .hcheck{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);background:#fff;border-radius:999px;padding:7px 10px;font-size:.82rem;font-weight:800;color:#1f2937}
+    .hcheck input{width:auto;margin:0}
     .opt{display:flex;gap:10px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:8px;font-size:.86rem;line-height:1.3;margin-top:8px}
     .opt input{width:auto;margin-top:2px}
     .btnRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
@@ -67,12 +52,21 @@
     .secondary:hover{background:#d1d5db}
     .ghost{border:1px solid rgba(37,99,235,.35);background:#fff;color:var(--accent2);border-radius:999px}
     .ghost:hover{box-shadow:0 6px 16px rgba(37,99,235,.18)}
-    .out{background:#0f172a;color:#e2e8f0;border-radius:12px;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:.82rem;line-height:1.55;overflow-y:auto;overflow-x:hidden;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;margin-top:6px;min-height:340px;max-height:calc(100vh - 260px);flex:1;width:100%;max-width:100%;min-width:0}
-    @media(max-width:980px){.out{max-height:62vh;flex:initial}}
-    .notice{margin-top:10px;font-size:.82rem;border-radius:10px;padding:9px 11px;line-height:1.4;flex:0 0 auto}
+    .out{background:#0f172a;color:#e2e8f0;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:.82rem;line-height:1.5;max-height:690px;overflow:auto;white-space:pre-wrap;word-wrap:break-word;margin-top:6px}
+    .notice{margin-top:10px;font-size:.82rem;border-radius:10px;padding:9px 11px;line-height:1.4}
     .notice.safe{color:#065f46;background:rgba(16,185,129,.10);border:1px solid rgba(16,185,129,.35)}
     .notice.warn{color:#92400e;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.45)}
     .toast{position:fixed;right:18px;bottom:18px;background:#111827;color:#fff;padding:10px 16px;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.35);font-weight:900;z-index:9999;max-width:90vw}
+
+    .previewPanel{position:sticky;top:106px;max-height:calc(100vh - 122px);display:flex;flex-direction:column;overflow:hidden;min-width:0;max-width:100%}
+    .previewPanel fieldset{display:flex;flex-direction:column;min-height:0;flex:1;overflow:hidden;max-width:100%}
+    .out{overflow-y:auto!important;overflow-x:hidden!important;white-space:pre-wrap!important;overflow-wrap:anywhere!important;word-break:break-word!important;min-height:340px;max-height:calc(100vh - 260px);max-width:100%;min-width:0}
+    textarea{overflow-y:auto;overflow-x:hidden;white-space:pre-wrap;overflow-wrap:anywhere;max-height:240px}
+    .otherRow{margin-top:8px}.otherRow[hidden]{display:none!important}
+    .hospitalPicker{margin-top:6px}.hospitalPicker summary{list-style:none;cursor:pointer;background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-weight:900;color:var(--accent2);display:flex;align-items:center;justify-content:space-between;gap:10px}.hospitalPicker summary::-webkit-details-marker{display:none}.hospitalPicker summary:after{content:"▾";font-size:.9rem;color:var(--muted)}.hospitalPicker[open] summary:after{content:"▴"}.hospitalBox{margin-top:8px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;max-height:250px;overflow-y:auto;overflow-x:hidden}.hospitalGroup{margin-top:8px}.hospitalGroup:first-child{margin-top:0}.hospitalGroupTitle{font-size:.74rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2px 0 6px}.hospitalGrid{display:grid!important;grid-template-columns:1fr 1fr;gap:6px 10px;max-height:none!important;overflow:visible!important}.hcheck{border-radius:10px;align-items:flex-start;line-height:1.25;font-weight:700}.hospitalControls{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.smallBtn{border:1px solid rgba(37,99,235,.35);background:#fff;color:var(--accent2);border-radius:999px;padding:6px 10px;font-weight:900;cursor:pointer;font-size:.78rem}.smallBtn:hover{background:rgba(37,99,235,.08)}
+    .phoneGate{display:none;margin-top:14px;background:#fff7ed;border:1px solid rgba(245,158,11,.55);border-radius:16px;box-shadow:var(--shadow);padding:14px;line-height:1.45}.phoneGateTitle{font-weight:900;color:#92400e;font-size:1.02rem}.phoneGate p{margin-top:6px;color:#7c2d12}.phoneGateActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.phoneGate .ghost,.phoneGate .mini{font-size:.9rem}.deviceToggle{font-size:.78rem;color:var(--muted);margin-top:8px}
+    body.phoneMode .phoneGate{display:block}body.phoneMode:not(.allowPhone) .layout{display:none}body.phoneMode.allowPhone .phoneGate{display:block;background:#eff6ff;border-color:rgba(37,99,235,.35)}
+    @media(max-width:980px){.previewPanel{position:static;max-height:none}.out{max-height:62vh}.hospitalGrid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -94,6 +88,20 @@
     </div>
   </header>
 
+  <section class="phoneGate" id="phoneGate" aria-live="polite">
+    <div class="phoneGateTitle">This tool works best on a computer.</div>
+    <p>On a phone, Microsoft 365 Copilot and PowerApps often open awkwardly. From a computer, go to <strong>cmihandbook.com</strong> and open the Consultant Finder link.</p>
+    <div class="phoneGateActions">
+      <a class="ghost" href="https://cmihandbook.com" target="_blank" rel="noopener">Open cmihandbook.com</a>
+      <button class="mini" id="shareLinkBtn" type="button">📤 Share this link</button>
+      <a class="ghost" id="emailSelfBtn" href="mailto:">✉️ Email link to myself</a>
+      <button class="ghost" id="continuePhoneBtn" type="button">Continue on phone anyway</button>
+    </div>
+    <div class="deviceToggle">
+      Phone mode is shown automatically on small touch devices. Use “Continue on phone anyway” only if you still want to build and copy the prompt here.
+    </div>
+  </section>
+
   <div class="layout">
     <section class="panel">
       <div class="phead"><div class="ptitle"><span class="step">1</span> Consultant request details</div></div>
@@ -106,7 +114,7 @@
         </div>
         <div class="otherRow" id="otherSpecialtyRow" hidden>
           <label class="hint">Other / write-in specialty or focus</label>
-          <input id="otherSpecialty" maxlength="120" placeholder="e.g., Long COVID clinic, complex Lyme/tick-borne disease, pelvic pain, dysautonomia…">
+          <input id="otherSpecialty" maxlength="120" placeholder="e.g., Long COVID clinic, complex tick-borne disease, dysautonomia…">
         </div>
         <div class="row3">
           <div><label class="hint">Preferred ZIP</label><input id="zip" maxlength="5" inputmode="numeric" placeholder="e.g., 15232"></div>
@@ -123,6 +131,7 @@
           <div class="hospitalBox" id="hospitalChoices"></div>
         </details>
         <div class="hospitalControls">
+          <button class="smallBtn" id="selectCoreHospitalsBtn" type="button">Select PGH hospitals</button>
           <button class="smallBtn" id="clearHospitalsBtn" type="button">Clear hospitals</button>
         </div>
         <div class="otherRow">
@@ -139,13 +148,13 @@
 
       <fieldset>
         <legend>Options</legend>
-        <label class="opt"><input type="checkbox" id="optInternal" checked /> <span><b>Use Microsoft 365/internal UPMC sources first</b> — directory/M365 profile, Outlook address book/contact card, Teams/SharePoint shared workspaces, referral/routing docs, and official internal pages.</span></label>
+        <label class="opt"><input type="checkbox" id="optInternal" checked /> <span><b>Use Microsoft 365/internal UPMC sources first</b> — directory, Teams/SharePoint, Outlook/Exchange signals when authorized, referral/routing docs, and official internal pages.</span></label>
         <label class="opt"><input type="checkbox" id="optExternal" checked /> <span><b>Use external/public sources second</b> for affiliation, specialty focus, location, and current professional footprint.</span></label>
-        <label class="opt"><input type="checkbox" id="optPresence" checked /> <span><b>Return Outlook email when available</b> and verify current presence/activity from M365 profile/directory plus accessible Teams/SharePoint workspace evidence.</span></label>
+        <label class="opt"><input type="checkbox" id="optPresence" checked /> <span><b>Private presence verification by email activity</b>; answer only verified / not verified / uncertain. Do not reveal private email/activity details.</span></label>
         <label class="opt"><input type="checkbox" id="optCatalog" checked /> <span><b>Consider consultantjson.txt only as supplemental context</b>, not as the main source of truth.</span></label>
-        <label class="opt"><input type="checkbox" id="optChair" checked /> <span><b>If unclear, find the relevant chair/chief/division leader</b> and include their Outlook email when available from directory/profile or official source.</span></label>
+        <label class="opt"><input type="checkbox" id="optChair" checked /> <span><b>If unclear, find the relevant chair/chief/division leader</b> and include their email only when visible in an authorized internal directory or official source.</span></label>
         <label class="opt"><input type="checkbox" id="optRouting" checked /> <span><b>Include practical referral/routing language</b> only when supported.</span></label>
-        <label class="opt"><input type="checkbox" id="optCaveats" checked /> <span><b>Flag uncertainty</b>, stale/conflicting data, staff turnover risk, and missing source evidence.</span></label>
+        <label class="opt"><input type="checkbox" id="optCaveats" checked /> <span><b>Flag uncertainty</b>, stale/conflicting data, and missing source evidence.</span></label>
       </fieldset>
 
       <div class="btnRow">
@@ -162,13 +171,14 @@
           <button class="mini" id="copilotBtn" type="button">🪟 Build & Open Copilot</button>
         </div>
       </div>
-      <fieldset class="previewField">
+      <fieldset>
         <legend>Generated payload prompt</legend>
         <div class="out" id="output">You haven't generated a payload yet.
-Click &quot;See Prompt&quot; or &quot;Build &amp; Open Copilot&quot; to construct it.</div>
+Click "See Prompt" or "Build & Open Copilot" to construct it.</div>
       </fieldset>
-      <div class="notice warn"><b>Tip:</b> Use <b>Get / Activate M365</b> first if needed, then open Copilot, select <b>Think Deeper</b>, click the chat box, and paste.</div>
       <div class="notice safe"><b>Contact design:</b> The payload asks Copilot to return Outlook email when available and use current M365/workspace evidence to separate available consultants from stale leads.</div>
+      <div class="notice warn"><b>Tip:</b> Use <b>Get / Activate M365</b> first if needed, then open Copilot, select <b>Think Deeper</b>, click the chat box, and paste.</div>
+      <div class="meta">PowerApps activation link is embedded. Copilot opens separately at Microsoft 365 Copilot.</div>
     </section>
   </div>
 </div>
@@ -176,346 +186,345 @@ Click &quot;See Prompt&quot; or &quot;Build &amp; Open Copilot&quot; to construc
 <script>
 (function(){
   "use strict";
-  const SUBSPEC_MAP = {
-  "Internal Medicine": [
-    "General",
-    "Other"
-  ],
-  "Cardiology": [
-    "General",
-    "Interventional",
-    "Heart Failure and Transplant",
-    "Electrophysiology",
-    "Preventive",
-    "Cardio Oncology",
-    "Adult Congenital Heart Disease",
-    "Sports Cardiology",
-    "Women’s Cardiology",
-    "Vascular Medicine",
-    "Other"
-  ],
-  "Endocrinology": [
-    "General",
-    "Diabetes and Metabolism",
-    "Thyroid Disorders",
-    "Pituitary",
-    "Bone and Mineral",
-    "Adrenal Disorders",
-    "Reproductive Endocrinology",
-    "Lipid Disorders",
-    "Other"
-  ],
-  "Nephrology": [
-    "General",
-    "End Stage Renal Disease and Dialysis",
-    "Kidney Transplantation",
-    "Hypertension",
-    "Glomerular Disease",
-    "Electrolyte and Acid Base Disorders",
-    "Genetic Renal Diseases",
-    "Onco Nephrology",
-    "Pediatric Nephrology",
-    "Other"
-  ],
-  "Rheumatology": [
-    "General",
-    "Inflammatory Arthritis",
-    "Systemic Autoimmune Disorders",
-    "Vasculitis",
-    "Crystalline Arthropathies",
-    "Musculoskeletal Pain Syndromes",
-    "Bone and Metabolism Disorders",
-    "Pediatric Rheumatology",
-    "Pregnancy Related Rheumatology",
-    "Other"
-  ],
-  "Gastroenterology": [
-    "General",
-    "Hepatology",
-    "Inflammatory Bowel Disease",
-    "Gastroenterology Oncology",
-    "Motility Disorders",
-    "Advanced Endoscopy and Procedures",
-    "Pediatric Gastroenterology",
-    "Celiac Disease",
-    "Nutritional Disorders",
-    "Pancreatic Disease",
-    "Other"
-  ],
-  "Infectious Disease": [
-    "General",
-    "HIV/ AIDS",
-    "Tropical and Travel",
-    "Antibiotic Stewardship",
-    "Mycology",
-    "Virology",
-    "Infection Control",
-    "Pediatric ID",
-    "Tropical Diseases",
-    "Sexually Transmitted Diseases",
-    "Other"
-  ],
-  "Hematology": [
-    "General",
-    "Hematologic Malignancies",
-    "Coagulation and Hemostasis",
-    "Bone Marrow Failure Syndromes",
-    "Hemoglobinopathies and Red Cell Disorders",
-    "Pediatric Hematology",
-    "Laboratory Hematology",
-    "Other"
-  ],
-  "Oncology": [
-    "General",
-    "Other"
-  ],
-  "Pulmonary": [
-    "General",
-    "Interstitial Lung Disease",
-    "Interventional Pulmonology",
-    "Sleep Medicine",
-    "Obstructive Lung Disease",
-    "Lung Transplantation",
-    "Other"
-  ],
-  "General Surgery": [
-    "General",
-    "Other"
-  ],
-  "Vascular Surgery": [
-    "General",
-    "Endovascular Surgery",
-    "Open Vascular Surgery",
-    "Aortic Surgery",
-    "Venous Disease",
-    "Peripheral Arterial Surgery and Limb Salvage",
-    "Carotid and Cerebrovascular Disease",
-    "Dialysis Access",
-    "Thoracic Outlet and Vascular Compression Syndromes",
-    "Other"
-  ],
-  "Colorectal Surgery": [
-    "General",
-    "Colorectal Cancer Surgery",
-    "Inflammatory Bowel Disease Surgery",
-    "Pelvic Floor Disorders",
-    "Anorectal Surgery",
-    "Diverticular Disease",
-    "Other"
-  ],
-  "Neurosurgery": [
-    "General",
-    "Spinal Surgery",
-    "Cerebrovascular Surgery",
-    "Neuro-Oncology Surgery",
-    "Functional Neurosurgery",
-    "Pediatric Neurosurgery",
-    "Peripheral Nerve Surgery",
-    "Skull Base Neurosurgery",
-    "Epilepsy Surgery",
-    "Stereotactic and Radiosurgery",
-    "Pain Neurosurgery",
-    "Other"
-  ],
-  "Cardiothoracic Surgery": [
-    "General",
-    "Adult Cardiac Surgery",
-    "Thoracic Surgery",
-    "Aortic Surgery",
-    "Congenital Heart Surgery",
-    "Esophageal Surgery",
-    "Minimally Invasive and Robotic Surgery",
-    "Other"
-  ],
-  "Orthopedic Surgery": [
-    "General",
-    "Sports Medicine",
-    "Joint Replacement Surgery",
-    "Spine Surgery",
-    "Hand and Upper Extremity Surgery",
-    "Foot and Ankle Surgery",
-    "Pediatric Orthopedic Surgery",
-    "Orthopedic Oncology Surgery",
-    "Shoulder and Elbow Surgery",
-    "Adult Reconstructive Orthopedics",
-    "Other"
-  ],
-  "Urologic Surgery": [
-    "General",
-    "Urologic Oncology",
-    "Endourology and Stone Disease",
-    "Male Infertility Surgery",
-    "Female Pelvic Floor Surgery and Uro Gynecology",
-    "Pediatric Urology",
-    "Reconstructive Urology",
-    "Neuro Urology and Incontinence Surgery",
-    "BPH/TURP/UroLift",
-    "Other"
-  ],
-  "Neurology": [
-    "General",
-    "Stroke Neurology",
-    "Headaches",
-    "Seizures Disorders",
-    "Movement Disorders",
-    "Multiple Sclerosis",
-    "Cognitive and Behavioral Neurology",
-    "Neuro-Oncology",
-    "Sleep Medicine",
-    "Pediatric Neurology",
-    "Other"
-  ],
-  "Plastic Surgery": [
-    "General",
-    "Aesthetic Surgery",
-    "Hand Surgery",
-    "Reconstructive Surgery",
-    "Craniofacial Surgery",
-    "Breast Surgery",
-    "Lymphedema Surgery",
-    "Gender Affirming Surgery",
-    "Pediatric Surgery",
-    "Other"
-  ],
-  "Psychiatry": [
-    "General",
-    "Geriatric Psychiatry",
-    "Addiction Psychiatry",
-    "Child and Adolescent Psychiatry",
-    "Other"
-  ],
-  "Dermatology": [
-    "General",
-    "Moh’s Micrographic Surgery",
-    "Cosmetic Dermatology",
-    "Immunodermatology",
-    "Pediatric Dermatology",
-    "Other"
-  ],
-  "Ophthalmology": [
-    "General",
-    "Corneal disease",
-    "Retina and Vitreous",
-    "Glaucoma",
-    "Pediatric Ophthalmology",
-    "Neuro Ophthalmology",
-    "Oncology",
-    "Cataract and Anterior Segment",
-    "Cataracts",
-    "Other"
-  ],
-  "ENT": [
-    "General",
-    "Otology",
-    "Neuro-Otology",
-    "Rhinology and Sinus Surgery",
-    "Laryngology",
-    "Head and Neck Oncology",
-    "Pediatric Otology",
-    "Allergy",
-    "Facial and Reconstructive Surgery",
-    "Sleep Medicine Surgery",
-    "Other"
-  ],
-  "Physiatry": [
-    "General",
-    "Pain Medicine",
-    "Sports Medicine",
-    "Spinal Cord Injury Medicine",
-    "Brain Injury Medicine",
-    "Neuromuscular Medicine",
-    "Pediatric Rehabilitation",
-    "Other"
-  ],
-  "Other": [
-    "General",
-    "Other"
-  ]
-};
-  const UPMC_HOSPITALS = [
-  "UPMC Presbyterian",
-  "UPMC Montefiore",
-  "UPMC Shadyside",
-  "UPMC Magee-Womens Hospital",
-  "UPMC Mercy",
-  "UPMC Children's Hospital of Pittsburgh",
-  "UPMC Western Psychiatric Hospital",
-  "UPMC Eye & Ear Institute",
-  "UPMC Hillman Cancer Center",
-  "UPMC St. Margaret",
-  "UPMC Passavant – McCandless",
-  "UPMC Passavant – Cranberry",
-  "UPMC East",
-  "UPMC McKeesport",
-  "UPMC Washington",
-  "UPMC Greene",
-  "UPMC Somerset",
-  "UPMC Altoona",
-  "UPMC Bedford",
-  "UPMC Carlisle",
-  "UPMC Community Osteopathic",
-  "UPMC Hanover",
-  "UPMC Harrisburg",
-  "UPMC Lititz",
-  "UPMC Memorial",
-  "UPMC West Shore",
-  "UPMC Hamot",
-  "UPMC Chautauqua",
-  "UPMC Jameson",
-  "UPMC Horizon – Greenville",
-  "UPMC Horizon – Shenango Valley",
-  "UPMC Northwest",
-  "UPMC Kane",
-  "UPMC Cole",
-  "UPMC Muncy",
-  "UPMC Wellsboro",
-  "UPMC Williamsport",
-  "UPMC Western Maryland"
-];
-  const UPMC_HOSPITAL_GROUPS = {
-    "PGH hospitals / nearby": [
-      "UPMC Presbyterian",
-      "UPMC Montefiore",
-      "UPMC Shadyside",
-      "UPMC Magee-Womens Hospital",
-      "UPMC Mercy",
-      "UPMC Children's Hospital of Pittsburgh",
-      "UPMC Western Psychiatric Hospital",
-      "UPMC Eye & Ear Institute",
-      "UPMC Hillman Cancer Center",
-      "UPMC St. Margaret",
-      "UPMC Passavant – McCandless",
-      "UPMC Passavant – Cranberry",
-      "UPMC East",
-      "UPMC McKeesport"
-    ],
-    "Regional UPMC hospitals": UPMC_HOSPITALS.filter(h => ![
-      "UPMC Presbyterian",
-      "UPMC Montefiore",
-      "UPMC Shadyside",
-      "UPMC Magee-Womens Hospital",
-      "UPMC Mercy",
-      "UPMC Children's Hospital of Pittsburgh",
-      "UPMC Western Psychiatric Hospital",
-      "UPMC Eye & Ear Institute",
-      "UPMC Hillman Cancer Center",
-      "UPMC St. Margaret",
-      "UPMC Passavant – McCandless",
-      "UPMC Passavant – Cranberry",
-      "UPMC East",
-      "UPMC McKeesport"
-    ].includes(h))
-  };
-  const CONSULTANT_JSON_REFERENCE = "CMI Primary Care Education Series Review site \u2192 Shared Documents \u2192 consultants \u2192 consultantjson.txt";
+
   const COPILOT_URL = "https://www.microsoft365.com/copilot";
   const M365_ACTIVATION_URL = "https://apps.powerapps.com/play/e/c34e244b-e683-4eef-bb66-67176b581713/a/daf86d65-9ffb-4e95-aaf2-388bbb5304bf?tenantId=8b3dd73e-4e72-4679-b191-56da1588712b&hint=2e699ac1-227b-4779-ac48-f7a1b3ff5631&sourcetime=1743427811944";
+  const CONSULTANT_JSON_REFERENCE = "https://upmchs.sharepoint.com/:t:/r/sites/CMIPrimaryCareEducationSeriesReview700/Shared%20Documents/consultants/consultantjson.txt?csf=1&web=1&e=QPuJGE";
+
+  // ---- Subspecialty mapping (expanded per your list; kept General/Other everywhere) ----
+  const SUBSPEC_MAP = {
+    "Internal Medicine": ["General", "Other"],
+
+    "Cardiology": [
+      "General",
+      "Interventional",
+      "Heart Failure and Transplant",
+      "Electrophysiology",
+      "Preventive",
+      "Cardio Oncology",
+      "Adult Congenital Heart Disease",
+      "Sports Cardiology",
+      "Women’s Cardiology",
+      "Vascular Medicine",
+      "Other"
+    ],
+
+    "Endocrinology": [
+      "General",
+      "Diabetes and Metabolism",
+      "Thyroid Disorders",
+      "Pituitary",
+      "Bone and Mineral",
+      "Adrenal Disorders",
+      "Reproductive Endocrinology",
+      "Lipid Disorders",
+      "Other"
+    ],
+
+    "Nephrology": [
+      "General",
+      "End Stage Renal Disease and Dialysis",
+      "Kidney Transplantation",
+      "Hypertension",
+      "Glomerular Disease",
+      "Electrolyte and Acid Base Disorders",
+      "Genetic Renal Diseases",
+      "Onco Nephrology",
+      "Pediatric Nephrology",
+      "Other"
+    ],
+
+    "Rheumatology": [
+      "General",
+      "Inflammatory Arthritis",
+      "Systemic Autoimmune Disorders",
+      "Vasculitis",
+      "Crystalline Arthropathies",
+      "Musculoskeletal Pain Syndromes",
+      "Bone and Metabolism Disorders",
+      "Pediatric Rheumatology",
+      "Pregnancy Related Rheumatology",
+      "Other"
+    ],
+
+    "Gastroenterology": [
+      "General",
+      "Hepatology",
+      "Inflammatory Bowel Disease",
+      "Gastroenterology Oncology",
+      "Motility Disorders",
+      "Advanced Endoscopy and Procedures",
+      "Pediatric Gastroenterology",
+      "Celiac Disease",
+      "Nutritional Disorders",
+      "Pancreatic Disease",
+      "Other"
+    ],
+
+    "Infectious Disease": [
+      "General",
+      "HIV/ AIDS",
+      "Tropical and Travel",
+      "Antibiotic Stewardship",
+      "Mycology",
+      "Virology",
+      "Infection Control",
+      "Pediatric ID",
+      "Tropical Diseases",
+      "Sexually Transmitted Diseases",
+      "Other"
+    ],
+
+    "Hematology": [
+      "General",
+      "Hematologic Malignancies",
+      "Coagulation and Hemostasis",
+      "Bone Marrow Failure Syndromes",
+      "Hemoglobinopathies and Red Cell Disorders",
+      "Pediatric Hematology",
+      "Laboratory Hematology",
+      "Other"
+    ],
+
+    "Oncology": [
+      "General",
+      "Other"
+    ],
+
+    "Pulmonary": [
+      "General",
+      "Interstitial Lung Disease",
+      "Interventional Pulmonology",
+      "Sleep Medicine",
+      "Obstructive Lung Disease",
+      "Lung Transplantation",
+      "Other"
+    ],
+
+    "General Surgery": ["General", "Other"],
+
+    "Vascular Surgery": [
+      "General",
+      "Endovascular Surgery",
+      "Open Vascular Surgery",
+      "Aortic Surgery",
+      "Venous Disease",
+      "Peripheral Arterial Surgery and Limb Salvage",
+      "Carotid and Cerebrovascular Disease",
+      "Dialysis Access",
+      "Thoracic Outlet and Vascular Compression Syndromes",
+      "Other"
+    ],
+
+    "Colorectal Surgery": [
+      "General",
+      "Colorectal Cancer Surgery",
+      "Inflammatory Bowel Disease Surgery",
+      "Pelvic Floor Disorders",
+      "Anorectal Surgery",
+      "Diverticular Disease",
+      "Other"
+    ],
+
+    "Neurosurgery": [
+      "General",
+      "Spinal Surgery",
+      "Cerebrovascular Surgery",
+      "Neuro-Oncology Surgery",
+      "Functional Neurosurgery",
+      "Pediatric Neurosurgery",
+      "Peripheral Nerve Surgery",
+      "Skull Base Neurosurgery",
+      "Epilepsy Surgery",
+      "Stereotactic and Radiosurgery",
+      "Pain Neurosurgery",
+      "Other"
+    ],
+
+    "Cardiothoracic Surgery": [
+      "General",
+      "Adult Cardiac Surgery",
+      "Thoracic Surgery",
+      "Aortic Surgery",
+      "Congenital Heart Surgery",
+      "Esophageal Surgery",
+      "Minimally Invasive and Robotic Surgery",
+      "Other"
+    ],
+
+    "Orthopedic Surgery": [
+      "General",
+      "Sports Medicine",
+      "Joint Replacement Surgery",
+      "Spine Surgery",
+      "Hand and Upper Extremity Surgery",
+      "Foot and Ankle Surgery",
+      "Pediatric Orthopedic Surgery",
+      "Orthopedic Oncology Surgery",
+      "Shoulder and Elbow Surgery",
+      "Adult Reconstructive Orthopedics",
+      "Other"
+    ],
+
+    "Urologic Surgery": [
+      "General",
+      "Urologic Oncology",
+      "Endourology and Stone Disease",
+      "Male Infertility Surgery",
+      "Female Pelvic Floor Surgery and Uro Gynecology",
+      "Pediatric Urology",
+      "Reconstructive Urology",
+      "Neuro Urology and Incontinence Surgery",
+      "BPH/TURP/UroLift",
+      "Other"
+    ],
+
+    "Neurology": [
+      "General",
+      "Stroke Neurology",
+      "Headaches",
+      "Seizures Disorders",
+      "Movement Disorders",
+      "Multiple Sclerosis",
+      "Cognitive and Behavioral Neurology",
+      "Neuro-Oncology",
+      "Sleep Medicine",
+      "Pediatric Neurology",
+      "Other"
+    ],
+
+    "Plastic Surgery": [
+      "General",
+      "Aesthetic Surgery",
+      "Hand Surgery",
+      "Reconstructive Surgery",
+      "Craniofacial Surgery",
+      "Breast Surgery",
+      "Lymphedema Surgery",
+      "Gender Affirming Surgery",
+      "Pediatric Surgery",
+      "Other"
+    ],
+
+    "Psychiatry": [
+      "General",
+      "Geriatric Psychiatry",
+      "Addiction Psychiatry",
+      "Child and Adolescent Psychiatry",
+      "Other"
+    ],
+
+    "Dermatology": [
+      "General",
+      "Moh’s Micrographic Surgery",
+      "Cosmetic Dermatology",
+      "Immunodermatology",
+      "Pediatric Dermatology",
+      "Other"
+    ],
+
+    "Ophthalmology": [
+      "General",
+      "Corneal disease",
+      "Retina and Vitreous",
+      "Glaucoma",
+      "Pediatric Ophthalmology",
+      "Neuro Ophthalmology",
+      "Oncology",
+      "Cataract and Anterior Segment",
+      "Cataracts",
+      "Other"
+    ],
+
+    "ENT": [
+      "General",
+      "Otology",
+      "Neuro-Otology",
+      "Rhinology and Sinus Surgery",
+      "Laryngology",
+      "Head and Neck Oncology",
+      "Pediatric Otology",
+      "Allergy",
+      "Facial and Reconstructive Surgery",
+      "Sleep Medicine Surgery",
+      "Other"
+    ],
+
+    "Physiatry": [
+      "General",
+      "Pain Medicine",
+      "Sports Medicine",
+      "Spinal Cord Injury Medicine",
+      "Brain Injury Medicine",
+      "Neuromuscular Medicine",
+      "Pediatric Rehabilitation",
+      "Other"
+    ],
+
+    "Other": ["General", "Other"]
+  };
+
+  const UPMC_HOSPITALS = [
+    "UPMC Presbyterian",
+    "UPMC Montefiore",
+    "UPMC Shadyside",
+    "UPMC Magee-Womens Hospital",
+    "UPMC Mercy",
+    "UPMC Children's Hospital of Pittsburgh",
+    "UPMC Western Psychiatric Hospital",
+    "UPMC Hillman Cancer Center",
+    "UPMC St. Margaret",
+    "UPMC Passavant – McCandless",
+    "UPMC Passavant – Cranberry",
+    "UPMC East",
+    "UPMC McKeesport",
+    "UPMC Washington",
+    "UPMC Altoona",
+    "UPMC Bedford",
+    "UPMC Carlisle",
+    "UPMC Chautauqua",
+    "UPMC Cole",
+    "UPMC Community Osteopathic",
+    "UPMC Hamot",
+    "UPMC Hanover",
+    "UPMC Harrisburg",
+    "UPMC Kane",
+    "UPMC Lititz",
+    "UPMC Lock Haven",
+    "UPMC McKeesport",
+    "UPMC Memorial",
+    "UPMC Muncy",
+    "UPMC Northwest",
+    "UPMC Somerset",
+    "UPMC Wellsboro",
+    "UPMC Williamsport",
+    "UPMC Western Maryland",
+    "Other / not sure"
+  ];
+
+  const SUGGESTIONS = [
+    "Find the best consultant and explain why.",
+    "Give me 3 options: best fit, fastest route, backup.",
+    "Prioritize consultants active at the selected UPMC hospital/location.",
+    "If the right consultant is unclear, identify the relevant chair/chief/division leader and include an email if available.",
+    "Verify current system presence by private email activity, but do not reveal email activity details.",
+    "Only return consultants whose current presence is verified or strongly supported."
+  ];
+
+  const HANDBOOK_URL = "https://cmihandbook.com";
+  const SHARE_TITLE = "CMI Consultant Finder";
+  const SHARE_TEXT = "On a computer, go to cmihandbook.com and open the Consultant Finder link.";
+  const CORE_HOSPITALS = new Set(["UPMC Presbyterian", "UPMC Montefiore", "UPMC Shadyside", "UPMC Magee-Womens Hospital", "UPMC Mercy", "UPMC Children's Hospital of Pittsburgh", "UPMC Western Psychiatric Hospital", "UPMC Eye & Ear Institute", "UPMC Hillman Cancer Center", "UPMC St. Margaret", "UPMC Passavant – McCandless", "UPMC Passavant – Cranberry", "UPMC East", "UPMC McKeesport"]);
 
   const $ = id => document.getElementById(id);
   const els = {
     specialty: $("specialty"), subspec: $("subspec"), otherSpecialtyRow: $("otherSpecialtyRow"), otherSpecialty: $("otherSpecialty"),
-    zip: $("zip"), maxResults: $("maxResults"), urgency: $("urgency"), hospitalPicker: $("hospitalPicker"), hospitalChoices: $("hospitalChoices"), selectedHospitalSummary: $("selectedHospitalSummary"), clearHospitalsBtn: $("clearHospitalsBtn"), customHospital: $("customHospital"),
+    zip: $("zip"), maxResults: $("maxResults"), urgency: $("urgency"), customHospital: $("customHospital"),
+    hospitalChoices: $("hospitalChoices"), selectedHospitalSummary: $("selectedHospitalSummary"), hospitalPicker: $("hospitalPicker"),
     question: $("question"), output: $("output"), seeBtn: $("seeBtn"), clearBtn: $("clearBtn"),
-    copilotBtn: $("copilotBtn"), get365Btn: $("get365Btn"), talkBtn: $("talkBtn")
+    copilotBtn: $("copilotBtn"), get365Btn: $("get365Btn"), talkBtn: $("talkBtn"),
+    selectCoreHospitalsBtn: $("selectCoreHospitalsBtn"), clearHospitalsBtn: $("clearHospitalsBtn"),
+    phoneGate: $("phoneGate"), shareLinkBtn: $("shareLinkBtn"), emailSelfBtn: $("emailSelfBtn"), continuePhoneBtn: $("continuePhoneBtn")
   };
   els.get365Btn.href = M365_ACTIVATION_URL;
 
@@ -539,13 +548,85 @@ Click &quot;See Prompt&quot; or &quot;Build &amp; Open Copilot&quot; to construc
       window.speechSynthesis.speak(u);
     }catch(e){}
   }
+
+  function shareUrl(){
+    return (location.protocol === "http:" || location.protocol === "https:") ? location.href : HANDBOOK_URL;
+  }
+  function isLikelyPhone(){
+    const ua = navigator.userAgent || navigator.vendor || "";
+    const uaPhone = /iPhone|iPod|Windows Phone|webOS|BlackBerry|IEMobile|Opera Mini|Android.*Mobile|Mobile Safari/i.test(ua);
+    const coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+    const shortSide = Math.min(window.innerWidth || 9999, window.screen?.width || 9999, window.screen?.height || 9999);
+    const longSide = Math.max(window.innerWidth || 0, window.innerHeight || 0, window.screen?.width || 0, window.screen?.height || 0);
+    const touchPhoneSize = !!coarse && shortSide <= 820 && longSide <= 1180;
+    const narrowTouch = (navigator.maxTouchPoints || 0) > 1 && (window.innerWidth || 9999) <= 820;
+    return uaPhone || touchPhoneSize || narrowTouch;
+  }
+  function phoneAllowed(){ return sessionStorage.getItem("cmiConsultantAllowPhone") === "1"; }
+  function applyDeviceMode(){
+    const phone = isLikelyPhone();
+    document.body.classList.toggle("phoneMode", phone);
+    document.body.classList.toggle("allowPhone", phone && phoneAllowed());
+    updateShareTargets();
+  }
+  function updateShareTargets(){
+    const url = shareUrl();
+    const body = `${SHARE_TEXT}\n\n${HANDBOOK_URL}\n\nCurrent page link, if available:\n${url}`;
+    if(els.emailSelfBtn){
+      els.emailSelfBtn.href = "mailto:?subject=" + encodeURIComponent(SHARE_TITLE) + "&body=" + encodeURIComponent(body);
+    }
+  }
+  function showPhoneMessage(){
+    sessionStorage.removeItem("cmiConsultantAllowPhone");
+    applyDeviceMode();
+    if(els.phoneGate){ els.phoneGate.scrollIntoView({behavior:"smooth", block:"start"}); }
+    toast("Use this from a computer via cmihandbook.com", 3600);
+    speak("This consultant finder works best on a computer. Go to C M I handbook dot com on a computer and open the Consultant Finder link. You can share or email yourself the link from this page.");
+  }
+  function continueOnPhone(){
+    sessionStorage.setItem("cmiConsultantAllowPhone", "1");
+    applyDeviceMode();
+    toast("Phone mode bypassed for this session.");
+    speak("Phone bypass enabled. You can build and copy the prompt here, but Microsoft 365 Copilot usually works better from a computer.");
+  }
+  async function shareThisLink(){
+    const url = shareUrl();
+    const data = { title: SHARE_TITLE, text: SHARE_TEXT + " " + HANDBOOK_URL, url };
+    try{
+      if(navigator.share){ await navigator.share(data); }
+      else {
+        await copyText(url);
+        toast("Link copied. You can paste it into email or messages.");
+      }
+    }catch(e){
+      toast("Share canceled or unavailable.");
+    }
+  }
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(text);
+    return new Promise((resolve, reject) => {
+      try{
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.left = "-9999px";
+        document.body.appendChild(ta);
+        ta.focus(); ta.select();
+        document.execCommand("copy");
+        ta.remove(); resolve();
+      }catch(e){ reject(e); }
+    });
+  }
+
   function initSpecialties(){
     els.specialty.innerHTML = '<option value="">Any specialty…</option>' + Object.keys(SUBSPEC_MAP).map(s => '<option>' + esc(s) + '</option>').join("");
     populateSubspec();
   }
   function populateSubspec(){
+    const current = els.subspec.value;
     const arr = SUBSPEC_MAP[els.specialty.value] || [];
     els.subspec.innerHTML = '<option value="">Any subspecialty…</option>' + arr.map(s => '<option>' + esc(s) + '</option>').join("");
+    if(arr.includes(current)) els.subspec.value = current;
     updateOtherSpecialty();
   }
   function updateOtherSpecialty(){
@@ -564,34 +645,28 @@ Click &quot;See Prompt&quot; or &quot;Build &amp; Open Copilot&quot; to construc
     return other && (els.subspec.value === "Other" || els.specialty.value === "Other") ? base + " — write-in/focus: " + other : base;
   }
   function renderHospitals(){
-    els.hospitalChoices.innerHTML = Object.keys(UPMC_HOSPITAL_GROUPS).map(group => {
-      const checks = UPMC_HOSPITAL_GROUPS[group].map(h => {
-        const id = "hosp_" + h.replace(/[^a-z0-9]+/gi, "_");
-        return '<label class="hospitalCheck" for="' + esc(id) + '"><input type="checkbox" id="' + esc(id) + '" class="hospitalCheckInput" value="' + esc(h) + '"><span>' + esc(h) + '</span></label>';
-      }).join("");
-      return '<div class="hospitalGroup"><div class="hospitalGroupTitle">' + esc(group) + '</div><div class="hospitalGrid">' + checks + '</div></div>';
-    }).join("");
-    els.hospitalChoices.querySelectorAll(".hospitalCheckInput").forEach(cb => cb.addEventListener("change", updateHospitalSummary));
+    const pgh = UPMC_HOSPITALS.filter(h => CORE_HOSPITALS.has(h));
+    const regional = UPMC_HOSPITALS.filter(h => !CORE_HOSPITALS.has(h));
+    function group(title, items){
+      return '<div class="hospitalGroup"><div class="hospitalGroupTitle">' + esc(title) + '</div><div class="hospitalGrid">' +
+        items.map((h, i) => '<label class="hcheck"><input type="checkbox" value="' + esc(h) + '"> <span>' + esc(h) + '</span></label>').join("") +
+        '</div></div>';
+    }
+    els.hospitalChoices.innerHTML = group("PGH hospitals / nearby", pgh) + group("Regional UPMC hospitals", regional);
+    els.hospitalChoices.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.addEventListener("change", updateHospitalSummary));
     updateHospitalSummary();
   }
-  function checkedHospitals(){
-    return Array.from(els.hospitalChoices.querySelectorAll(".hospitalCheckInput:checked")).map(cb => cb.value);
-  }
-  function updateHospitalSummary(){
-    const hs = checkedHospitals();
-    if(!hs.length){
-      els.selectedHospitalSummary.textContent = "PGH hospitals / UPMC locations — none selected";
-    } else if(hs.length <= 2){
-      els.selectedHospitalSummary.textContent = "PGH hospitals / UPMC locations — " + hs.join("; ");
-    } else {
-      els.selectedHospitalSummary.textContent = "PGH hospitals / UPMC locations — " + hs.length + " selected";
-    }
-  }
   function selectedHospitals(){
-    const hs = checkedHospitals();
+    const hs = Array.from(els.hospitalChoices.querySelectorAll('input[type="checkbox"]:checked')).map(x => x.value);
     const custom = els.customHospital.value.trim();
     if(custom && !hs.includes(custom)) hs.unshift(custom);
     return hs;
+  }
+  function updateHospitalSummary(){
+    const hs = selectedHospitals();
+    if(!hs.length) els.selectedHospitalSummary.textContent = "PGH hospitals / UPMC locations — none selected";
+    else if(hs.length <= 2) els.selectedHospitalSummary.textContent = "PGH hospitals / UPMC locations — " + hs.join("; ");
+    else els.selectedHospitalSummary.textContent = "PGH hospitals / UPMC locations — " + hs.length + " selected";
   }
   function optionsBlock(){
     const opts = [];
@@ -601,7 +676,7 @@ Click &quot;See Prompt&quot; or &quot;Build &amp; Open Copilot&quot; to construc
     if($("optCatalog").checked) opts.push("Consider the CMI SharePoint file consultantjson.txt only as supplemental context, not the main source of truth. Try to find it in Microsoft 365 / SharePoint at: " + CONSULTANT_JSON_REFERENCE + ". Use it to generate leads only, then verify against stronger internal/public evidence.");
     if($("optChair").checked) opts.push("If the best consultant is unclear, identify the relevant department chair, division chief, center director, program director, or administrative leader who could route the question. Include their Outlook email when available from M365 profile/directory, Outlook address book, or official public source. Do not invent emails.");
     if($("optRouting").checked) opts.push("Include practical referral/routing/scheduling notes only when supported by an internal routing document, official directory, clinic page, or trusted source.");
-    if($("optCaveats").checked) opts.push("Flag uncertainty, stale data, staff-turnover risk, conflicting evidence, and missing source evidence explicitly. Label source type as internal / public / supplemental catalog / inferred. Assume that older consultant rosters, external directories, and stale provider pages may be wrong unless current M365/directory/routing evidence supports them.");
+    if($("optCaveats").checked) opts.push("Flag uncertainty, stale data, staff-turnover risk, conflicting evidence, and missing source evidence explicitly. Label source type as internal / public / supplemental catalog / inferred. Assume older consultant rosters, external directories, and stale provider pages may be wrong unless current M365/directory/routing evidence supports them.");
     return opts.map(x => "- " + x).join("\n");
   }
   function hospitalBlock(){
@@ -668,25 +743,24 @@ Then use short bullets below the table for details.
   function clearAll(){
     els.question.value = "";
     els.zip.value = "";
-    els.hospitalChoices.querySelectorAll(".hospitalCheckInput").forEach(cb => { cb.checked = false; });
-    updateHospitalSummary();
     els.customHospital.value = "";
     els.otherSpecialty.value = "";
     els.specialty.value = "";
     populateSubspec();
     els.urgency.value = "Routine";
     els.maxResults.value = "5";
+    els.hospitalChoices.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+    updateHospitalSummary();
     els.output.textContent = "You haven't generated a payload yet.\nClick \"See Prompt\" or \"Build & Open Copilot\" to construct it.";
   }
   function copyToClipboard(text, cb){
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(text).then(() => cb && cb(), () => { toast("Clipboard blocked. Select and copy manually."); cb && cb(); });
-    } else {
-      toast("Clipboard unavailable. Select and copy manually.");
-      cb && cb();
-    }
+    copyText(text).then(() => cb && cb(), () => { toast("Clipboard blocked. Select and copy manually."); cb && cb(); });
   }
   function openCopilot(){
+    if(isLikelyPhone() && !phoneAllowed()){
+      showPhoneMessage();
+      return;
+    }
     const prompt = buildPrompt();
     copyToClipboard(prompt, () => {
       toast("Payload copied. Opening Copilot…", 2200);
@@ -695,23 +769,44 @@ Then use short bullets below the table for details.
     });
   }
   function talkThrough(){
+    if(isLikelyPhone() && !phoneAllowed()){
+      speak("This tool works best on a computer. Go to C M I handbook dot com on a computer and open the Consultant Finder link. You can share or email yourself the link from this phone.");
+      return;
+    }
     speak("This tool builds a Microsoft 365 Copilot prompt for finding the right UPMC consultant. Choose the specialty, subspecialty, ZIP, hospital or location, and urgency. Then describe the clinical question without patient identifiers. The prompt asks Copilot to use internal Microsoft 365 sources first, return Outlook email when available, verify current availability and activity from accessible Teams and SharePoint workspace evidence, treat older rosters as possibly stale because of staff turnover, use consultant JSON only as supplemental context, and include a chair or division chief contact if the consultant answer is unclear.");
   }
 
   els.specialty.addEventListener("change", populateSubspec);
   els.subspec.addEventListener("change", updateOtherSpecialty);
+  els.customHospital.addEventListener("input", updateHospitalSummary);
   els.seeBtn.addEventListener("click", () => { buildPrompt(); toast("Payload generated below."); });
   els.clearBtn.addEventListener("click", clearAll);
   els.copilotBtn.addEventListener("click", openCopilot);
   els.talkBtn.addEventListener("click", talkThrough);
-  els.clearHospitalsBtn.addEventListener("click", () => {
-    els.hospitalChoices.querySelectorAll(".hospitalCheckInput").forEach(cb => { cb.checked = false; });
-    updateHospitalSummary();
-    toast("Hospital selections cleared.");
+  els.get365Btn.addEventListener("click", (ev) => {
+    if(isLikelyPhone() && !phoneAllowed()){
+      ev.preventDefault();
+      showPhoneMessage();
+    }
   });
+  els.selectCoreHospitalsBtn.addEventListener("click", () => {
+    els.hospitalChoices.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = CORE_HOSPITALS.has(cb.value));
+    updateHospitalSummary();
+    toast("Selected PGH hospitals / nearby UPMC locations.");
+  });
+  els.clearHospitalsBtn.addEventListener("click", () => {
+    els.hospitalChoices.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+    updateHospitalSummary();
+    toast("Cleared hospital selections.");
+  });
+  if(els.shareLinkBtn) els.shareLinkBtn.addEventListener("click", shareThisLink);
+  if(els.continuePhoneBtn) els.continuePhoneBtn.addEventListener("click", continueOnPhone);
+  window.addEventListener("resize", applyDeviceMode);
+  window.addEventListener("orientationchange", () => setTimeout(applyDeviceMode, 250));
 
   initSpecialties();
   renderHospitals();
+  applyDeviceMode();
 })();
 </script>
 </body>
