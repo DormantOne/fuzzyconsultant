@@ -64,13 +64,26 @@
     textarea{overflow-y:auto;overflow-x:hidden;white-space:pre-wrap;overflow-wrap:anywhere;max-height:240px}
     .otherRow{margin-top:8px}.otherRow[hidden]{display:none!important}
     .hospitalPicker{margin-top:6px}.hospitalPicker summary{list-style:none;cursor:pointer;background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-weight:900;color:var(--accent2);display:flex;align-items:center;justify-content:space-between;gap:10px}.hospitalPicker summary::-webkit-details-marker{display:none}.hospitalPicker summary:after{content:"▾";font-size:.9rem;color:var(--muted)}.hospitalPicker[open] summary:after{content:"▴"}.hospitalBox{margin-top:8px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;max-height:250px;overflow-y:auto;overflow-x:hidden}.hospitalGroup{margin-top:8px}.hospitalGroup:first-child{margin-top:0}.hospitalGroupTitle{font-size:.74rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2px 0 6px}.hospitalGrid{display:grid!important;grid-template-columns:1fr 1fr;gap:6px 10px;max-height:none!important;overflow:visible!important}.hcheck{border-radius:10px;align-items:flex-start;line-height:1.25;font-weight:700}.hospitalControls{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.smallBtn{border:1px solid rgba(37,99,235,.35);background:#fff;color:var(--accent2);border-radius:999px;padding:6px 10px;font-weight:900;cursor:pointer;font-size:.78rem}.smallBtn:hover{background:rgba(37,99,235,.08)}
-    .phoneGate{display:none;margin-top:14px;background:#fff7ed;border:1px solid rgba(245,158,11,.55);border-radius:16px;box-shadow:var(--shadow);padding:14px;line-height:1.45}.phoneGateTitle{font-weight:900;color:#92400e;font-size:1.02rem}.phoneGate p{margin-top:6px;color:#7c2d12}.phoneGateActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.phoneGate .ghost,.phoneGate .mini{font-size:.9rem}.deviceToggle{font-size:.78rem;color:var(--muted);margin-top:8px}
+    .phoneGate{display:none;margin-bottom:14px;background:#fff7ed;border:1px solid rgba(245,158,11,.55);border-radius:16px;box-shadow:var(--shadow);padding:14px;line-height:1.45}.phoneGateTitle{font-weight:900;color:#92400e;font-size:1.02rem}.phoneGate p{margin-top:6px;color:#7c2d12}.phoneGateActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.phoneGate .ghost,.phoneGate .mini{font-size:.9rem}.deviceToggle{font-size:.78rem;color:var(--muted);margin-top:8px}
     body.phoneMode .phoneGate{display:block}body.phoneMode:not(.allowPhone) .layout{display:none}body.phoneMode.allowPhone .phoneGate{display:block;background:#eff6ff;border-color:rgba(37,99,235,.35)}
     @media(max-width:980px){.previewPanel{position:static;max-height:none}.out{max-height:62vh}.hospitalGrid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
 <div class="wrap">
+  <section class="phoneGate" id="phoneGate" aria-live="polite">
+    <div class="phoneGateTitle">Use this from a computer.</div>
+    <p>On your computer, go to <strong>cmihandbook.com</strong> and choose the Consultant Finder link. You can share or email yourself this page link below.</p>
+    <div class="phoneGateActions">
+      <button class="mini" id="shareLinkBtn" type="button">📤 Share this link</button>
+      <a class="ghost" id="emailSelfBtn" href="mailto:">✉️ Email link to myself</a>
+      <button class="ghost" id="continuePhoneBtn" type="button">Continue on phone anyway</button>
+    </div>
+    <div class="deviceToggle">
+      Phone mode is shown automatically on small touch devices. Use “Continue on phone anyway” only if you still want to build and copy the prompt here.
+    </div>
+  </section>
+
   <header class="header">
     <div class="htop">
       <div>
@@ -87,20 +100,6 @@
       </div>
     </div>
   </header>
-
-  <section class="phoneGate" id="phoneGate" aria-live="polite">
-    <div class="phoneGateTitle">This tool works best on a computer.</div>
-    <p>On a phone, Microsoft 365 Copilot and PowerApps often open awkwardly. From a computer, go to <strong>cmihandbook.com</strong> and open the Consultant Finder link.</p>
-    <div class="phoneGateActions">
-      <a class="ghost" href="https://cmihandbook.com" target="_blank" rel="noopener">Open cmihandbook.com</a>
-      <button class="mini" id="shareLinkBtn" type="button">📤 Share this link</button>
-      <a class="ghost" id="emailSelfBtn" href="mailto:">✉️ Email link to myself</a>
-      <button class="ghost" id="continuePhoneBtn" type="button">Continue on phone anyway</button>
-    </div>
-    <div class="deviceToggle">
-      Phone mode is shown automatically on small touch devices. Use “Continue on phone anyway” only if you still want to build and copy the prompt here.
-    </div>
-  </section>
 
   <div class="layout">
     <section class="panel">
@@ -513,7 +512,7 @@ Click "See Prompt" or "Build & Open Copilot" to construct it.</div>
 
   const HANDBOOK_URL = "https://cmihandbook.com";
   const SHARE_TITLE = "CMI Consultant Finder";
-  const SHARE_TEXT = "On a computer, go to cmihandbook.com and open the Consultant Finder link.";
+  const SHARE_TEXT = "On your computer, go to cmihandbook.com and choose the Consultant Finder link.";
   const CORE_HOSPITALS = new Set(["UPMC Presbyterian", "UPMC Montefiore", "UPMC Shadyside", "UPMC Magee-Womens Hospital", "UPMC Mercy", "UPMC Children's Hospital of Pittsburgh", "UPMC Western Psychiatric Hospital", "UPMC Eye & Ear Institute", "UPMC Hillman Cancer Center", "UPMC St. Margaret", "UPMC Passavant – McCandless", "UPMC Passavant – Cranberry", "UPMC East", "UPMC McKeesport"]);
 
   const $ = id => document.getElementById(id);
@@ -580,8 +579,8 @@ Click "See Prompt" or "Build & Open Copilot" to construct it.</div>
     sessionStorage.removeItem("cmiConsultantAllowPhone");
     applyDeviceMode();
     if(els.phoneGate){ els.phoneGate.scrollIntoView({behavior:"smooth", block:"start"}); }
-    toast("Use this from a computer via cmihandbook.com", 3600);
-    speak("This consultant finder works best on a computer. Go to C M I handbook dot com on a computer and open the Consultant Finder link. You can share or email yourself the link from this page.");
+    toast("Use this from a computer. Go to cmihandbook.com.", 3600);
+    speak("This consultant finder works best on a computer. Go to C M I handbook dot com on a computer and choose the Consultant Finder link. You can share or email yourself the link from this page.");
   }
   function continueOnPhone(){
     sessionStorage.setItem("cmiConsultantAllowPhone", "1");
@@ -770,7 +769,7 @@ Then use short bullets below the table for details.
   }
   function talkThrough(){
     if(isLikelyPhone() && !phoneAllowed()){
-      speak("This tool works best on a computer. Go to C M I handbook dot com on a computer and open the Consultant Finder link. You can share or email yourself the link from this phone.");
+      speak("This tool works best on a computer. Go to C M I handbook dot com on a computer and choose the Consultant Finder link. You can share or email yourself the link from this phone.");
       return;
     }
     speak("This tool builds a Microsoft 365 Copilot prompt for finding the right UPMC consultant. Choose the specialty, subspecialty, ZIP, hospital or location, and urgency. Then describe the clinical question without patient identifiers. The prompt asks Copilot to use internal Microsoft 365 sources first, return Outlook email when available, verify current availability and activity from accessible Teams and SharePoint workspace evidence, treat older rosters as possibly stale because of staff turnover, use consultant JSON only as supplemental context, and include a chair or division chief contact if the consultant answer is unclear.");
@@ -811,4 +810,3 @@ Then use short bullets below the table for details.
 </script>
 </body>
 </html>
- 
