@@ -1,6 +1,97 @@
 {
   "lectures": [
     {
+  "id": "shy-20260528-001",
+  "series": "shy",
+  "seriesLabel": "SHY",
+  "date": "2026-05-28",
+  "dateLabel": "5/28/26",
+  "title": "THE PROBLEM WITH “NORMAL” RETHINKING IRON DEFICIENCY IN CLINICAL PRACTICE",
+  "rawTitle": "05/28/26 SHADYSIDE MEDICINE GRAND ROUNDS — \"THE PROBLEM WITH “NORMAL” RETHINKING IRON DEFICIENCY IN CLINICAL PRACTICE\"",
+  "presenter": "Nicoletta Machin, DO, MS",
+  "keywords": [
+    "problem with normal",
+    "iron deficiency",
+    "iron",
+    "ferritin",
+    "transferrin saturation",
+    "anemia",
+    "hematology",
+    "classical hematology",
+    "hemoglobin",
+    "microcytosis",
+    "PURPAW"
+  ],
+  "links": [
+    {
+      "label": "🎥 Watch Recording",
+      "type": "recording",
+      "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/odonwl_upmc_edu/IQCdcM_9CXo8Rb389d3gFb7VAfFrkvwYDWn_QXjP9N0ewKA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=0jaKDn"
+    },
+    {
+      "label": "📄 Transcript",
+      "type": "transcript",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQCQIcfn5eL5Q6YijY2XLxs5AeokKoA7ib5IOY3ail3ynMs?e=q0KdQY"
+    },
+    {
+      "label": "🧾 Take-Home",
+      "type": "take_home",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQBIFZQUV9xYRafpytAKSaxwAYyHBvc8jeCWLRBnkkXiHvA?e=mTQcV7"
+    },
+    {
+      "label": "🧠 Mindmap",
+      "type": "mind_map",
+      "url": "https://examplepages.z13.web.core.windows.net/iron_mind_map.html"
+    }
+  ],
+  "sortOrder": 1
+},
+{
+  "id": "shy-20260514-003",
+  "series": "shy",
+  "seriesLabel": "SHY",
+  "date": "2026-05-14",
+  "dateLabel": "5/14/26",
+  "title": "HEALTHY TRANSITION: PATHWAY TO ADULTHOOD",
+  "rawTitle": "05/14/26 SHADYSIDE MEDICINE GRAND ROUNDS — \"HEALTHY TRANSITION: PATHWAY TO ADULTHOOD\"",
+  "presenter": "Andrew McCormick, MD, FAAP",
+  "keywords": [
+    "healthy transition",
+    "pathway to adulthood",
+    "transition to adulthood",
+    "pediatrics",
+    "adolescent medicine",
+    "young adults",
+    "chronic illness transition",
+    "care coordination",
+    "primary care transition",
+    "TUYMES"
+  ],
+  "links": [
+    {
+      "label": "🎥 Watch Recording",
+      "type": "recording",
+      "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/odonwl_upmc_edu/IQBzC8gkCNVCR7fawBZ_s2pcAWAe6CgCxT3N11s4kXiu1a0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bpq7t"
+    },
+    {
+      "label": "📄 Transcript",
+      "type": "transcript",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQBIwiT0_cu5RIascA8S1vCuAYhX3xoB9apy6vug6hyvYOA?e=rBBMWu"
+    },
+    {
+      "label": "🧾 Take-Home",
+      "type": "take_home",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQA5vSywtAWSR4CcjdSP7meBAcqLdBrrg6Zs0LBpRhPlhwM?e=Iyh4c9"
+    },
+    {
+      "label": "🧠 Mindmap",
+      "type": "mind_map",
+      "url": "https://examplepages.z13.web.core.windows.net/transitions_mind_map.html"
+    }
+  ],
+  "sortOrder": 3
+},
+    {
       "id": "cmi-20260520-001",
       "series": "cmi",
       "seriesLabel": "CMI",
