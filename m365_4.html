@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CMI Consultant Finder — Copilot Payload Builder</title>
+<style>
+:root{--panel:#fff;--accent:#2563eb;--accent2:#1d4ed8;--border:#d1d5db;--text:#111827;--muted:#6b7280;--shadow:0 10px 25px rgba(15,23,42,.12);--r:16px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,#e0f2fe 0,#f3f4f6 40%,#e5e7eb 100%);color:var(--text);min-height:100vh;padding:16px}.wrap{max-width:1220px;margin:auto}.header,.panel,.phoneGate{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow)}.header{padding:16px 18px;position:sticky;top:8px;z-index:10;background:linear-gradient(135deg,#fff,#e0f2fe);backdrop-filter:blur(10px)}.htop,.phead,.actions,.btnRow,.hospitalControls,.phoneActions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.htop,.phead{justify-content:space-between}.title{font-size:1.18rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em;color:var(--accent2)}.subtitle,.hint,.meta{color:var(--muted);font-size:.86rem;line-height:1.4;margin-top:6px}.badge{display:inline-flex;gap:6px;align-items:center;padding:5px 10px;border-radius:999px;background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.18);color:var(--accent2);font-weight:900;font-size:.78rem}.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}.layout{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px}.panel{padding:14px}.ptitle{font-weight:900;display:flex;gap:8px;align-items:center}.step{width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--accent);color:#fff;font-weight:900}fieldset{border:1px solid var(--border);background:#f9fafb;border-radius:12px;padding:10px;margin-top:10px}legend{padding:0 6px;color:var(--muted);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}select,input,textarea{width:100%;margin-top:6px;padding:9px 10px;border:1px solid var(--border);border-radius:8px;font:inherit;background:#fff}textarea{min-height:112px;resize:vertical;line-height:1.45;max-height:240px}select:focus,input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.18)}.row2,.row3{display:grid;gap:10px}.row2{grid-template-columns:1fr 1fr}.row3{grid-template-columns:1fr 1fr 1fr}.otherRow{margin-top:8px}.otherRow[hidden],.feedbackPrompt[hidden]{display:none!important}.opt{display:flex;gap:10px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:8px;font-size:.86rem;line-height:1.3;margin-top:8px}.opt input,.hcheck input{width:auto;margin-top:2px}.btnRow{margin-top:10px}.btn,.mini,.ghost,.smallBtn{border:none;border-radius:10px;padding:10px 12px;font-weight:900;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}.btn{flex:1;min-width:160px}.primary,.mini{background:var(--accent);color:#fff}.primary:hover,.mini:hover{background:var(--accent2)}.secondary{background:#e5e7eb;color:var(--text)}.ghost,.smallBtn{border:1px solid rgba(37,99,235,.35);background:#fff;color:var(--accent2);border-radius:999px}.smallBtn{padding:6px 10px;font-size:.78rem}.hospitalPicker{margin-top:6px}.hospitalPicker summary{list-style:none;cursor:pointer;background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-weight:900;color:var(--accent2);display:flex;justify-content:space-between}.hospitalPicker summary:after{content:"▾"}.hospitalPicker[open] summary:after{content:"▴"}.hospitalBox{margin-top:8px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;max-height:250px;overflow:auto}.hospitalGroup{margin-top:8px}.hospitalGroupTitle{font-size:.74rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2px 0 6px}.hospitalGrid{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}.hcheck{display:flex;gap:7px;border:1px solid var(--border);background:#fff;border-radius:10px;padding:7px 10px;font-size:.82rem;line-height:1.25}.previewPanel{position:sticky;top:106px;max-height:calc(100vh - 122px);display:flex;flex-direction:column;overflow:hidden}.previewPanel fieldset{display:flex;flex-direction:column;min-height:0;flex:1;overflow:hidden}.out{background:#0f172a;color:#e2e8f0;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82rem;line-height:1.5;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;min-height:340px;max-height:calc(100vh - 260px);margin-top:6px}.notice{margin-top:10px;font-size:.82rem;border-radius:10px;padding:9px 11px;line-height:1.4}.safe{color:#065f46;background:rgba(16,185,129,.10);border:1px solid rgba(16,185,129,.35)}.warn{color:#92400e;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.45)}.feedbackCTA{font-size:1.06rem;padding:13px 18px;border:2px solid rgba(37,99,235,.55);animation:pulse 1.8s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.025);box-shadow:0 0 0 8px rgba(37,99,235,0)}}.toast{position:fixed;right:18px;bottom:18px;background:#111827;color:#fff;padding:10px 16px;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.35);font-weight:900;z-index:9999}.phoneGate{display:none;margin-bottom:14px;padding:14px;line-height:1.45;background:#fff7ed}.phoneTitle{font-weight:900;color:#92400e}.deviceToggle{font-size:.78rem;color:var(--muted);margin-top:8px}body.phoneMode .phoneGate{display:block}body.phoneMode:not(.allowPhone) .layout{display:none}@media(max-width:980px){.layout{grid-template-columns:1fr}.previewPanel{position:static;max-height:none}.out{max-height:62vh}.hospitalGrid{grid-template-columns:1fr}}@media(max-width:760px){.row2,.row3{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){.feedbackCTA{animation:none}}
+</style>
+<style>
+/* Restored full Consultant Finder presentation layer. */
+.wrap{max-width:1220px;margin:0 auto}
+.header{padding:16px 18px}
+.htop{align-items:flex-start;gap:12px}
+.actions{align-items:center;gap:8px}
+.badge{white-space:nowrap}
+.panel{min-width:0;max-width:100%}
+.phead{margin-bottom:10px}
+.step{min-width:26px}
+.secondary:hover{background:#d1d5db}
+.ghost:hover,.smallBtn:hover{background:rgba(37,99,235,.08);box-shadow:0 6px 16px rgba(37,99,235,.14)}
+.feedbackCTA{font-weight:1000;background:#fff;color:var(--accent2);border-radius:999px;box-shadow:0 0 0 rgba(37,99,235,0)}
+.feedbackCTA:hover{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(37,99,235,.25)}
+.hospitalPicker summary::-webkit-details-marker{display:none}
+.hospitalPicker summary{align-items:center;gap:10px}
+.hospitalBox{overflow-y:auto;overflow-x:hidden}
+.hospitalGroup:first-child{margin-top:0}
+.hospitalControls{margin-top:8px}
+.hcheck{align-items:flex-start;font-weight:700}
+.out{overflow-y:auto!important;overflow-x:hidden!important;min-width:0;max-width:100%}
+textarea{overflow-y:auto;overflow-x:hidden;white-space:pre-wrap;overflow-wrap:anywhere}
+.toast{max-width:90vw}
+.phoneGate{border:1px solid rgba(245,158,11,.55);box-shadow:var(--shadow)}
+.phoneTitle{font-size:1.02rem}
+.phoneGate p{margin-top:6px;color:#7c2d12}
+.phoneActions{margin-top:10px}
+body.phoneMode.allowPhone .phoneGate{display:block;background:#eff6ff;border-color:rgba(37,99,235,.35)}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid rgba(37,99,235,.35);outline-offset:2px}
+@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,99,235,.28)}50%{transform:scale(1.025);box-shadow:0 0 0 8px rgba(37,99,235,0)}}
+</style>
+</head>
+<body><div class="wrap">
+<section class="phoneGate" id="phoneGate" aria-live="polite"><div class="phoneTitle">Use this from a computer.</div><p>On your computer, go to <strong>cmihandbook.com</strong> and choose the Consultant Finder link. You can share or email yourself this page link below.</p><div class="phoneActions"><button class="mini" id="shareLinkBtn" type="button">📤 Share this link</button><a class="ghost" id="emailSelfBtn" href="mailto:">✉️ Email link to myself</a><button class="ghost" id="continuePhoneBtn" type="button">Continue on phone anyway</button></div><div class="deviceToggle">Phone mode is shown automatically on small touch devices. Use “Continue on phone anyway” only if you still want to build and copy the prompt here.</div></section>
+<header class="header"><div class="htop"><div><div class="title">CMI Consultant Finder — Copilot Payload Builder</div><div class="subtitle">Specialty/subspecialty + UPMC hospital/location + Microsoft 365 Copilot payload.<br><strong>Use only with UPMC Microsoft 365 Copilot. Do not enter patient identifiers.</strong></div><div class="meta">Searches for current practice, principal system role, last known system contact, clinical fit, and referral route. It does not generate quality scores.</div></div><div class="actions"><a class="ghost" id="tutorialLink" href="https://upmchs-my.sharepoint.com/:v:/g/personal/sohnae_upmc_edu/IQBkBYTmBxRBQaMWv45NKd2IARsE7U0XPrWjRW5lVxRbiEU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SPE9uW-" target="_blank" rel="noopener noreferrer" title="tutorial">tutorial</a><span class="badge"><span class="dot"></span> Prototype</span><button class="ghost" id="talkBtn" type="button">🔊 Talk it through</button></div></div></header>
+<div class="layout"><section class="panel"><div class="phead"><div class="ptitle"><span class="step">1</span> Consultant request details</div></div>
+<fieldset><legend>Specialty filters</legend><div class="row2"><div><label class="hint">What kind of consultant?</label><select id="specialty"></select></div><div><label class="hint">Subspecialty / focus</label><select id="subspec"></select></div></div><div class="otherRow" id="otherSpecialtyRow" hidden><label class="hint">Other / write-in specialty or focus</label><input id="otherSpecialty" maxlength="120" placeholder="e.g., complex tendon surgery, dysautonomia"></div><div class="row3"><div><label class="hint">Preferred ZIP</label><input id="zip" maxlength="5" inputmode="numeric" placeholder="e.g., 15232"></div><div><label class="hint">How many names?</label><select id="maxResults"><option>3</option><option selected>5</option><option>8</option><option>10</option></select></div><div><label class="hint">Urgency</label><select id="urgency"><option>Routine</option><option>Time-sensitive</option><option>Urgent clinical need</option></select></div></div><div class="hint">Specialties and subspecialties are embedded in this HTML.</div></fieldset>
+<fieldset><legend>UPMC hospital / location</legend><details class="hospitalPicker" id="hospitalPicker"><summary id="hospitalSummary">PGH hospitals / UPMC locations — none selected</summary><div class="hospitalBox" id="hospitalChoices"></div></details><div class="hospitalControls"><button class="smallBtn" id="selectCoreBtn" type="button">Select PGH hospitals</button><button class="smallBtn" id="clearHospitalsBtn" type="button">Clear hospitals</button></div><div class="otherRow"><label class="hint">Other / write-in location</label><input id="customHospital" maxlength="120" placeholder="e.g., Falk, Mercy, Monroeville, Erie"></div><div class="hint">Optional. Open the PGH hospitals / UPMC locations box and click several hospitals if useful. Leave blank for system-wide UPMC.</div></fieldset>
+<fieldset><legend>Clinical question / area of interest</legend><textarea id="question" placeholder="e.g., proximal hamstring rupture near Shadyside; current principal consultants for repair? Do not include patient identifiers."></textarea></fieldset>
+<fieldset><legend>Options</legend><label class="opt"><input type="checkbox" id="optInternal" checked><span><b>Use authorized Microsoft 365/internal UPMC sources first</b>.</span></label><label class="opt"><input type="checkbox" id="optSignals" checked><span><b>Search authorized internal clinical signals</b> for current practice, principal system role, and last known system contact, not quality.</span></label><label class="opt"><input type="checkbox" id="optExternal" checked><span><b>Use official/public sources second</b> for affiliation, focus, location, and freshness.</span></label><label class="opt"><input type="checkbox" id="optPresence" checked><span><b>Verify current organizational presence carefully</b>; an enabled account alone is insufficient.</span></label><label class="opt"><input type="checkbox" id="optChair" checked><span><b>If unclear, identify a verified routing leader or coordinator</b>.</span></label><label class="opt"><input type="checkbox" id="optRouting" checked><span><b>Include clickable verified email and one concrete next step</b>.</span></label><label class="opt"><input type="checkbox" id="optCaveats" checked><span><b>Flag stale/conflicting data and search gaps</b>.</span></label></fieldset>
+<div class="btnRow"><button class="btn primary" id="seeBtn" type="button">👁 See Prompt</button><button class="btn secondary" id="clearBtn" type="button">🧹 Clear</button></div></section>
+<section class="panel previewPanel"><div class="phead"><div class="ptitle"><span class="step">2</span> Payload Preview</div><div class="actions"><a class="ghost" id="get365Btn" target="_blank" rel="noopener">✅ Get / Activate M365</a><button class="mini" id="copilotBtn" type="button">🪟 Build & Open Copilot</button></div></div><fieldset><legend>Generated payload prompt</legend><div class="out" id="output">You haven't generated a payload yet.
+Select "See Prompt" or "Build & Open Copilot".</div></fieldset><div class="notice safe"><b>Contact design:</b> Each clinician card requests a verified clickable email and a privacy-limited last known system contact date/source class.</div><div class="notice warn"><b>Freshness rule:</b> Contact older than 90 days, missing, or undated triggers both a new internal check and public affiliation verification.</div><div class="notice warn"><b>Tip:</b> Use <b>Get / Activate M365</b> first if needed, then open Copilot, select <b>Think Deeper</b>, click the chat box, and paste.</div><div class="notice safe feedbackPrompt" id="feedbackPrompt" hidden aria-live="polite"><b>Help improve Consultant Finder:</b> Share omissions, concerns, routing experience, and tool feedback.<div class="btnRow"><a class="ghost feedbackCTA" id="feedbackFormBtn" target="_blank" rel="noopener">📝 Share consultant insights</a></div></div><div class="meta">Contributor feedback is supplemental operational context and is not converted into a quality score. Copilot opens separately in Microsoft 365.</div></section></div></div>
+<script>
+(()=>{"use strict";
+const COPILOT_URL="https://www.microsoft365.com/copilot",ACTIVATE_URL="https://apps.powerapps.com/play/e/c34e244b-e683-4eef-bb66-67176b581713/a/daf86d65-9ffb-4e95-aaf2-388bbb5304bf?tenantId=8b3dd73e-4e72-4679-b191-56da1588712b&hint=2e699ac1-227b-4779-ac48-f7a1b3ff5631&sourcetime=1743427811944",FORM_URL="https://forms.cloud.microsoft/r/zncnZ3iz5r",WORKBOOK_URL="https://upmchs.sharepoint.com/:x:/s/CMIPrimaryCareEducationSeriesReview700/IQCI5ILkwq2iRaBLF4twqiFhAdK67rVqO9MaeKQdR9PUPTg?e=u7fwuv";
+const HANDBOOK_URL="https://cmihandbook.com",SHARE_TITLE="CMI Consultant Finder",SHARE_TEXT="On your computer, go to cmihandbook.com and choose the Consultant Finder link.";
+const MAP={
+  "Internal Medicine":["General","Other"],
+  "Cardiology":["General","Interventional","Heart Failure and Transplant","Electrophysiology","Preventive","Cardio Oncology","Adult Congenital Heart Disease","Sports Cardiology","Women’s Cardiology","Vascular Medicine","Other"],
+  "Endocrinology":["General","Diabetes and Metabolism","Thyroid Disorders","Pituitary","Bone and Mineral","Adrenal Disorders","Reproductive Endocrinology","Lipid Disorders","Other"],
+  "Nephrology":["General","End Stage Renal Disease and Dialysis","Kidney Transplantation","Hypertension","Glomerular Disease","Electrolyte and Acid Base Disorders","Genetic Renal Diseases","Onco Nephrology","Pediatric Nephrology","Other"],
+  "Rheumatology":["General","Inflammatory Arthritis","Systemic Autoimmune Disorders","Vasculitis","Crystalline Arthropathies","Musculoskeletal Pain Syndromes","Bone and Metabolism Disorders","Pediatric Rheumatology","Pregnancy Related Rheumatology","Other"],
+  "Gastroenterology":["General","Hepatology","Inflammatory Bowel Disease","Gastroenterology Oncology","Motility Disorders","Advanced Endoscopy and Procedures","Pediatric Gastroenterology","Celiac Disease","Nutritional Disorders","Pancreatic Disease","Other"],
+  "Infectious Disease":["General","HIV/ AIDS","Tropical and Travel","Antibiotic Stewardship","Mycology","Virology","Infection Control","Pediatric ID","Tropical Diseases","Sexually Transmitted Diseases","Other"],
+  "Hematology":["General","Hematologic Malignancies","Coagulation and Hemostasis","Bone Marrow Failure Syndromes","Hemoglobinopathies and Red Cell Disorders","Pediatric Hematology","Laboratory Hematology","Other"],
+  "Oncology":["General","Other"],
+  "Pulmonary":["General","Interstitial Lung Disease","Interventional Pulmonology","Sleep Medicine","Obstructive Lung Disease","Lung Transplantation","Other"],
+  "General Surgery":["General","Other"],
+  "Vascular Surgery":["General","Endovascular Surgery","Open Vascular Surgery","Aortic Surgery","Venous Disease","Peripheral Arterial Surgery and Limb Salvage","Carotid and Cerebrovascular Disease","Dialysis Access","Thoracic Outlet and Vascular Compression Syndromes","Other"],
+  "Colorectal Surgery":["General","Colorectal Cancer Surgery","Inflammatory Bowel Disease Surgery","Pelvic Floor Disorders","Anorectal Surgery","Diverticular Disease","Other"],
+  "Neurosurgery":["General","Spinal Surgery","Cerebrovascular Surgery","Neuro-Oncology Surgery","Functional Neurosurgery","Pediatric Neurosurgery","Peripheral Nerve Surgery","Skull Base Neurosurgery","Epilepsy Surgery","Stereotactic and Radiosurgery","Pain Neurosurgery","Other"],
+  "Cardiothoracic Surgery":["General","Adult Cardiac Surgery","Thoracic Surgery","Aortic Surgery","Congenital Heart Surgery","Esophageal Surgery","Minimally Invasive and Robotic Surgery","Other"],
+  "Orthopedic Surgery":["General","Sports Medicine","Joint Replacement Surgery","Spine Surgery","Hand and Upper Extremity Surgery","Foot and Ankle Surgery","Pediatric Orthopedic Surgery","Orthopedic Oncology Surgery","Shoulder and Elbow Surgery","Adult Reconstructive Orthopedics","Other"],
+  "Urologic Surgery":["General","Urologic Oncology","Endourology and Stone Disease","Male Infertility Surgery","Female Pelvic Floor Surgery and Uro Gynecology","Pediatric Urology","Reconstructive Urology","Neuro Urology and Incontinence Surgery","BPH/TURP/UroLift","Other"],
+  "Neurology":["General","Stroke Neurology","Headaches","Seizures Disorders","Movement Disorders","Multiple Sclerosis","Cognitive and Behavioral Neurology","Neuro-Oncology","Sleep Medicine","Pediatric Neurology","Other"],
+  "Plastic Surgery":["General","Aesthetic Surgery","Hand Surgery","Reconstructive Surgery","Craniofacial Surgery","Breast Surgery","Lymphedema Surgery","Gender Affirming Surgery","Pediatric Surgery","Other"],
+  "Psychiatry":["General","Geriatric Psychiatry","Addiction Psychiatry","Child and Adolescent Psychiatry","Other"],
+  "Dermatology":["General","Moh’s Micrographic Surgery","Cosmetic Dermatology","Immunodermatology","Pediatric Dermatology","Other"],
+  "Ophthalmology":["General","Corneal disease","Retina and Vitreous","Glaucoma","Pediatric Ophthalmology","Neuro Ophthalmology","Oncology","Cataract and Anterior Segment","Cataracts","Other"],
+  "ENT":["General","Otology","Neuro-Otology","Rhinology and Sinus Surgery","Laryngology","Head and Neck Oncology","Pediatric Otology","Allergy","Facial and Reconstructive Surgery","Sleep Medicine Surgery","Other"],
+  "Physiatry":["General","Pain Medicine","Sports Medicine","Spinal Cord Injury Medicine","Brain Injury Medicine","Neuromuscular Medicine","Pediatric Rehabilitation","Other"],
+  "Other":["General","Other"]
+};
+const HOSPITALS=["UPMC Presbyterian","UPMC Montefiore","UPMC Shadyside","UPMC Magee-Womens Hospital","UPMC Mercy","UPMC Children's Hospital of Pittsburgh","UPMC Western Psychiatric Hospital","UPMC Eye & Ear Institute","UPMC Hillman Cancer Center","UPMC St. Margaret","UPMC Passavant – McCandless","UPMC Passavant – Cranberry","UPMC East","UPMC McKeesport","UPMC Washington","UPMC Altoona","UPMC Bedford","UPMC Carlisle","UPMC Chautauqua","UPMC Cole","UPMC Community Osteopathic","UPMC Hamot","UPMC Hanover","UPMC Harrisburg","UPMC Kane","UPMC Lititz","UPMC Lock Haven","UPMC Memorial","UPMC Muncy","UPMC Northwest","UPMC Somerset","UPMC Wellsboro","UPMC Williamsport","UPMC Western Maryland","Other / not sure"],CORE=new Set(HOSPITALS.slice(0,14)),$=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const e={sp:$("specialty"),sub:$("subspec"),orow:$("otherSpecialtyRow"),other:$("otherSpecialty"),zip:$("zip"),max:$("maxResults"),urg:$("urgency"),custom:$("customHospital"),choices:$("hospitalChoices"),summary:$("hospitalSummary"),q:$("question"),out:$("output"),feedback:$("feedbackPrompt")};$("get365Btn").href=ACTIVATE_URL;$("feedbackFormBtn").href=FORM_URL;
+function toast(t,ms){const n=document.createElement("div");n.className="toast";n.textContent=t;document.body.appendChild(n);setTimeout(()=>n.remove(),ms||2600)}
+function speak(text){try{if(!("speechSynthesis" in window)||!("SpeechSynthesisUtterance" in window))return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.rate=1.05;u.pitch=1;window.speechSynthesis.speak(u)}catch(x){}}
+function copy(t){if(navigator.clipboard?.writeText)return navigator.clipboard.writeText(t);return new Promise((r,j)=>{try{const a=document.createElement("textarea");a.value=t;a.style.position="fixed";a.style.left="-9999px";document.body.appendChild(a);a.focus();a.select();document.execCommand("copy");a.remove();r()}catch(x){j(x)}})}
+function init(){e.sp.innerHTML='<option value="">Any specialty…</option>'+Object.keys(MAP).map(x=>`<option>${esc(x)}</option>`).join("");subs();const group=(t,a)=>`<div class="hospitalGroup"><div class="hospitalGroupTitle">${t}</div><div class="hospitalGrid">${a.map(x=>`<label class="hcheck"><input type="checkbox" value="${esc(x)}"><span>${esc(x)}</span></label>`).join("")}</div></div>`;e.choices.innerHTML=group("PGH hospitals / nearby",HOSPITALS.filter(x=>CORE.has(x)))+group("Regional UPMC hospitals",HOSPITALS.filter(x=>!CORE.has(x)));e.choices.querySelectorAll("input").forEach(x=>x.onchange=summary);summary()}
+function subs(){const current=e.sub.value,a=MAP[e.sp.value]||[];e.sub.innerHTML='<option value="">Any subspecialty…</option>'+a.map(x=>`<option>${esc(x)}</option>`).join("");if(a.includes(current))e.sub.value=current;updateOther()}
+function updateOther(){const show=e.sp.value==="Other"||e.sub.value==="Other";e.orow.hidden=!show;if(!show)e.other.value=""}
+function selected(){const a=[...e.choices.querySelectorAll("input:checked")].map(x=>x.value);if(e.custom.value.trim()&&!a.includes(e.custom.value.trim()))a.unshift(e.custom.value.trim());return a}function summary(){const a=selected();e.summary.textContent=!a.length?"PGH hospitals / UPMC locations — none selected":a.length<3?"PGH hospitals / UPMC locations — "+a.join("; "):"PGH hospitals / UPMC locations — "+a.length+" selected"}function line(el){return el.value||"(not specified)"}
+function options(){const a=[];if($("optInternal").checked)a.push("Use authorized Microsoft 365 and internal UPMC sources first.");if($("optSignals").checked)a.push("Search authorized Outlook email/attachments, Teams communications, meeting notes/recaps/transcripts, internal writings and talks, SharePoint/OneDrive, referral materials, coverage documents, clinic rosters, and explicit rounding evidence for current practice, principal system role, and last known system contact. Do not use digital activity volume to judge quality.");if($("optExternal").checked)a.push("Use current official and public sources for clinical focus, affiliation, location, freshness, and conflicts.");if($("optPresence").checked)a.push("Use internal evidence only for high-level presence classification. Do not reveal private content. An enabled account alone does not prove active practice.");if($("optChair").checked)a.push("If unclear, identify a verified routing leader, coordinator, or practice contact.");if($("optRouting").checked)a.push("Provide a verified clickable email and one concrete supported next action.");if($("optCaveats").checked)a.push("Flag stale/conflicting information, inaccessible sources, and unresolved gaps.");return a.map(x=>"- "+x).join("\n")}
+function build(){const max=e.max.value,hosp=selected().join("; ")||"System-wide UPMC / no specific hospital selected",other=e.other.value.trim(),sp=other&&e.sp.value==="Other"?line(e.sp)+" — "+other:line(e.sp),sub=other&&(e.sub.value==="Other"||e.sp.value==="Other")?line(e.sub)+" — "+other:line(e.sub);
+const p=`You are helping a UPMC primary care physician identify appropriate current consultants.
+
+GOAL
+Determine who currently practices in the requested area, who appears to be a principal or usual consultant within the system for this problem, the most recent supported system contact, and the best supported referral route. Do not create a quality score or infer quality from private communications.
+
+REQUEST
+Specialty: ${sp}
+Subspecialty or focus: ${sub}
+Preferred UPMC hospital or location: ${hosp}
+Preferred ZIP: ${e.zip.value.trim()||"(not specified)"}
+Urgency: ${e.urg.value}
+Desired number of names: ${max}
+Clinical question or area of interest:
+${e.q.value.trim()||"Find current principal system consultants for this specialty, focus, location, and clinical problem."}
+
+SAFETY AND ACCURACY
+- Do not treat this as emergency triage. For urgent needs, identify the supported urgent pathway, on-call service, emergency department, or transfer route.
+- Do not request, reproduce, or expose patient identifiers.
+- Never invent a physician, email, phone number, referral route, affiliation, procedure capability, practice status, system role, or contact date.
+
+PRIMARY SEARCH RULE
+Search broadly before ranking. Build the full reasonable candidate pool from all accessible relevant sources before selecting the best-supported current system matches.
+
+Search when accessible: M365 People and contact cards; authorized Outlook email and attachments; Teams chats/channels/meeting chats/notes/recaps/transcripts; SharePoint/OneDrive; internal writings, presentations, lectures, and grand rounds; current referral, routing, scheduling, service-line, coverage, and operational documents; current practice and program rosters; approved aggregate provider-level clinical-system evidence; official UPMC pages; current public professional profiles; license/NPI information; and the contributor workbook below.
+
+Do not search for or use consultantjson.txt or an older consultant catalog.
+
+REQUEST-SPECIFIC OPTIONS
+${options()}
+
+BROAD CANDIDATE AND SYNONYM SEARCH
+- Generate all clinically reasonable physicians, practices, programs, clinics, and centers before ranking.
+- Search the problem as written plus disease, anatomical, procedural, surgical, nonsurgical, program, specialty, subspecialty, and abbreviation variants.
+- Include adjacent specialties only when evidence supports relevance.
+- Do not omit a reasonable current clinician merely because another has stronger evidence.
+
+CONTRIBUTOR WORKBOOK
+Use only relevant rows from this workbook as supplemental user-contributed experience, omissions, concerns, and search leads:
+${WORKBOOK_URL}
+- A suggested or missed physician is a lead, not proof of current practice, system role, expertise, or availability.
+- A request that someone not appear requires objective verification.
+- PCP comments may contain favorable or unfavorable referral experiences. Present only directly relevant, non-sensitive comments as clearly labeled user-contributed operational context. Do not convert subjective comments into a quality score or performance judgment.
+- Prefer concrete operational facts: whether a referral was accepted, whether the clinician handled the problem, whether the route worked, whether the physician appears to be a principal destination, and whether a listing seems stale.
+- Do not reveal contributor email addresses, patient information, sensitive comments, irrelevant comments, or the workbook link in the final answer.
+
+CLICKABLE EMAIL RULE
+For every physician, practice, coordinator, or routing leader, provide a verified email when available from M365 People/contact card, Outlook directory, an authorized current internal source, or a current official source.
+- Render it exactly as a clickable Markdown mail link: [email@domain](mailto:email@domain)
+- Example format only: Email: [name@upmc.edu](mailto:name@upmc.edu)
+- Use the same verified address for both visible text and the mailto target.
+- Never infer or construct an email from a naming pattern.
+- If no address is verified, write: Email not verified.
+- Do not add a fabricated subject or body payload.
+
+LAST KNOWN SYSTEM CONTACT RULE
+For each physician, identify the most recent dated, authorized internal system evidence that directly supports current organizational or clinical presence. Label this “Last known system contact.”
+
+Qualifying evidence may include a dated email authored by or directly involving the physician, a substantive Teams communication, a dated internal document authored by the physician, a meeting transcript or presentation showing substantive participation, a current service/coverage/routing document, or authorized aggregate clinical-system evidence.
+
+Do not treat these as last system contact: a passive calendar invitation, distribution-list delivery, automated notification, mere name mention, copied biography, duplicate profile, forwarded copy without new involvement, or an undated item.
+
+Report only:
+- Exact date, if available
+- Source class, such as M365 profile, email, Teams communication, internal document, meeting transcript, coverage document, or approved aggregate clinical-system evidence
+- Age bucket: within 90 days / more than 90 days / date unavailable
+- The limited fact established
+
+Do not quote, summarize, or expose private communication content, correspondents, recipients, patient information, or unrelated details.
+
+THREE-MONTH FRESHNESS ESCALATION
+Calculate age from the response date. If the last known system contact is more than 90 days old, missing, or undated:
+1. Search internally again for newer authorized evidence across M365 People/contact card, Outlook, Teams, SharePoint/OneDrive, current routing/coverage documents, and approved aggregate clinical-system evidence when available.
+2. Search the current public web for continued UPMC affiliation, current official profile, current practice location, retirement or emeritus status, departure, relocation, or conflicting affiliation.
+3. State the result separately as “Internal recheck” and “Public affiliation check,” with dates and source limits.
+4. Do not upgrade a clinician to current practice solely because an old M365 account remains enabled or an old public profile remains online.
+5. If continued affiliation remains unresolved, classify as Needs confirmation rather than current.
+
+CURRENT PRACTICE AND PRINCIPAL SYSTEM ROLE
+Use authorized internal sources only for objective facts: current clinic/service/program role; repeated independent identification as a usual consultant; relevant current authorship/presentation; an explicit current procedural or clinical focus; current referral/coverage role; or authorized operational evidence of current consultation activity.
+
+Principal consultant means a physician or practice supported by current evidence as a usual, central, or repeatedly identified referral destination. It does not mean highest quality. When possible require more than one independent current signal. Do not count duplicate profiles, forwards, copied lists, repeated biographies, or repeated mentions from one underlying source as independent confirmation.
+
+Do not evaluate or infer competence, intelligence, personality, bedside manner, professionalism, productivity, popularity, motives, or intent from internal communications. Do not infer lack of practice from silence. Do not rank by message count, meeting count, document count, or digital activity volume.
+
+ROUNDING AND CLINICAL-SYSTEM EVIDENCE
+Do not infer rounding from email volume, calendar invitations, meeting attendance, Teams presence, or an enabled account. Treat rounding or consultation activity as supported only when an authorized source explicitly identifies current coverage, service assignment, rounding, or signed clinical activity. If approved evidence is unavailable, state: “Current rounding or signed clinical activity was not verified from an authorized clinical-system source.” Use only aggregate provider-level, non-patient-identifying evidence.
+
+CURRENT PRACTICE CLASSIFICATION
+Use one of:
+- Current practice and referral role supported
+- Current organizational presence supported; clinical practice not confirmed
+- Needs confirmation
+- Likely stale or unavailable
+- Uncertain
+
+SEPARATE FOUND FROM RECOMMENDED
+1. BEST SUPPORTED CURRENT SYSTEM MATCHES
+2. OTHER REASONABLE CURRENT CLINICIANS
+3. USER-CONTRIBUTED LEADS AND OPERATIONAL CONTEXT
+4. NEEDS CONFIRMATION OR LIKELY STALE
+
+SOURCE LEDGER
+For every physician list each meaningful source with source class, recognizable general title/context, exact date or recency if available, what it establishes, and what it does not establish. Do not expose private content or cite a source as proving more than it does.
+
+STOPPING RULE
+Continue until either ${max} current clinically reasonable candidates have adequate evidence or all accessible relevant source classes have been searched. Return fewer rather than padding with weak, stale, unrelated, or invented names.
+
+OUTPUT FORMAT
+Use cards or a compact table with no more than five columns:
+Name/contact | Clinical fit and system role | Location/routing | Current practice/contact | Confidence
+
+Order:
+1. Best supported current system matches
+2. Other reasonable current clinicians
+3. User-contributed leads and operational context
+4. Needs confirmation or likely stale
+5. Practical referral and scheduling actions
+6. Suggested referral wording
+7. Routing leader or coordinator if needed
+8. Source coverage and search gaps
+9. Caveats and unresolved conflicts
+
+For each physician or practice separately report:
+- Name and role
+- Clickable verified email, or “Email not verified”
+- Current-practice status
+- Principal/usual system-consultant status
+- Last known system contact: exact date, source class, age bucket, and limited fact established
+- Internal recheck and public affiliation check when contact is older than 90 days, missing, or undated
+- Clinical-topic fit
+- Location and referral route
+- Relevant user-contributed operational context, clearly labeled
+- Confidence and source ledger
+- One concrete supported next action
+
+Do not collapse these into a quality rating.
+
+SOURCE COVERAGE AND GAPS
+List Successfully searched; Searched without useful evidence; and Not accessible or not verified. Address M365 People/directory, Outlook, Teams, meetings/transcripts, SharePoint/OneDrive, internal writings/talks, routing documents, clinic/service/coverage/rounding rosters, approved aggregate clinical-system evidence, contributor workbook, official UPMC pages, public web, license/NPI, and operational scheduling sources. Do not imply a source was searched if it was not.
+
+FINAL FEEDBACK INVITATION
+At the very end include only:
+
+**HELP IMPROVE CONSULTANT FINDER**
+Consultant insights form: ${FORM_URL}`;e.out.textContent=p;return p}
+function clearAll(){e.q.value=e.zip.value=e.custom.value=e.other.value="";e.sp.value="";subs();e.urg.value="Routine";e.max.value="5";e.choices.querySelectorAll("input").forEach(x=>x.checked=false);summary();e.out.textContent='You haven\'t generated a payload yet.\nSelect "See Prompt" or "Build & Open Copilot".'}
+function feedback(){e.feedback.hidden=sessionStorage.getItem("cmiConsultantFeedbackReady")!=="1"||sessionStorage.getItem("cmiConsultantFeedbackDismissed")==="1"}
+function showFeedback(){sessionStorage.setItem("cmiConsultantFeedbackReady","1");feedback()}
+function phoneAllowed(){return sessionStorage.getItem("cmiConsultantAllowPhone")==="1"}
+function isLikelyPhone(){const ua=navigator.userAgent||navigator.vendor||"",uaPhone=/iPhone|iPod|Windows Phone|webOS|BlackBerry|IEMobile|Opera Mini|Android.*Mobile|Mobile Safari/i.test(ua),coarse=window.matchMedia&&window.matchMedia("(pointer: coarse)").matches,shortSide=Math.min(window.innerWidth||9999,window.screen?.width||9999,window.screen?.height||9999),longSide=Math.max(window.innerWidth||0,window.innerHeight||0,window.screen?.width||0,window.screen?.height||0),touchPhoneSize=!!coarse&&shortSide<=820&&longSide<=1180,narrowTouch=(navigator.maxTouchPoints||0)>1&&(window.innerWidth||9999)<=820;return uaPhone||touchPhoneSize||narrowTouch}
+function shareUrl(){return location.protocol==="http:"||location.protocol==="https:"?location.href:HANDBOOK_URL}
+function updateShareTargets(){const url=shareUrl(),body=`${SHARE_TEXT}\n\n${HANDBOOK_URL}\n\nCurrent page link, if available:\n${url}`;$("emailSelfBtn").href="mailto:?subject="+encodeURIComponent(SHARE_TITLE)+"&body="+encodeURIComponent(body)}
+function applyDeviceMode(){const phone=isLikelyPhone();document.body.classList.toggle("phoneMode",phone);document.body.classList.toggle("allowPhone",phone&&phoneAllowed());updateShareTargets()}
+function showPhoneMessage(){sessionStorage.removeItem("cmiConsultantAllowPhone");applyDeviceMode();$("phoneGate").scrollIntoView({behavior:"smooth",block:"start"});toast("Use this from a computer. Go to cmihandbook.com.",3600);speak("This consultant finder works best on a computer. Go to C M I handbook dot com on a computer and choose the Consultant Finder link. You can share or email yourself the link from this page.")}
+function continueOnPhone(){sessionStorage.setItem("cmiConsultantAllowPhone","1");applyDeviceMode();toast("Phone mode bypassed for this session.");speak("Phone bypass enabled. You can build and copy the prompt here, but Microsoft 365 Copilot usually works better from a computer.")}
+async function shareThisLink(){const url=shareUrl(),data={title:SHARE_TITLE,text:SHARE_TEXT+" "+HANDBOOK_URL,url};try{if(navigator.share)await navigator.share(data);else{await copy(url);toast("Link copied. You can paste it into email or messages.")}}catch(x){toast("Share canceled or unavailable.")}}
+function openCopilot(){if(isLikelyPhone()&&!phoneAllowed()){showPhoneMessage();return}const p=build(),finish=()=>{showFeedback();toast("Payload copied. Opening Copilot…",2200);speak("Payload copied. Opening Microsoft 365 Copilot. Select Think Deeper mode if available, then click in the chat box and paste the prompt with Control V or Command V.");setTimeout(()=>window.open(COPILOT_URL,"_blank","noopener"),1200)};copy(p).then(finish,()=>{showFeedback();toast("Clipboard blocked. Select and copy the prompt manually.",3600);speak("The clipboard was blocked. Microsoft 365 Copilot will open. Return to this page and copy the visible prompt manually.");setTimeout(()=>window.open(COPILOT_URL,"_blank","noopener"),1200)})}
+function talkThrough(){if(isLikelyPhone()&&!phoneAllowed()){speak("This tool works best on a computer. Go to C M I handbook dot com on a computer and choose the Consultant Finder link. You can share or email yourself the link from this phone.");return}speak("This tool builds a Microsoft 365 Copilot prompt for finding current UPMC consultants. Choose the specialty, subspecialty, ZIP, hospital or location, and urgency. Then describe the clinical question without patient identifiers. The prompt searches broadly before ranking, distinguishes current practice from organizational presence, requests verified clickable email and referral routing, records a privacy-limited last known system contact, and triggers fresh internal and public checks when evidence is older than ninety days, missing, or undated. Contributor feedback is used only as supplemental operational context, never as a quality score.")}
+
+e.sp.addEventListener("change",subs);
+e.sub.addEventListener("change",updateOther);
+e.custom.addEventListener("input",summary);
+$("seeBtn").addEventListener("click",()=>{build();toast("Payload generated below.")});
+$("clearBtn").addEventListener("click",clearAll);
+$("copilotBtn").addEventListener("click",openCopilot);
+$("talkBtn").addEventListener("click",talkThrough);
+$("get365Btn").addEventListener("click",ev=>{if(isLikelyPhone()&&!phoneAllowed()){ev.preventDefault();showPhoneMessage()}});
+$("selectCoreBtn").addEventListener("click",()=>{e.choices.querySelectorAll("input").forEach(x=>x.checked=CORE.has(x.value));summary();toast("Selected PGH hospitals / nearby UPMC locations.")});
+$("clearHospitalsBtn").addEventListener("click",()=>{e.choices.querySelectorAll("input").forEach(x=>x.checked=false);summary();toast("Cleared hospital selections.")});
+$("continuePhoneBtn").addEventListener("click",continueOnPhone);
+$("shareLinkBtn").addEventListener("click",shareThisLink);
+$("feedbackFormBtn").addEventListener("click",()=>{sessionStorage.setItem("cmiConsultantFeedbackDismissed","1");feedback()});
+window.addEventListener("resize",applyDeviceMode);
+window.addEventListener("orientationchange",()=>setTimeout(applyDeviceMode,250));
+init();applyDeviceMode();feedback();
+})();
+</script></body></html>
