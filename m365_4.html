@@ -43,7 +43,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid rgb
 <section class="phoneGate" id="phoneGate" aria-live="polite"><div class="phoneTitle">Use this from a computer.</div><p>On your computer, go to <strong>cmihandbook.com</strong> and choose the Consultant Finder link. You can share or email yourself this page link below.</p><div class="phoneActions"><button class="mini" id="shareLinkBtn" type="button">📤 Share this link</button><a class="ghost" id="emailSelfBtn" href="mailto:">✉️ Email link to myself</a><button class="ghost" id="continuePhoneBtn" type="button">Continue on phone anyway</button></div><div class="deviceToggle">Phone mode is shown automatically on small touch devices. Use “Continue on phone anyway” only if you still want to build and copy the prompt here.</div></section>
 <header class="header"><div class="htop"><div><div class="title">CMI Consultant Finder — Copilot Payload Builder</div><div class="subtitle">Specialty/subspecialty + UPMC hospital/location + Microsoft 365 Copilot payload.<br><strong>Use only with UPMC Microsoft 365 Copilot. Do not enter patient identifiers.</strong></div><div class="meta">Searches for current practice, principal system role, last known system contact, clinical fit, and referral route. It does not generate quality scores.</div></div><div class="actions"><a class="ghost" id="tutorialLink" href="https://upmchs-my.sharepoint.com/:v:/g/personal/sohnae_upmc_edu/IQBkBYTmBxRBQaMWv45NKd2IARsE7U0XPrWjRW5lVxRbiEU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SPE9uW-" target="_blank" rel="noopener noreferrer" title="tutorial">tutorial</a><span class="badge"><span class="dot"></span> Prototype</span><button class="ghost" id="talkBtn" type="button">🔊 Talk it through</button></div></div></header>
 <div class="layout"><section class="panel"><div class="phead"><div class="ptitle"><span class="step">1</span> Consultant request details</div></div>
-<fieldset><legend>Specialty filters</legend><div class="row2"><div><label class="hint">What kind of consultant?</label><select id="specialty"></select></div><div><label class="hint">Subspecialty / focus</label><select id="subspec"></select></div></div><div class="otherRow" id="otherSpecialtyRow" hidden><label class="hint">Other / write-in specialty or focus</label><input id="otherSpecialty" maxlength="120" placeholder="e.g., complex tendon surgery, dysautonomia"></div><div class="row3"><div><label class="hint">Preferred ZIP</label><input id="zip" maxlength="5" inputmode="numeric" placeholder="e.g., 15232"></div><div><label class="hint">How many names?</label><select id="maxResults"><option>3</option><option selected>5</option><option>8</option><option>10</option></select></div><div><label class="hint">Urgency</label><select id="urgency"><option>Routine</option><option>Time-sensitive</option><option>Urgent clinical need</option></select></div></div><div class="hint">Specialties and subspecialties are embedded in this HTML.</div></fieldset>
+<fieldset><legend>Specialty filters</legend><div class="row2"><div><label class="hint">What kind of consultant?</label><select id="specialty"></select></div><div><label class="hint">Subspecialty / focus</label><select id="subspec"></select></div></div><div class="otherRow" id="otherSpecialtyRow" hidden><label class="hint">Other / write-in specialty or focus</label><input id="otherSpecialty" maxlength="120" placeholder="e.g., complex tendon surgery, dysautonomia"></div><div class="row3"><div><label class="hint">Preferred ZIP</label><input id="zip" maxlength="5" inputmode="numeric" placeholder="e.g., 15232"></div><div><label class="hint">Detailed consultant cards</label><select id="maxResults"><option>3</option><option>5</option><option>8</option><option selected>10</option></select></div><div><label class="hint">Urgency</label><select id="urgency"><option>Routine</option><option>Time-sensitive</option><option>Urgent clinical need</option></select></div></div><div class="hint">The number controls detailed cards only. Copilot must still find and preserve all relevant names.</div></fieldset>
 <fieldset><legend>UPMC hospital / location</legend><details class="hospitalPicker" id="hospitalPicker"><summary id="hospitalSummary">PGH hospitals / UPMC locations — none selected</summary><div class="hospitalBox" id="hospitalChoices"></div></details><div class="hospitalControls"><button class="smallBtn" id="selectCoreBtn" type="button">Select PGH hospitals</button><button class="smallBtn" id="clearHospitalsBtn" type="button">Clear hospitals</button></div><div class="otherRow"><label class="hint">Other / write-in location</label><input id="customHospital" maxlength="120" placeholder="e.g., Falk, Mercy, Monroeville, Erie"></div><div class="hint">Optional. Open the PGH hospitals / UPMC locations box and click several hospitals if useful. Leave blank for system-wide UPMC.</div></fieldset>
 <fieldset><legend>Clinical question / area of interest</legend><textarea id="question" placeholder="e.g., proximal hamstring rupture near Shadyside; current principal consultants for repair? Do not include patient identifiers."></textarea></fieldset>
 <fieldset><legend>Options</legend><label class="opt"><input type="checkbox" id="optInternal" checked><span><b>Use authorized Microsoft 365/internal UPMC sources first</b>.</span></label><label class="opt"><input type="checkbox" id="optSignals" checked><span><b>Search authorized internal clinical signals</b> for current practice, principal system role, and last known system contact, not quality.</span></label><label class="opt"><input type="checkbox" id="optExternal" checked><span><b>Use official/public sources second</b> for affiliation, focus, location, and freshness.</span></label><label class="opt"><input type="checkbox" id="optPresence" checked><span><b>Verify current organizational presence carefully</b>; an enabled account alone is insufficient.</span></label><label class="opt"><input type="checkbox" id="optChair" checked><span><b>If unclear, identify a verified routing leader or coordinator</b>.</span></label><label class="opt"><input type="checkbox" id="optRouting" checked><span><b>Include clickable verified email and one concrete next step</b>.</span></label><label class="opt"><input type="checkbox" id="optCaveats" checked><span><b>Flag stale/conflicting data and search gaps</b>.</span></label></fieldset>
@@ -103,7 +103,8 @@ Subspecialty or focus: ${sub}
 Preferred UPMC hospital or location: ${hosp}
 Preferred ZIP: ${e.zip.value.trim()||"(not specified)"}
 Urgency: ${e.urg.value}
-Desired number of names: ${max}
+Detailed consultant cards requested: up to ${max}
+Important: this is a display limit, never a search limit. Find all relevant consultants and preserve every relevant name found.
 Clinical question or area of interest:
 ${e.q.value.trim()||"Find current principal system consultants for this specialty, focus, location, and clinical problem."}
 
@@ -113,7 +114,7 @@ SAFETY AND ACCURACY
 - Never invent a physician, email, phone number, referral route, affiliation, procedure capability, practice status, system role, or contact date.
 
 PRIMARY SEARCH RULE
-Search broadly before ranking. Build the full reasonable candidate pool from all accessible relevant sources before selecting the best-supported current system matches.
+Search broadly before ranking. Build the complete reasonable candidate pool from all accessible relevant sources before selecting the best-supported current system matches. Do not stop searching when the requested number of detailed cards or ten candidates has been reached.
 
 Search when accessible: M365 People and contact cards; authorized Outlook email and attachments; Teams chats/channels/meeting chats/notes/recaps/transcripts; SharePoint/OneDrive; internal writings, presentations, lectures, and grand rounds; current referral, routing, scheduling, service-line, coverage, and operational documents; current practice and program rosters; approved aggregate provider-level clinical-system evidence; official UPMC pages; current public professional profiles; license/NPI information; and the contributor workbook below.
 
@@ -127,6 +128,8 @@ BROAD CANDIDATE AND SYNONYM SEARCH
 - Search the problem as written plus disease, anatomical, procedural, surgical, nonsurgical, program, specialty, subspecialty, and abbreviation variants.
 - Include adjacent specialties only when evidence supports relevance.
 - Do not omit a reasonable current clinician merely because another has stronger evidence.
+- Treat completeness and presentation as separate steps: first find the full reasonable candidate pool; only then rank and decide which candidates receive detailed cards.
+- For a requested subspecialty, search the subspecialty itself, its parent specialty, closely related surgical and nonsurgical services, named programs/centers, current rosters, and referral pathways so a prominent relevant clinician is not missed because of taxonomy or title differences.
 
 CONTRIBUTOR WORKBOOK
 Use only relevant rows from this workbook as supplemental user-contributed experience, omissions, concerns, and search leads:
@@ -190,14 +193,21 @@ Use one of:
 SEPARATE FOUND FROM RECOMMENDED
 1. BEST SUPPORTED CURRENT SYSTEM MATCHES
 2. OTHER REASONABLE CURRENT CLINICIANS
-3. USER-CONTRIBUTED LEADS AND OPERATIONAL CONTEXT
-4. NEEDS CONFIRMATION OR LIKELY STALE
+3. ADDITIONAL RELEVANT NAMES BEYOND THE DETAILED-CARD LIMIT
+4. USER-CONTRIBUTED LEADS AND OPERATIONAL CONTEXT
+5. NEEDS CONFIRMATION OR LIKELY STALE
 
 SOURCE LEDGER
-For every physician list each meaningful source with source class, recognizable general title/context, exact date or recency if available, what it establishes, and what it does not establish. Do not expose private content or cite a source as proving more than it does.
+For every physician receiving a detailed card, list each meaningful source with source class, recognizable general title/context, exact date or recency if available, what it establishes, and what it does not establish. For names beyond the detailed-card limit, give the name, role/focus, current-status classification, and a brief basis for inclusion without inventing unsupported details. Do not expose private content or cite a source as proving more than it does.
 
 STOPPING RULE
-Continue until either ${max} current clinically reasonable candidates have adequate evidence or all accessible relevant source classes have been searched. Return fewer rather than padding with weak, stale, unrelated, or invented names.
+Continue until all accessible relevant source classes have been searched and the full reasonable candidate pool has been assembled. Reaching ${max} detailed candidates or ten total candidates is not a stopping condition. Return fewer than ${max} detailed cards only when no additional defensible candidates are found; never pad with weak, stale, unrelated, or invented names.
+
+RESULT-CAP RULE
+- Provide full detailed cards for up to ${max} best-supported candidates, with an absolute maximum of ten detailed cards.
+- If more candidates are relevant, include every remaining name under “Additional relevant names beyond the detailed-card limit,” with role/focus, current-status classification, and brief basis for inclusion when available.
+- Do not silently drop, hide, or fail to mention a relevant name merely because the detailed-card limit has been reached.
+- If ten or fewer defensible candidates exist and ${max} is ten, provide detailed cards for all of them. If more than ten exist, detail the best-supported ten and list all remaining relevant names.
 
 OUTPUT FORMAT
 Use cards or a compact table with no more than five columns:
@@ -206,13 +216,14 @@ Name/contact | Clinical fit and system role | Location/routing | Current practic
 Order:
 1. Best supported current system matches
 2. Other reasonable current clinicians
-3. User-contributed leads and operational context
-4. Needs confirmation or likely stale
-5. Practical referral and scheduling actions
-6. Suggested referral wording
-7. Routing leader or coordinator if needed
-8. Source coverage and search gaps
-9. Caveats and unresolved conflicts
+3. Additional relevant names beyond the detailed-card limit, if any
+4. User-contributed leads and operational context
+5. Needs confirmation or likely stale
+6. Practical referral and scheduling actions
+7. Suggested referral wording
+8. Routing leader or coordinator if needed
+9. Source coverage and search gaps
+10. Caveats and unresolved conflicts
 
 For each physician or practice separately report:
 - Name and role
@@ -237,7 +248,7 @@ At the very end include only:
 
 **HELP IMPROVE CONSULTANT FINDER**
 Consultant insights form: ${FORM_URL}`;e.out.textContent=p;return p}
-function clearAll(){e.q.value=e.zip.value=e.custom.value=e.other.value="";e.sp.value="";subs();e.urg.value="Routine";e.max.value="5";e.choices.querySelectorAll("input").forEach(x=>x.checked=false);summary();e.out.textContent='You haven\'t generated a payload yet.\nSelect "See Prompt" or "Build & Open Copilot".'}
+function clearAll(){e.q.value=e.zip.value=e.custom.value=e.other.value="";e.sp.value="";subs();e.urg.value="Routine";e.max.value="10";e.choices.querySelectorAll("input").forEach(x=>x.checked=false);summary();e.out.textContent='You haven\'t generated a payload yet.\nSelect "See Prompt" or "Build & Open Copilot".'}
 function feedback(){e.feedback.hidden=sessionStorage.getItem("cmiConsultantFeedbackReady")!=="1"||sessionStorage.getItem("cmiConsultantFeedbackDismissed")==="1"}
 function showFeedback(){sessionStorage.setItem("cmiConsultantFeedbackReady","1");feedback()}
 function phoneAllowed(){return sessionStorage.getItem("cmiConsultantAllowPhone")==="1"}
