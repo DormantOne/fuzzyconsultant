@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,7 @@
 .step{min-width:26px}
 .secondary:hover{background:#d1d5db}
 .ghost:hover,.smallBtn:hover{background:rgba(37,99,235,.08);box-shadow:0 6px 16px rgba(37,99,235,.14)}
-.feedbackCTA{font-weight:1000;background:#fff;color:var(--accent2);border-radius:999px;box-shadow:0 0 0 rgba(37,99,235,0)}
+.feedbackCTA{font-weight:1000;background:#fff;color:var(--accent2);border-radius:999px;box-shadow:0 0 0 rgba(37,99,235,0);text-decoration:underline;text-underline-offset:3px}
 .feedbackCTA:hover{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(37,99,235,.25)}
 .hospitalPicker summary::-webkit-details-marker{display:none}
 .hospitalPicker summary{align-items:center;gap:10px}
@@ -41,23 +42,24 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid rgb
 </head>
 <body><div class="wrap">
 <section class="phoneGate" id="phoneGate" aria-live="polite"><div class="phoneTitle">Use this from a computer.</div><p>On your computer, go to <strong>cmihandbook.com</strong> and choose the Consultant Finder link. You can share or email yourself this page link below.</p><div class="phoneActions"><button class="mini" id="shareLinkBtn" type="button">📤 Share this link</button><a class="ghost" id="emailSelfBtn" href="mailto:">✉️ Email link to myself</a><button class="ghost" id="continuePhoneBtn" type="button">Continue on phone anyway</button></div><div class="deviceToggle">Phone mode is shown automatically on small touch devices. Use “Continue on phone anyway” only if you still want to build and copy the prompt here.</div></section>
-<header class="header"><div class="htop"><div><div class="title">CMI Consultant Finder — Copilot Payload Builder</div><div class="subtitle">Specialty/subspecialty + UPMC hospital/location + Microsoft 365 Copilot payload.<br><strong>Use only with UPMC Microsoft 365 Copilot. Do not enter patient identifiers.</strong></div><div class="meta">Searches for current practice, principal system role, last known system contact, clinical fit, and referral route. It does not generate quality scores.</div></div><div class="actions"><a class="ghost" id="tutorialLink" href="https://upmchs-my.sharepoint.com/:v:/g/personal/sohnae_upmc_edu/IQBkBYTmBxRBQaMWv45NKd2IARsE7U0XPrWjRW5lVxRbiEU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SPE9uW-" target="_blank" rel="noopener noreferrer" title="tutorial">tutorial</a><span class="badge"><span class="dot"></span> Prototype</span><button class="ghost" id="talkBtn" type="button">🔊 Talk it through</button></div></div></header>
+<header class="header"><div class="htop"><div><div class="title">CMI Consultant Finder — Copilot Payload Builder</div><div class="subtitle">Specialty/subspecialty + UPMC hospital/location + Microsoft 365 Copilot payload.<br><strong>Use only with UPMC Microsoft 365 Copilot. Do not enter patient identifiers.</strong></div><div class="meta">Searches People, departments, leadership, clinical programs, procedures, and referral sources separately before ranking.</div></div><div class="actions"><a class="ghost" id="tutorialLink" href="https://upmchs-my.sharepoint.com/:v:/g/personal/sohnae_upmc_edu/IQBkBYTmBxRBQaMWv45NKd2IARsE7U0XPrWjRW5lVxRbiEU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SPE9uW-" target="_blank" rel="noopener noreferrer" title="tutorial">tutorial</a><span class="badge"><span class="dot"></span> Prototype</span><button class="ghost" id="talkBtn" type="button">🔊 Talk it through</button></div></div></header>
 <div class="layout"><section class="panel"><div class="phead"><div class="ptitle"><span class="step">1</span> Consultant request details</div></div>
-<fieldset><legend>Specialty filters</legend><div class="row2"><div><label class="hint">What kind of consultant?</label><select id="specialty"></select></div><div><label class="hint">Subspecialty / focus</label><select id="subspec"></select></div></div><div class="otherRow" id="otherSpecialtyRow" hidden><label class="hint">Other / write-in specialty or focus</label><input id="otherSpecialty" maxlength="120" placeholder="e.g., complex tendon surgery, dysautonomia"></div><div class="row3"><div><label class="hint">Preferred ZIP</label><input id="zip" maxlength="5" inputmode="numeric" placeholder="e.g., 15232"></div><div><label class="hint">Detailed consultant cards</label><select id="maxResults"><option>3</option><option>5</option><option>8</option><option selected>10</option></select></div><div><label class="hint">Urgency</label><select id="urgency"><option>Routine</option><option>Time-sensitive</option><option>Urgent clinical need</option></select></div></div><div class="hint">The number controls detailed cards only. Copilot must still find and preserve all relevant names.</div></fieldset>
+<fieldset><legend>Specialty filters</legend><div class="row2"><div><label class="hint">What kind of consultant?</label><select id="specialty"></select></div><div><label class="hint">Subspecialty / focus</label><select id="subspec"></select></div></div><div class="otherRow" id="otherSpecialtyRow" hidden><label class="hint">Other / write-in specialty or focus</label><input id="otherSpecialty" maxlength="120" placeholder="e.g., complex tendon surgery, dysautonomia"></div><div class="row3"><div><label class="hint">Preferred ZIP</label><input id="zip" maxlength="5" inputmode="numeric" placeholder="e.g., 15232"></div><div><label class="hint">Search breadth</label><select id="maxResults"><option value="10" selected>All relevant · up to 10 detailed</option></select></div><div><label class="hint">Urgency</label><select id="urgency"><option>Routine</option><option>Time-sensitive</option><option>Urgent clinical need</option></select></div></div><div class="hint">Copilot must complete all discovery passes, detail up to ten matches, and list every additional relevant name.</div></fieldset>
 <fieldset><legend>UPMC hospital / location</legend><details class="hospitalPicker" id="hospitalPicker"><summary id="hospitalSummary">PGH hospitals / UPMC locations — none selected</summary><div class="hospitalBox" id="hospitalChoices"></div></details><div class="hospitalControls"><button class="smallBtn" id="selectCoreBtn" type="button">Select PGH hospitals</button><button class="smallBtn" id="clearHospitalsBtn" type="button">Clear hospitals</button></div><div class="otherRow"><label class="hint">Other / write-in location</label><input id="customHospital" maxlength="120" placeholder="e.g., Falk, Mercy, Monroeville, Erie"></div><div class="hint">Optional. Open the PGH hospitals / UPMC locations box and click several hospitals if useful. Leave blank for system-wide UPMC.</div></fieldset>
 <fieldset><legend>Clinical question / area of interest</legend><textarea id="question" placeholder="e.g., proximal hamstring rupture near Shadyside; current principal consultants for repair? Do not include patient identifiers."></textarea></fieldset>
-<fieldset><legend>Options</legend><label class="opt"><input type="checkbox" id="optInternal" checked><span><b>Use authorized Microsoft 365/internal UPMC sources first</b>.</span></label><label class="opt"><input type="checkbox" id="optSignals" checked><span><b>Search authorized internal clinical signals</b> for current practice, principal system role, and last known system contact, not quality.</span></label><label class="opt"><input type="checkbox" id="optExternal" checked><span><b>Use official/public sources second</b> for affiliation, focus, location, and freshness.</span></label><label class="opt"><input type="checkbox" id="optPresence" checked><span><b>Verify current organizational presence carefully</b>; an enabled account alone is insufficient.</span></label><label class="opt"><input type="checkbox" id="optChair" checked><span><b>If unclear, identify a verified routing leader or coordinator</b>.</span></label><label class="opt"><input type="checkbox" id="optRouting" checked><span><b>Include clickable verified email and one concrete next step</b>.</span></label><label class="opt"><input type="checkbox" id="optCaveats" checked><span><b>Flag stale/conflicting data and search gaps</b>.</span></label></fieldset>
+<fieldset><legend>Options</legend><label class="opt"><input type="checkbox" id="optInternal" checked><span><b>Use Microsoft 365/internal UPMC sources first</b>.</span></label><label class="opt"><input type="checkbox" id="optSignals" checked><span><b>Run separate searches across People, departments, leadership, programs, procedures, and referral documents</b>.</span></label><label class="opt"><input type="checkbox" id="optExternal" checked><span><b>Use official/public sources second</b> to confirm focus and current affiliation.</span></label><label class="opt"><input type="checkbox" id="optPresence" checked><span><b>Verify current practice</b>; keep plausible names as “needs confirmation” instead of dropping them.</span></label><label class="opt"><input type="checkbox" id="optChair" checked><span><b>Include the department/program leader and central referral phone or routing contact</b>.</span></label><label class="opt"><input type="checkbox" id="optRouting" checked><span><b>Include clickable verified email and one concrete next step</b>.</span></label><label class="opt"><input type="checkbox" id="optCaveats" checked><span><b>Flag stale/conflicting data and source gaps</b>.</span></label></fieldset>
 <div class="btnRow"><button class="btn primary" id="seeBtn" type="button">👁 See Prompt</button><button class="btn secondary" id="clearBtn" type="button">🧹 Clear</button></div></section>
 <section class="panel previewPanel"><div class="phead"><div class="ptitle"><span class="step">2</span> Payload Preview</div><div class="actions"><a class="ghost" id="get365Btn" target="_blank" rel="noopener">✅ Get / Activate M365</a><button class="mini" id="copilotBtn" type="button">🪟 Build & Open Copilot</button></div></div><fieldset><legend>Generated payload prompt</legend><div class="out" id="output">You haven't generated a payload yet.
-Select "See Prompt" or "Build & Open Copilot".</div></fieldset><div class="notice safe"><b>Contact design:</b> Each clinician card requests a verified clickable email and a privacy-limited last known system contact date/source class.</div><div class="notice warn"><b>Freshness rule:</b> Contact older than 90 days, missing, or undated triggers both a new internal check and public affiliation verification.</div><div class="notice warn"><b>Tip:</b> Use <b>Get / Activate M365</b> first if needed, then open Copilot, select <b>Think Deeper</b>, click the chat box, and paste.</div><div class="notice safe feedbackPrompt" id="feedbackPrompt" hidden aria-live="polite"><b>Help improve Consultant Finder:</b> Share omissions, concerns, routing experience, and tool feedback.<div class="btnRow"><a class="ghost feedbackCTA" id="feedbackFormBtn" target="_blank" rel="noopener">📝 Share consultant insights</a></div></div><div class="meta">Contributor feedback is supplemental operational context and is not converted into a quality score. Copilot opens separately in Microsoft 365.</div></section></div></div>
+Select "See Prompt" or "Build & Open Copilot".</div></fieldset><div class="notice safe"><b>Completeness design:</b> Copilot searches six independent source families before ranking and performs a second-pass missed-name audit.</div><div class="notice warn"><b>Current-practice check:</b> Directory accounts, email lists, org charts, and old announcements are leads only. Each proposed best match requires positive current clinical evidence plus a focused departure check.</div><div class="notice warn"><b>No silent omissions:</b> Plausible names with incomplete evidence remain visible as “needs confirmation,” and names beyond ten go into an additional-names list.</div><div class="notice warn"><b>Tip:</b> Use <b>Get / Activate M365</b> first if needed, then open Copilot, select <b>Think Deeper</b>, click the chat box, and paste.</div><div class="notice safe feedbackPrompt" id="feedbackPrompt" hidden aria-live="polite"><b>Help improve Consultant Finder:</b> Share specialist suggestions, referral experience, routing pearls, and tool feedback.<div class="btnRow"><a class="ghost feedbackCTA" id="feedbackFormBtn" target="_blank" rel="noopener">📝 Suggest a consultant / Rate this tool</a></div></div><div class="meta">Contributor suggestions are used as additional search leads. Copilot opens separately in Microsoft 365.</div></section></div></div>
 <script>
 (()=>{"use strict";
-const COPILOT_URL="https://www.microsoft365.com/copilot",ACTIVATE_URL="https://apps.powerapps.com/play/e/c34e244b-e683-4eef-bb66-67176b581713/a/daf86d65-9ffb-4e95-aaf2-388bbb5304bf?tenantId=8b3dd73e-4e72-4679-b191-56da1588712b&hint=2e699ac1-227b-4779-ac48-f7a1b3ff5631&sourcetime=1743427811944",FORM_URL="https://forms.cloud.microsoft/r/zncnZ3iz5r",WORKBOOK_URL="https://upmchs.sharepoint.com/:x:/s/CMIPrimaryCareEducationSeriesReview700/IQCI5ILkwq2iRaBLF4twqiFhAdK67rVqO9MaeKQdR9PUPTg?e=u7fwuv";
+const COPILOT_URL="https://www.microsoft365.com/copilot",ACTIVATE_URL="https://apps.powerapps.com/play/e/c34e244b-e683-4eef-bb66-67176b581713/a/daf86d65-9ffb-4e95-aaf2-388bbb5304bf?tenantId=8b3dd73e-4e72-4679-b191-56da1588712b&hint=2e699ac1-227b-4779-ac48-f7a1b3ff5631&sourcetime=1743427811944",FORM_URL="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=Ptc9i3JOeUaxkVbaFYhxK5bmPCveR8VGm32LiBzx7tJUQURISVNYVkJBMjBPWVpLWEw5OFkzSVJVTyQlQCN0PWcu",WORKBOOK_URL="https://upmchs.sharepoint.com/:x:/s/CMIPrimaryCareEducationSeriesReview700/IQCI5ILkwq2iRaBLF4twqiFhAdK67rVqO9MaeKQdR9PUPTg?e=u7fwuv";
 const HANDBOOK_URL="https://cmihandbook.com",SHARE_TITLE="CMI Consultant Finder",SHARE_TEXT="On your computer, go to cmihandbook.com and choose the Consultant Finder link.";
 const MAP={
   "Internal Medicine":["General","Other"],
   "Cardiology":["General","Interventional","Heart Failure and Transplant","Electrophysiology","Preventive","Cardio Oncology","Adult Congenital Heart Disease","Sports Cardiology","Women’s Cardiology","Vascular Medicine","Other"],
   "Endocrinology":["General","Diabetes and Metabolism","Thyroid Disorders","Pituitary","Bone and Mineral","Adrenal Disorders","Reproductive Endocrinology","Lipid Disorders","Other"],
+  "Endocrine Surgery":["General","Thyroid Surgery","Parathyroid Surgery","Adrenal Surgery","Neuroendocrine Tumor Surgery","Other"],
   "Nephrology":["General","End Stage Renal Disease and Dialysis","Kidney Transplantation","Hypertension","Glomerular Disease","Electrolyte and Acid Base Disorders","Genetic Renal Diseases","Onco Nephrology","Pediatric Nephrology","Other"],
   "Rheumatology":["General","Inflammatory Arthritis","Systemic Autoimmune Disorders","Vasculitis","Crystalline Arthropathies","Musculoskeletal Pain Syndromes","Bone and Metabolism Disorders","Pediatric Rheumatology","Pregnancy Related Rheumatology","Other"],
   "Gastroenterology":["General","Hepatology","Inflammatory Bowel Disease","Gastroenterology Oncology","Motility Disorders","Advanced Endoscopy and Procedures","Pediatric Gastroenterology","Celiac Disease","Nutritional Disorders","Pancreatic Disease","Other"],
@@ -90,12 +92,12 @@ function init(){e.sp.innerHTML='<option value="">Any specialty…</option>'+Obje
 function subs(){const current=e.sub.value,a=MAP[e.sp.value]||[];e.sub.innerHTML='<option value="">Any subspecialty…</option>'+a.map(x=>`<option>${esc(x)}</option>`).join("");if(a.includes(current))e.sub.value=current;updateOther()}
 function updateOther(){const show=e.sp.value==="Other"||e.sub.value==="Other";e.orow.hidden=!show;if(!show)e.other.value=""}
 function selected(){const a=[...e.choices.querySelectorAll("input:checked")].map(x=>x.value);if(e.custom.value.trim()&&!a.includes(e.custom.value.trim()))a.unshift(e.custom.value.trim());return a}function summary(){const a=selected();e.summary.textContent=!a.length?"PGH hospitals / UPMC locations — none selected":a.length<3?"PGH hospitals / UPMC locations — "+a.join("; "):"PGH hospitals / UPMC locations — "+a.length+" selected"}function line(el){return el.value||"(not specified)"}
-function options(){const a=[];if($("optInternal").checked)a.push("Use authorized Microsoft 365 and internal UPMC sources first.");if($("optSignals").checked)a.push("Search authorized Outlook email/attachments, Teams communications, meeting notes/recaps/transcripts, internal writings and talks, SharePoint/OneDrive, referral materials, coverage documents, clinic rosters, and explicit rounding evidence for current practice, principal system role, and last known system contact. Do not use digital activity volume to judge quality.");if($("optExternal").checked)a.push("Use current official and public sources for clinical focus, affiliation, location, freshness, and conflicts.");if($("optPresence").checked)a.push("Use internal evidence only for high-level presence classification. Do not reveal private content. An enabled account alone does not prove active practice.");if($("optChair").checked)a.push("If unclear, identify a verified routing leader, coordinator, or practice contact.");if($("optRouting").checked)a.push("Provide a verified clickable email and one concrete supported next action.");if($("optCaveats").checked)a.push("Flag stale/conflicting information, inaccessible sources, and unresolved gaps.");return a.map(x=>"- "+x).join("\n")}
-function build(){const max=e.max.value,hosp=selected().join("; ")||"System-wide UPMC / no specific hospital selected",other=e.other.value.trim(),sp=other&&e.sp.value==="Other"?line(e.sp)+" — "+other:line(e.sp),sub=other&&(e.sub.value==="Other"||e.sp.value==="Other")?line(e.sub)+" — "+other:line(e.sub);
-const p=`You are helping a UPMC primary care physician identify appropriate current consultants.
+function options(){const a=[];if($("optInternal").checked)a.push("Use Microsoft 365 and internal UPMC sources first.");if($("optSignals").checked)a.push("Run separate searches across People, departments, hospital/service leadership, clinical programs, procedure and condition terms, and referral or scheduling documents.");if($("optExternal").checked)a.push("Use current official UPMC and public professional sources second to confirm focus, location, and affiliation.");if($("optPresence").checked)a.push("Verify current practice when possible; keep a plausible name as Needs confirmation rather than silently dropping it.");if($("optChair").checked)a.push("Include a separate Department/program leadership and referral routing section with the relevant current chair, division chief, center or program director, verified email, and the central clinic, referral, or scheduling phone number for this type of consult.");if($("optRouting").checked)a.push("Provide a verified clickable email when available and one concrete referral action.");if($("optCaveats").checked)a.push("Flag stale or conflicting information and state which search families were unavailable.");return a.map(x=>"- "+x).join("\n")}
+function build(){const year=new Date().getFullYear(),max=e.max.value,hosp=selected().join("; ")||"System-wide UPMC / no specific hospital selected",other=e.other.value.trim(),sp=other&&e.sp.value==="Other"?line(e.sp)+" — "+other:line(e.sp),sub=other&&(e.sub.value==="Other"||e.sp.value==="Other")?line(e.sub)+" — "+other:line(e.sub);
+const p=`You are helping a UPMC primary care physician find the right consultant.
 
-GOAL
-Determine who currently practices in the requested area, who appears to be a principal or usual consultant within the system for this problem, the most recent supported system contact, and the best supported referral route. Do not create a quality score or infer quality from private communications.
+PRIMARY RULE
+Use Microsoft 365 and current UPMC-accessible sources as the main source of truth: M365 People and contact cards, the organization directory, departments and divisions, clinical programs and centers, SharePoint/OneDrive, referral and scheduling documents, and official current UPMC pages. Use public professional sources for currentness and conflict checks. Use the contributor workbook only as supplemental leads.
 
 REQUEST
 Specialty: ${sp}
@@ -103,151 +105,95 @@ Subspecialty or focus: ${sub}
 Preferred UPMC hospital or location: ${hosp}
 Preferred ZIP: ${e.zip.value.trim()||"(not specified)"}
 Urgency: ${e.urg.value}
-Detailed consultant cards requested: up to ${max}
-Important: this is a display limit, never a search limit. Find all relevant consultants and preserve every relevant name found.
+Detailed results: up to ${max}, plus a concise list of every additional relevant name found
 Clinical question or area of interest:
-${e.q.value.trim()||"Find current principal system consultants for this specialty, focus, location, and clinical problem."}
-
-SAFETY AND ACCURACY
-- Do not treat this as emergency triage. For urgent needs, identify the supported urgent pathway, on-call service, emergency department, or transfer route.
-- Do not request, reproduce, or expose patient identifiers.
-- Never invent a physician, email, phone number, referral route, affiliation, procedure capability, practice status, system role, or contact date.
-
-PRIMARY SEARCH RULE
-Search broadly before ranking. Build the complete reasonable candidate pool from all accessible relevant sources before selecting the best-supported current system matches. Do not stop searching when the requested number of detailed cards or ten candidates has been reached.
-
-Search when accessible: M365 People and contact cards; authorized Outlook email and attachments; Teams chats/channels/meeting chats/notes/recaps/transcripts; SharePoint/OneDrive; internal writings, presentations, lectures, and grand rounds; current referral, routing, scheduling, service-line, coverage, and operational documents; current practice and program rosters; approved aggregate provider-level clinical-system evidence; official UPMC pages; current public professional profiles; license/NPI information; and the contributor workbook below.
-
-Do not search for or use consultantjson.txt or an older consultant catalog.
+${e.q.value.trim()||"Find the best current UPMC consultant matches for this specialty, focus, location, and clinical problem."}
 
 REQUEST-SPECIFIC OPTIONS
 ${options()}
 
-BROAD CANDIDATE AND SYNONYM SEARCH
-- Generate all clinically reasonable physicians, practices, programs, clinics, and centers before ranking.
-- Search the problem as written plus disease, anatomical, procedural, surgical, nonsurgical, program, specialty, subspecialty, and abbreviation variants.
-- Include adjacent specialties only when evidence supports relevance.
-- Do not omit a reasonable current clinician merely because another has stronger evidence.
-- Treat completeness and presentation as separate steps: first find the full reasonable candidate pool; only then rank and decide which candidates receive detailed cards.
-- For a requested subspecialty, search the subspecialty itself, its parent specialty, closely related surgical and nonsurgical services, named programs/centers, current rosters, and referral pathways so a prominent relevant clinician is not missed because of taxonomy or title differences.
+SEARCH BROADLY BEFORE RANKING
+Build the candidate pool before choosing the best matches. Run these as separate searches rather than one large query:
 
-CONTRIBUTOR WORKBOOK
-Use only relevant rows from this workbook as supplemental user-contributed experience, omissions, concerns, and search leads:
-${WORKBOOK_URL}
-- A suggested or missed physician is a lead, not proof of current practice, system role, expertise, or availability.
-- A request that someone not appear requires objective verification.
-- PCP comments may contain favorable or unfavorable referral experiences. Present only directly relevant, non-sensitive comments as clearly labeled user-contributed operational context. Do not convert subjective comments into a quality score or performance judgment.
-- Prefer concrete operational facts: whether a referral was accepted, whether the clinician handled the problem, whether the route worked, whether the physician appears to be a principal destination, and whether a listing seems stale.
-- Do not reveal contributor email addresses, patient information, sensitive comments, irrelevant comments, or the workbook link in the final answer.
+1. PEOPLE AND DIRECTORY
+Search the requested specialty and subspecialty, the parent specialty, relevant departments and divisions, and both exact and broader professional titles. Follow useful department, clinic, practice, and organization affiliations to additional people.
 
-CLICKABLE EMAIL RULE
-For every physician, practice, coordinator, or routing leader, provide a verified email when available from M365 People/contact card, Outlook directory, an authorized current internal source, or a current official source.
-- Render it exactly as a clickable Markdown mail link: [email@domain](mailto:email@domain)
-- Example format only: Email: [name@upmc.edu](mailto:name@upmc.edu)
-- Use the same verified address for both visible text and the mailto target.
-- Never infer or construct an email from a naming pattern.
-- If no address is verified, write: Email not verified.
-- Do not add a fabricated subject or body payload.
+2. DEPARTMENTS AND LEADERSHIP
+Search current department and division rosters, hospital and service-line leadership, chairs, chiefs, section heads, program directors, and clinical faculty lists. For a subspecialty surgeon or proceduralist, search every plausible parent department rather than assuming one department owns the work.
 
-LAST KNOWN SYSTEM CONTACT RULE
-For each physician, identify the most recent dated, authorized internal system evidence that directly supports current organizational or clinical presence. Label this “Last known system contact.”
+3. CLINICAL PROGRAMS AND CENTERS
+Search the disease, anatomy, procedure, center, institute, multidisciplinary clinic, care team, and specialty program. Identify the current program or center first, then enumerate its physicians, surgeons, director, team roster, and referral route. This step is essential because a prominent clinician may use a broader directory title.
 
-Qualifying evidence may include a dated email authored by or directly involving the physician, a substantive Teams communication, a dated internal document authored by the physician, a meeting transcript or presentation showing substantive participation, a current service/coverage/routing document, or authorized aggregate clinical-system evidence.
+4. PROCEDURE AND CONDITION TERMS
+Run the important disease, anatomy, procedure, procedure-synonym, surgical/nonsurgical, abbreviation, and referral-language terms separately. Combine them with physician, surgeon, specialist, program, center, clinic, and director as appropriate.
 
-Do not treat these as last system contact: a passive calendar invitation, distribution-list delivery, automated notification, mere name mention, copied biography, duplicate profile, forwarded copy without new involvement, or an undated item.
+5. REFERRAL AND OPERATIONAL SOURCES
+Search current referral guides, scheduling instructions, clinic rosters, service directories, coverage documents, presentations, grand rounds, internal clinical writings, and relevant SharePoint/OneDrive material. Outlook and Teams may supply leads or current operational evidence but should not be the only search route.
 
-Report only:
-- Exact date, if available
-- Source class, such as M365 profile, email, Teams communication, internal document, meeting transcript, coverage document, or approved aggregate clinical-system evidence
-- Age bucket: within 90 days / more than 90 days / date unavailable
-- The limited fact established
+6. CONTRIBUTOR AND CONFIRMATION SOURCES
+Check only relevant rows in this contributor workbook for additional names or routing leads: ${WORKBOOK_URL}
+Verify workbook leads elsewhere when possible. Do not show the workbook link in the final answer. Use current official UPMC and public institutional or professional sources to confirm clinical focus, affiliation, or departure.
 
-Do not quote, summarize, or expose private communication content, correspondents, recipients, patient information, or unrelated details.
+COMPLETENESS RULE
+- Do not stop after finding five or ten names. The number ${max} is an output-detail limit, not a search limit.
+- If a result list looks short or capped, repeat with narrower department, program, procedure, disease, anatomy, hospital, and leadership queries.
+- Union and de-duplicate the names from all search paths before ranking.
+- Treat the selected hospital and ZIP as ranking preferences, not discovery boundaries, unless the user explicitly made location mandatory.
+- Give full details for up to ${max} best matches. Preserve every other reasonable name in “Other relevant names found,” even when currentness or exact fit needs confirmation.
+- Never invent a person, role, focus, email, phone number, or referral route.
 
-THREE-MONTH FRESHNESS ESCALATION
-Calculate age from the response date. If the last known system contact is more than 90 days old, missing, or undated:
-1. Search internally again for newer authorized evidence across M365 People/contact card, Outlook, Teams, SharePoint/OneDrive, current routing/coverage documents, and approved aggregate clinical-system evidence when available.
-2. Search the current public web for continued UPMC affiliation, current official profile, current practice location, retirement or emeritus status, departure, relocation, or conflicting affiliation.
-3. State the result separately as “Internal recheck” and “Public affiliation check,” with dates and source limits.
-4. Do not upgrade a clinician to current practice solely because an old M365 account remains enabled or an old public profile remains online.
-5. If continued affiliation remains unresolved, classify as Needs confirmation rather than current.
+CURRENTNESS AND TURNOVER CHECK — APPLY TO EACH PROPOSED BEST MATCH
+An active M365 account, People card, UPMC email address, organization chart, recent mass email or recipient list, meeting invitation, Teams mention, publication affiliation, old announcement, cached result, or historical UPMC page is a discovery lead only. It does not by itself prove current clinical practice.
 
-CURRENT PRACTICE AND PRINCIPAL SYSTEM ROLE
-Use authorized internal sources only for objective facts: current clinic/service/program role; repeated independent identification as a usual consultant; relevant current authorship/presentation; an explicit current procedural or clinical focus; current referral/coverage role; or authorized operational evidence of current consultation activity.
+Before calling a proposed best match current, look for at least one positive, physician-specific current clinical source, such as:
+- A current official UPMC provider profile
+- A current official department, division, center, program, or care-team roster
+- A current physician-specific scheduling or clinical location page
+- A current clinical referral, coverage, or service document
+- Direct current confirmation from the clinic, program, coordinator, or service
 
-Principal consultant means a physician or practice supported by current evidence as a usual, central, or repeatedly identified referral destination. It does not mean highest quality. When possible require more than one independent current signal. Do not count duplicate profiles, forwards, copied lists, repeated biographies, or repeated mentions from one underlying source as independent confirmation.
+Also search the full name of each proposed best match with departure and current-employer terms: “left UPMC,” “departed UPMC,” “joined,” “appointed,” “new role,” “new institution,” “current employer,” and “${year}.” A current outside-institution profile overrides stale UPMC administrative artifacts.
 
-Do not evaluate or infer competence, intelligence, personality, bedside manner, professionalism, productivity, popularity, motives, or intent from internal communications. Do not infer lack of practice from silence. Do not rank by message count, meeting count, document count, or digital activity volume.
+If a current public page is inaccessible, do not treat the access failure as evidence that the person left. Use current internal clinical evidence when available. If only directory, email, or historical evidence is available, label the person “current practice needs confirmation” rather than “current.”
 
-ROUNDING AND CLINICAL-SYSTEM EVIDENCE
-Do not infer rounding from email volume, calendar invitations, meeting attendance, Teams presence, or an enabled account. Treat rounding or consultation activity as supported only when an authorized source explicitly identifies current coverage, service assignment, rounding, or signed clinical activity. If approved evidence is unavailable, state: “Current rounding or signed clinical activity was not verified from an authorized clinical-system source.” Use only aggregate provider-level, non-patient-identifying evidence.
+RANKING
+After discovery and the focused turnover check, rank by direct clinical/procedural fit, current UPMC clinical evidence, preferred location, and practical routing. Do not let a broad leadership title outrank a clearly documented disease- or procedure-specific clinician.
 
-CURRENT PRACTICE CLASSIFICATION
-Use one of:
-- Current practice and referral role supported
-- Current organizational presence supported; clinical practice not confirmed
-- Needs confirmation
-- Likely stale or unavailable
-- Uncertain
+DEPARTMENT / PROGRAM LEADERSHIP AND REFERRAL ROUTING
+After ranking the consultants, separately identify the most relevant current department chair, division chief, center director, program director, or service leader who could route this specific referral. Also find the best-supported central clinic, program, referral, or scheduling phone number for this type of consult.
 
-SEPARATE FOUND FROM RECOMMENDED
-1. BEST SUPPORTED CURRENT SYSTEM MATCHES
-2. OTHER REASONABLE CURRENT CLINICIANS
-3. ADDITIONAL RELEVANT NAMES BEYOND THE DETAILED-CARD LIMIT
-4. USER-CONTRIBUTED LEADS AND OPERATIONAL CONTEXT
-5. NEEDS CONFIRMATION OR LIKELY STALE
+Report:
+- Leader’s name and current role
+- Verified Outlook or official email when available
+- Central referral, clinic, or scheduling phone number
+- What service or referral type the number routes to
+- Source and date or recency for the role and routing information
+- One concrete fallback contact or service if the exact physician assignment remains unclear
 
-SOURCE LEDGER
-For every physician receiving a detailed card, list each meaningful source with source class, recognizable general title/context, exact date or recency if available, what it establishes, and what it does not establish. For names beyond the detailed-card limit, give the name, role/focus, current-status classification, and a brief basis for inclusion without inventing unsupported details. Do not expose private content or cite a source as proving more than it does.
+Do not treat the leader as the best clinical consultant merely because of the leadership title. Never label a personal or departmental business number as a central referral line unless the source supports that function. If the exact central line cannot be verified, say so and provide the best-supported current clinic or program contact instead.
 
-STOPPING RULE
-Continue until all accessible relevant source classes have been searched and the full reasonable candidate pool has been assembled. Reaching ${max} detailed candidates or ten total candidates is not a stopping condition. Return fewer than ${max} detailed cards only when no additional defensible candidates are found; never pad with weak, stale, unrelated, or invented names.
-
-RESULT-CAP RULE
-- Provide full detailed cards for up to ${max} best-supported candidates, with an absolute maximum of ten detailed cards.
-- If more candidates are relevant, include every remaining name under “Additional relevant names beyond the detailed-card limit,” with role/focus, current-status classification, and brief basis for inclusion when available.
-- Do not silently drop, hide, or fail to mention a relevant name merely because the detailed-card limit has been reached.
-- If ten or fewer defensible candidates exist and ${max} is ten, provide detailed cards for all of them. If more than ten exist, detail the best-supported ten and list all remaining relevant names.
+EMAIL
+Provide a verified Outlook or official email when available. Render it as [email@domain](mailto:email@domain). Never construct an email from a naming pattern; otherwise write “Email not verified.”
 
 OUTPUT FORMAT
-Use cards or a compact table with no more than five columns:
-Name/contact | Clinical fit and system role | Location/routing | Current practice/contact | Confidence
+Avoid an ultra-wide table. Use a compact table with no more than five columns:
+Name/contact | best fit for | location/routing | current availability | confidence/sources
 
-Order:
-1. Best supported current system matches
-2. Other reasonable current clinicians
-3. Additional relevant names beyond the detailed-card limit, if any
-4. User-contributed leads and operational context
-5. Needs confirmation or likely stale
-6. Practical referral and scheduling actions
-7. Suggested referral wording
-8. Routing leader or coordinator if needed
-9. Source coverage and search gaps
-10. Caveats and unresolved conflicts
+Then give short sections:
+1. Best matches: up to ${max}, with role, clinical fit, email, location/routing, currentness basis, confidence, and brief source labels/dates.
+2. Other relevant names found: every remaining reasonable name, with role/focus and current / needs confirmation / likely stale.
+3. User leads: only relevant contributor-workbook suggestions, clearly labeled unless independently verified.
+4. Needs confirmation or likely stale: include plausible historical names and any departure/conflict evidence.
+5. Practical routing and scheduling notes.
+6. Department/program leadership and referral routing: current leader, verified email, central referral or scheduling phone, what it routes to, source/recency, and fallback.
+7. A concise suggested referral question or consult-order phrase.
+8. Brief caveats only when a material source or currentness check was unavailable.
 
-For each physician or practice separately report:
-- Name and role
-- Clickable verified email, or “Email not verified”
-- Current-practice status
-- Principal/usual system-consultant status
-- Last known system contact: exact date, source class, age bucket, and limited fact established
-- Internal recheck and public affiliation check when contact is older than 90 days, missing, or undated
-- Clinical-topic fit
-- Location and referral route
-- Relevant user-contributed operational context, clearly labeled
-- Confidence and source ledger
-- One concrete supported next action
+END OF ANSWER
+At the very end, include the following exactly and carry out its instruction. Put nothing after it:
 
-Do not collapse these into a quality rating.
-
-SOURCE COVERAGE AND GAPS
-List Successfully searched; Searched without useful evidence; and Not accessible or not verified. Address M365 People/directory, Outlook, Teams, meetings/transcripts, SharePoint/OneDrive, internal writings/talks, routing documents, clinic/service/coverage/rounding rosters, approved aggregate clinical-system evidence, contributor workbook, official UPMC pages, public web, license/NPI, and operational scheduling sources. Do not imply a source was searched if it was not.
-
-FINAL FEEDBACK INVITATION
-At the very end include only:
-
-**HELP IMPROVE CONSULTANT FINDER**
-Consultant insights form: ${FORM_URL}`;e.out.textContent=p;return p}
+**ADD YOUR FAVORED CONSULTANT TO OUR BANK!**
+Make this clickable: https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=Ptc9i3JOeUaxkVbaFYhxK5bmPCveR8VGm32LiBzx7tJUQURISVNYVkJBMjBPWVpLWEw5OFkzSVJVTyQlQCN0PWcu`;e.out.textContent=p;return p}
 function clearAll(){e.q.value=e.zip.value=e.custom.value=e.other.value="";e.sp.value="";subs();e.urg.value="Routine";e.max.value="10";e.choices.querySelectorAll("input").forEach(x=>x.checked=false);summary();e.out.textContent='You haven\'t generated a payload yet.\nSelect "See Prompt" or "Build & Open Copilot".'}
 function feedback(){e.feedback.hidden=sessionStorage.getItem("cmiConsultantFeedbackReady")!=="1"||sessionStorage.getItem("cmiConsultantFeedbackDismissed")==="1"}
 function showFeedback(){sessionStorage.setItem("cmiConsultantFeedbackReady","1");feedback()}
@@ -260,7 +206,7 @@ function showPhoneMessage(){sessionStorage.removeItem("cmiConsultantAllowPhone")
 function continueOnPhone(){sessionStorage.setItem("cmiConsultantAllowPhone","1");applyDeviceMode();toast("Phone mode bypassed for this session.");speak("Phone bypass enabled. You can build and copy the prompt here, but Microsoft 365 Copilot usually works better from a computer.")}
 async function shareThisLink(){const url=shareUrl(),data={title:SHARE_TITLE,text:SHARE_TEXT+" "+HANDBOOK_URL,url};try{if(navigator.share)await navigator.share(data);else{await copy(url);toast("Link copied. You can paste it into email or messages.")}}catch(x){toast("Share canceled or unavailable.")}}
 function openCopilot(){if(isLikelyPhone()&&!phoneAllowed()){showPhoneMessage();return}const p=build(),finish=()=>{showFeedback();toast("Payload copied. Opening Copilot…",2200);speak("Payload copied. Opening Microsoft 365 Copilot. Select Think Deeper mode if available, then click in the chat box and paste the prompt with Control V or Command V.");setTimeout(()=>window.open(COPILOT_URL,"_blank","noopener"),1200)};copy(p).then(finish,()=>{showFeedback();toast("Clipboard blocked. Select and copy the prompt manually.",3600);speak("The clipboard was blocked. Microsoft 365 Copilot will open. Return to this page and copy the visible prompt manually.");setTimeout(()=>window.open(COPILOT_URL,"_blank","noopener"),1200)})}
-function talkThrough(){if(isLikelyPhone()&&!phoneAllowed()){speak("This tool works best on a computer. Go to C M I handbook dot com on a computer and choose the Consultant Finder link. You can share or email yourself the link from this phone.");return}speak("This tool builds a Microsoft 365 Copilot prompt for finding current UPMC consultants. Choose the specialty, subspecialty, ZIP, hospital or location, and urgency. Then describe the clinical question without patient identifiers. The prompt searches broadly before ranking, distinguishes current practice from organizational presence, requests verified clickable email and referral routing, records a privacy-limited last known system contact, and triggers fresh internal and public checks when evidence is older than ninety days, missing, or undated. Contributor feedback is used only as supplemental operational context, never as a quality score.")}
+function talkThrough(){if(isLikelyPhone()&&!phoneAllowed()){speak("This tool works best on a computer. Go to C M I handbook dot com on a computer and choose the Consultant Finder link. You can share or email yourself the link from this phone.");return}speak("This tool builds a Microsoft 365 Copilot prompt for finding current UPMC consultants. Choose the specialty, subspecialty, ZIP, hospital or location, and urgency. Then describe the clinical question without patient identifiers. Copilot searches People and the organization directory, departments and leadership, clinical programs, procedure and condition terms, referral sources, and contributor leads as separate search paths before ranking. Each proposed best match then receives a focused current-clinical-evidence and departure check. Up to ten matches receive detailed results, and every additional or not yet confirmed relevant name remains visible. A separate routing section identifies the current department or program leader, verified email, central referral or scheduling phone number, what the line routes to, and a fallback contact.")}
 
 e.sp.addEventListener("change",subs);
 e.sub.addEventListener("change",updateOther);
