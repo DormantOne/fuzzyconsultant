@@ -1,6 +1,73 @@
 {
   "lectures": [
     {
+  "id": "cmi-20260730-001",
+  "series": "cmi",
+  "seriesLabel": "CMI",
+  "date": "2026-07-30",
+  "dateLabel": "7/30/26",
+  "title": "Alzheimer's Disease Has Changed: Are You Up to Date?",
+  "rawTitle": "07/30/26 Primary Care Educational Session - Alzheimer's Disease Has Changed: Are You Up to Date?",
+  "presenter": "Dr. Tharick Pascoal",
+  "keywords": [
+    "alzheimer",
+    "alzheimers",
+    "alzheimer's disease",
+    "dementia",
+    "memory loss",
+    "cognitive impairment",
+    "cognitive concerns",
+    "amyloid",
+    "tau",
+    "biomarkers",
+    "serum biomarkers",
+    "blood biomarkers",
+    "anti-amyloid treatment",
+    "lecanemab",
+    "donanemab",
+    "Tharick Pascoal",
+    "AD"
+  ],
+  "links": [
+    {
+      "label": "🎥 Watch Recording",
+      "type": "recording",
+      "url": "https://upmchs.sharepoint.com/:v:/s/CMIRFPProviderEducationSeries/IQB4Hvz__bkSSJT08wpR5vGyAY6qfUdclZrDSNmEWz-R7vY?e=yGR3hC"
+    },
+    {
+      "label": "✅ Get Credit",
+      "type": "related",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQBmL2ETcuUCRYKlJboNQPFUATqp3NlE3mCxcWfOIQ3GoXo?e=T4WqOe"
+    },
+    {
+      "label": "📄 Transcript",
+      "type": "transcript",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQAcZVfQeRJwSJNaRBLWhWIhAdVkRUQ5fy15jS8tyc1U-Kc?e=K6OEt9"
+    },
+    {
+      "label": "🧾 Take-Home",
+      "type": "take_home",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQBdiVtrxvHFQJX8KicJNdjdAYNyRkhasfeZ4J_KV-arBXE?e=0Hef8R"
+    },
+    {
+      "label": "🗺 Mind Map",
+      "type": "mind_map",
+      "url": "https://examplepages.z13.web.core.windows.net/Alzheimers_Mind_Map.html"
+    },
+    {
+      "label": "🧠 Cognitive Concern Workup",
+      "type": "related",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQAmpnKVyVrzQp0uX8BpnkKtAetKohQehsc8DdGZdTTiCW4?e=KzdOze"
+    },
+    {
+      "label": "🧪 Serum Alzheimer Marker Study",
+      "type": "related",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQCAvmCiSmoESLXUsqLvCxG8AabjD1unFbMSY9OfSEEMO6o?e=P3Zm7M"
+    }
+  ],
+  "sortOrder": 1
+},
+    {
   "id": "shy-20260528-001",
   "series": "shy",
   "seriesLabel": "SHY",
