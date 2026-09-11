@@ -22,19 +22,13 @@
     "stress",
     "secondary traumatic stress",
     "Caitlin Matthis",
-    "Melissa Clark",
-    "ROHSAZ"
+    "Melissa Clark"
   ],
   "links": [
     {
       "label": "🎥 Watch Recording",
       "type": "recording",
       "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/odonwl_upmc_edu/IQCVmTYMCzxYTr6gsfjG058YAczhnz7tHmO5mGPkYpEcvQo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=QoKrHu"
-    },
-    {
-      "label": "✅ Text Attendance — ROHSAZ",
-      "type": "attendance",
-      "url": "sms:+14123124424?body=ROHSAZ"
     },
     {
       "label": "📄 Transcript",
