@@ -1,6 +1,60 @@
 {
   "lectures": [
     {
+  "id": "shy-20260910-001",
+  "series": "shy",
+  "seriesLabel": "SHY",
+  "date": "2026-09-10",
+  "dateLabel": "9/10/26",
+  "title": "COPING TECHNIQUES & RESOURCES FOR COMPASSION FATIGUE",
+  "rawTitle": "09/10/26 SHADYSIDE MEDICINE GRAND ROUNDS — \"COPING TECHNIQUES & RESOURCES FOR COMPASSION FATIGUE\"",
+  "presenter": "Caitlin Matthis, DO, FAAFP and Melissa Clark, MD, SEP",
+  "keywords": [
+    "compassion fatigue",
+    "burnout",
+    "physician burnout",
+    "clinician well-being",
+    "resilience",
+    "coping techniques",
+    "coping",
+    "wellness",
+    "mental health",
+    "stress",
+    "secondary traumatic stress",
+    "Caitlin Matthis",
+    "Melissa Clark",
+    "ROHSAZ"
+  ],
+  "links": [
+    {
+      "label": "🎥 Watch Recording",
+      "type": "recording",
+      "url": "https://upmchs-my.sharepoint.com/:v:/g/personal/odonwl_upmc_edu/IQCVmTYMCzxYTr6gsfjG058YAczhnz7tHmO5mGPkYpEcvQo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=QoKrHu"
+    },
+    {
+      "label": "✅ Text Attendance — ROHSAZ",
+      "type": "attendance",
+      "url": "sms:+14123124424?body=ROHSAZ"
+    },
+    {
+      "label": "📄 Transcript",
+      "type": "transcript",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQBqL4q0YXjtRKDinOyqCL29AXc-Lor6zBeFjvLC4XBMCkw?e=sM3Tz4"
+    },
+    {
+      "label": "🧾 Take-Home",
+      "type": "take_home",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQCMyTXdlmt8TrHScSMP-eu7AVzGcrSPUlrDqqo-w2EaUH0?e=9IZ5s2"
+    },
+    {
+      "label": "🧠 Mindmap",
+      "type": "mind_map",
+      "url": "https://examplepages.z13.web.core.windows.net/compassion-mind-map.html"
+    }
+  ],
+  "sortOrder": 1
+},
+    {
   "id": "cmi-20260730-001",
   "series": "cmi",
   "seriesLabel": "CMI",
