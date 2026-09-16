@@ -1,6 +1,70 @@
 {
   "lectures": [
     {
+  "id": "pc-20260915-001",
+  "series": "cmi",
+  "seriesLabel": "Primary Care",
+  "date": "2026-09-15",
+  "dateLabel": "9/15/26",
+  "title": "PRIMARY CARE EPIC PREPAREDNESS FORUM",
+  "rawTitle": "09/15/26 PRIMARY CARE EPIC PREPAREDNESS FORUM",
+  "presenter": "Jose Abad, MD and John Arnold, MD",
+  "keywords": [
+    "Epic",
+    "Epic Bridges",
+    "Bridges",
+    "Epic preparedness",
+    "Epic readiness",
+    "primary care",
+    "go-live",
+    "Epic go-live",
+    "personalization",
+    "referrals",
+    "internal referral",
+    "outgoing referral",
+    "scheduling tickets",
+    "follow-up orders",
+    "labs",
+    "resulting agency",
+    "Quest",
+    "LabCorp",
+    "UPMC Internal",
+    "In Basket",
+    "Secure Chat",
+    "health maintenance",
+    "care gaps",
+    "Draft with ART",
+    "Chart Insights",
+    "Abridge",
+    "Learning Library",
+    "Jose Abad",
+    "John Arnold"
+  ],
+  "links": [
+    {
+      "label": "🎥 Watch Recording",
+      "type": "recording",
+      "url": "https://upmchs.sharepoint.com/:v:/s/CMIRFPProviderEducationSeries/IQAyrHrdwcPeS5ofq0abrGTSAf4fJN1mCoeFe1lPaOqDgKM?e=X7ZJyV"
+    },
+    {
+      "label": "📄 Transcript",
+      "type": "transcript",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQBcn_brjVKpSpRAy59c2KuhAeLuvnqXKBjqgnGnOFJkNbY?e=7Yj54t"
+    },
+    {
+      "label": "🧾 Take-Home",
+      "type": "take_home",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQDUEvOGyBjuQahgTzjmtffdAbFlpYVmdi-J-j1m90VMWpk?e=uVXzb5"
+    },
+    {
+      "label": "✅ Epic Checklist",
+      "type": "checklist",
+      "url": "https://examplepages.z13.web.core.windows.net/Epic_Checklist.html"
+    }
+  ],
+  "sortOrder": 1
+},
+    {
   "id": "shy-20260910-001",
   "series": "shy",
   "seriesLabel": "SHY",
