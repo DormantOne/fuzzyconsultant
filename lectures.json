@@ -1,6 +1,100 @@
 {
   "lectures": [
     {
+  "id": "pc-20260916-001",
+  "series": "cmi",
+  "seriesLabel": "Primary Care",
+  "date": "2026-09-16",
+  "dateLabel": "9/16/26",
+  "title": "NEW STANDARDS OF CARE FOR ATRIAL FIBRILLATION",
+  "rawTitle": "09/16/26 (5:00PM) Primary Care Educational Session - New Standards of Care for Atrial Fibrillation",
+  "presenter": "Sandeep Jain, MD",
+  "keywords": [
+    "atrial fibrillation",
+    "AF",
+    "AFib",
+    "A-fib",
+    "new atrial fibrillation",
+    "atrial fibrillation management",
+    "stroke prevention",
+    "stroke risk",
+    "CHA2DS2-VASc",
+    "CHADS-VASc",
+    "anticoagulation",
+    "DOAC",
+    "DOACs",
+    "apixaban",
+    "Eliquis",
+    "rivaroxaban",
+    "Xarelto",
+    "dabigatran",
+    "Pradaxa",
+    "warfarin",
+    "Coumadin",
+    "aspirin",
+    "rate control",
+    "rhythm control",
+    "cardioversion",
+    "beta blocker",
+    "calcium channel blocker",
+    "digoxin",
+    "antiarrhythmic",
+    "amiodarone",
+    "flecainide",
+    "sotalol",
+    "dofetilide",
+    "catheter ablation",
+    "AF ablation",
+    "pulsed field ablation",
+    "pulmonary vein isolation",
+    "Watchman",
+    "left atrial appendage",
+    "left atrial appendage closure",
+    "LAA closure",
+    "fall risk",
+    "Johns Hopkins fall risk",
+    "JHFRAT",
+    "heart failure",
+    "tachycardia cardiomyopathy",
+    "sleep apnea",
+    "obesity",
+    "alcohol",
+    "risk factor modification",
+    "Apple Watch",
+    "AF burden",
+    "early rhythm control",
+    "Sandeep Jain"
+  ],
+  "links": [
+    {
+      "label": "🎥 Watch Recording",
+      "type": "recording",
+      "url": "https://upmchs.sharepoint.com/:v:/s/CMIRFPProviderEducationSeries/IQDMC8ribDgbRru_hQc1TmyWATuXSyYP8gI3cGoJi6eRL74?e=yyhW92"
+    },
+    {
+      "label": "📄 Transcript",
+      "type": "transcript",
+      "url": "https://upmchs-my.sharepoint.com/:b:/g/personal/sohnae_upmc_edu/IQARIdKy8CiITqhVcUsu9nbgAYstqPmaYcJaHX8ZHOrKxxE?e=CDDLF6"
+    },
+    {
+      "label": "🧾 Take-Home",
+      "type": "take_home",
+      "url": "https://upmchs-my.sharepoint.com/:w:/g/personal/sohnae_upmc_edu/IQCMFdJjm6zxQLdzjBNAHg1hAXn-VVakytN93Z52kMWmBLk?e=Aokn6m"
+    },
+    {
+      "label": "🗺 Mind Map",
+      "type": "mind_map",
+      "url": "https://examplepages.z13.web.core.windows.net/afibmindmap.html"
+    },
+    {
+      "label": "🤖 Discuss with AI",
+      "type": "ai",
+      "url": "https://dormantone.github.io/payloadprompt/educationseries.html"
+    }
+  ],
+  "sortOrder": 1
+},
+    {
   "id": "pc-20260915-001",
   "series": "cmi",
   "seriesLabel": "Primary Care",
